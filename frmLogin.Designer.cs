@@ -58,6 +58,7 @@
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(59, 274);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -88,6 +89,7 @@
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Location = new System.Drawing.Point(59, 354);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -135,6 +137,7 @@
             this.btnLogIn.Size = new System.Drawing.Size(111, 40);
             this.btnLogIn.TabIndex = 2;
             this.btnLogIn.UseTransparentBackground = true;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // guna2PictureBox1
             // 
