@@ -15,5 +15,11 @@ namespace InfoConnect
             Form frmLogin = new frmLogin();
             frmLogin.Show();
         }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Form frmSignup = new frmSignup();
+            frmSignup.Show();
+        }
     }
 }

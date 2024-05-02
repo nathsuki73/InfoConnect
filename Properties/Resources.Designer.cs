@@ -153,6 +153,16 @@ namespace InfoConnect.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Sign_Up_Btn {
+            get {
+                object obj = ResourceManager.GetObject("Sign Up Btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap welcome_page_bg {
             get {
                 object obj = ResourceManager.GetObject("welcome_page_bg", resourceCulture);

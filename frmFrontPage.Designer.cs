@@ -30,7 +30,7 @@
         {
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnLogIn = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnSignUp = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,31 +65,32 @@
             this.btnLogIn.UseTransparentBackground = true;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
-            // guna2ImageButton1
+            // btnSignUp
             // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton1.HoverState.Image = global::InfoConnect.Properties.Resources.btn_signup_hover;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(236, 66);
-            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = global::InfoConnect.Properties.Resources.btn_signup_default;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(236, 66);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(694, 573);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = global::InfoConnect.Properties.Resources.btn_signup_hover;
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(236, 66);
-            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(236, 66);
-            this.guna2ImageButton1.TabIndex = 1;
-            this.guna2ImageButton1.UseTransparentBackground = true;
+            this.btnSignUp.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignUp.CheckedState.Parent = this.btnSignUp;
+            this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignUp.HoverState.Image = global::InfoConnect.Properties.Resources.btn_signup_hover;
+            this.btnSignUp.HoverState.ImageSize = new System.Drawing.Size(236, 66);
+            this.btnSignUp.HoverState.Parent = this.btnSignUp;
+            this.btnSignUp.Image = global::InfoConnect.Properties.Resources.btn_signup_default;
+            this.btnSignUp.ImageSize = new System.Drawing.Size(236, 66);
+            this.btnSignUp.Location = new System.Drawing.Point(694, 573);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.PressedState.Image = global::InfoConnect.Properties.Resources.btn_signup_hover;
+            this.btnSignUp.PressedState.ImageSize = new System.Drawing.Size(236, 66);
+            this.btnSignUp.PressedState.Parent = this.btnSignUp;
+            this.btnSignUp.Size = new System.Drawing.Size(236, 66);
+            this.btnSignUp.TabIndex = 1;
+            this.btnSignUp.UseTransparentBackground = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // frmFrontPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.guna2ImageButton1);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.guna2PictureBox1);
             this.Name = "frmFrontPage";
@@ -104,7 +105,7 @@
 
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ImageButton btnLogIn;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2ImageButton btnSignUp;
     }
 }
 
