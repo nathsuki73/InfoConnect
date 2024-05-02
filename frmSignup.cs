@@ -37,8 +37,12 @@ namespace InfoConnect
         //eto yung sa dalawang buttons na naglilipat sa page 1 to page 2 ng signup form and vice versa, need lang ifix ng onte kasi nag ooverlap yung mga form pag nalipat ng page ehehe
         private void pg1SignUpBtnPg2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form frmSignUpPage2 = new frmSignupPage2();
             frmSignUpPage2.Show();
+
+
+            
 
         }
     }
