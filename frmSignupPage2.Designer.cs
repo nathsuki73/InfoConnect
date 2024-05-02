@@ -165,7 +165,7 @@
             this.pg2SignUpBtnPg2.BackColor = System.Drawing.Color.Transparent;
             this.pg2SignUpBtnPg2.CheckedState.Parent = this.pg2SignUpBtnPg2;
             this.pg2SignUpBtnPg2.CustomImages.Parent = this.pg2SignUpBtnPg2;
-            this.pg2SignUpBtnPg2.FillColor = System.Drawing.Color.White;
+            this.pg2SignUpBtnPg2.FillColor = System.Drawing.Color.CornflowerBlue;
             this.pg2SignUpBtnPg2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.pg2SignUpBtnPg2.ForeColor = System.Drawing.Color.White;
             this.pg2SignUpBtnPg2.HoverState.Parent = this.pg2SignUpBtnPg2;
@@ -208,6 +208,8 @@
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(111, 40);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = global::InfoConnect.Properties.Resources.Sign_Up_Btn;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(111, 40);

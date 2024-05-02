@@ -28,7 +28,6 @@ namespace InfoConnect
             txtboxfirstname.Parent = pictureBoxSignUp;
             txtboxlastname.Parent = pictureBoxSignUp;
             txtboxmiddlename.Parent = pictureBoxSignUp;
-            txtboxaccounttype.Parent = pictureBoxSignUp;
             txtboxinstiaccount.Parent = pictureBoxSignUp;
             pg1SignUpBtnPg1.Parent = pictureBoxSignUp;
             pg1SignUpBtnPg2.Parent = pictureBoxSignUp;
@@ -45,5 +44,7 @@ namespace InfoConnect
             
 
         }
+
+
     }
 }

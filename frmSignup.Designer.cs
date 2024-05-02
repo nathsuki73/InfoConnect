@@ -33,10 +33,11 @@
             this.txtboxlastname = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtboxmiddlename = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtboxinstiaccount = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtboxaccounttype = new Guna.UI2.WinForms.Guna2TextBox();
             this.pg1SignUpBtnPg1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pg1SignUpBtnPg2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pictureBoxSignUp = new System.Windows.Forms.PictureBox();
+            this.txtboxaccounttype = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSignUp)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +60,7 @@
             this.txtboxfirstname.ForeColor = System.Drawing.Color.Black;
             this.txtboxfirstname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxfirstname.HoverState.Parent = this.txtboxfirstname;
+            this.txtboxfirstname.IconRightSize = new System.Drawing.Size(27, 27);
             this.txtboxfirstname.Location = new System.Drawing.Point(56, 161);
             this.txtboxfirstname.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtboxfirstname.Name = "txtboxfirstname";
@@ -160,42 +162,12 @@
             this.txtboxinstiaccount.Size = new System.Drawing.Size(317, 42);
             this.txtboxinstiaccount.TabIndex = 4;
             // 
-            // txtboxaccounttype
-            // 
-            this.txtboxaccounttype.BackColor = System.Drawing.Color.Transparent;
-            this.txtboxaccounttype.BorderColor = System.Drawing.Color.Gray;
-            this.txtboxaccounttype.BorderRadius = 17;
-            this.txtboxaccounttype.BorderThickness = 3;
-            this.txtboxaccounttype.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtboxaccounttype.DefaultText = "";
-            this.txtboxaccounttype.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtboxaccounttype.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtboxaccounttype.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxaccounttype.DisabledState.Parent = this.txtboxaccounttype;
-            this.txtboxaccounttype.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxaccounttype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxaccounttype.FocusedState.Parent = this.txtboxaccounttype;
-            this.txtboxaccounttype.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxaccounttype.ForeColor = System.Drawing.Color.Black;
-            this.txtboxaccounttype.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxaccounttype.HoverState.Parent = this.txtboxaccounttype;
-            this.txtboxaccounttype.Location = new System.Drawing.Point(56, 418);
-            this.txtboxaccounttype.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtboxaccounttype.Name = "txtboxaccounttype";
-            this.txtboxaccounttype.PasswordChar = '\0';
-            this.txtboxaccounttype.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtboxaccounttype.PlaceholderText = "Account type";
-            this.txtboxaccounttype.SelectedText = "";
-            this.txtboxaccounttype.ShadowDecoration.Parent = this.txtboxaccounttype;
-            this.txtboxaccounttype.Size = new System.Drawing.Size(317, 42);
-            this.txtboxaccounttype.TabIndex = 5;
-            // 
             // pg1SignUpBtnPg1
             // 
             this.pg1SignUpBtnPg1.BackColor = System.Drawing.Color.Transparent;
             this.pg1SignUpBtnPg1.CheckedState.Parent = this.pg1SignUpBtnPg1;
             this.pg1SignUpBtnPg1.CustomImages.Parent = this.pg1SignUpBtnPg1;
-            this.pg1SignUpBtnPg1.FillColor = System.Drawing.Color.White;
+            this.pg1SignUpBtnPg1.FillColor = System.Drawing.Color.CornflowerBlue;
             this.pg1SignUpBtnPg1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.pg1SignUpBtnPg1.ForeColor = System.Drawing.Color.White;
             this.pg1SignUpBtnPg1.HoverState.Parent = this.pg1SignUpBtnPg1;
@@ -233,11 +205,74 @@
             this.pictureBoxSignUp.TabIndex = 0;
             this.pictureBoxSignUp.TabStop = false;
             // 
+            // txtboxaccounttype
+            // 
+            this.txtboxaccounttype.BackColor = System.Drawing.Color.Transparent;
+            this.txtboxaccounttype.BorderColor = System.Drawing.Color.Gray;
+            this.txtboxaccounttype.BorderRadius = 17;
+            this.txtboxaccounttype.BorderThickness = 3;
+            this.txtboxaccounttype.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtboxaccounttype.DefaultText = "";
+            this.txtboxaccounttype.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtboxaccounttype.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtboxaccounttype.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtboxaccounttype.DisabledState.Parent = this.txtboxaccounttype;
+            this.txtboxaccounttype.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtboxaccounttype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtboxaccounttype.FocusedState.Parent = this.txtboxaccounttype;
+            this.txtboxaccounttype.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxaccounttype.ForeColor = System.Drawing.Color.Black;
+            this.txtboxaccounttype.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtboxaccounttype.HoverState.Parent = this.txtboxaccounttype;
+            this.txtboxaccounttype.IconRightSize = new System.Drawing.Size(27, 27);
+            this.txtboxaccounttype.Location = new System.Drawing.Point(56, 418);
+            this.txtboxaccounttype.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtboxaccounttype.Name = "txtboxaccounttype";
+            this.txtboxaccounttype.PasswordChar = '\0';
+            this.txtboxaccounttype.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtboxaccounttype.PlaceholderText = "Phone Number";
+            this.txtboxaccounttype.SelectedText = "";
+            this.txtboxaccounttype.ShadowDecoration.Parent = this.txtboxaccounttype;
+            this.txtboxaccounttype.Size = new System.Drawing.Size(317, 42);
+            this.txtboxaccounttype.TabIndex = 5;
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.Gray;
+            this.guna2TextBox1.BorderRadius = 17;
+            this.guna2TextBox1.BorderThickness = 3;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.IconRightSize = new System.Drawing.Size(27, 27);
+            this.guna2TextBox1.Location = new System.Drawing.Point(56, 482);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.guna2TextBox1.PlaceholderText = "Emergency Contact Number";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(317, 42);
+            this.guna2TextBox1.TabIndex = 8;
+            // 
             // frmSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 647);
+            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.pg1SignUpBtnPg2);
             this.Controls.Add(this.pg1SignUpBtnPg1);
             this.Controls.Add(this.txtboxaccounttype);
@@ -262,8 +297,9 @@
         private Guna.UI2.WinForms.Guna2TextBox txtboxlastname;
         private Guna.UI2.WinForms.Guna2TextBox txtboxmiddlename;
         private Guna.UI2.WinForms.Guna2TextBox txtboxinstiaccount;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxaccounttype;
         public Guna.UI2.WinForms.Guna2CircleButton pg1SignUpBtnPg1;
         public Guna.UI2.WinForms.Guna2CircleButton pg1SignUpBtnPg2;
+        private Guna.UI2.WinForms.Guna2TextBox txtboxaccounttype;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }
