@@ -29,171 +29,159 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSignup));
-            this.txtboxfirstname = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtboxlastname = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtboxmiddlename = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtboxinstiaccount = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pg1SignUpBtnPg1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.pg1SignUpBtnPg2 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.txtFirstName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtLastName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMiddleName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBoxSignUp = new System.Windows.Forms.PictureBox();
-            this.txtboxaccounttype = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtContactNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEmergencyContactNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.rbtnPageOne = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.rbtnPageTwo = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.piclblName = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.piclblContacts = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.piclblConfirmPassword = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.piclblPassword = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.piclblDateOfBirth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.piclblSex = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.cmbYear = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbDay = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbMonth = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbSex = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtConfirmPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSignUp = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnNext = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSignUp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblContacts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblConfirmPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblDateOfBirth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblSex)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtboxfirstname
+            // txtFirstName
             // 
-            this.txtboxfirstname.BackColor = System.Drawing.Color.Transparent;
-            this.txtboxfirstname.BorderColor = System.Drawing.Color.Gray;
-            this.txtboxfirstname.BorderRadius = 17;
-            this.txtboxfirstname.BorderThickness = 3;
-            this.txtboxfirstname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtboxfirstname.DefaultText = "";
-            this.txtboxfirstname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtboxfirstname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtboxfirstname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxfirstname.DisabledState.Parent = this.txtboxfirstname;
-            this.txtboxfirstname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxfirstname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxfirstname.FocusedState.Parent = this.txtboxfirstname;
-            this.txtboxfirstname.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxfirstname.ForeColor = System.Drawing.Color.Black;
-            this.txtboxfirstname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxfirstname.HoverState.Parent = this.txtboxfirstname;
-            this.txtboxfirstname.IconRightSize = new System.Drawing.Size(27, 27);
-            this.txtboxfirstname.Location = new System.Drawing.Point(56, 161);
-            this.txtboxfirstname.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtboxfirstname.Name = "txtboxfirstname";
-            this.txtboxfirstname.PasswordChar = '\0';
-            this.txtboxfirstname.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtboxfirstname.PlaceholderText = "First Name";
-            this.txtboxfirstname.SelectedText = "";
-            this.txtboxfirstname.ShadowDecoration.Parent = this.txtboxfirstname;
-            this.txtboxfirstname.Size = new System.Drawing.Size(317, 42);
-            this.txtboxfirstname.TabIndex = 1;
+            this.txtFirstName.BackColor = System.Drawing.Color.Transparent;
+            this.txtFirstName.BorderColor = System.Drawing.Color.Gray;
+            this.txtFirstName.BorderRadius = 13;
+            this.txtFirstName.BorderThickness = 3;
+            this.txtFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFirstName.DefaultText = "";
+            this.txtFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtFirstName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtFirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFirstName.DisabledState.Parent = this.txtFirstName;
+            this.txtFirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFirstName.FocusedState.Parent = this.txtFirstName;
+            this.txtFirstName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.ForeColor = System.Drawing.Color.Black;
+            this.txtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFirstName.HoverState.Parent = this.txtFirstName;
+            this.txtFirstName.IconRightSize = new System.Drawing.Size(27, 27);
+            this.txtFirstName.Location = new System.Drawing.Point(56, 161);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.PasswordChar = '\0';
+            this.txtFirstName.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtFirstName.PlaceholderText = "First Name";
+            this.txtFirstName.SelectedText = "";
+            this.txtFirstName.ShadowDecoration.Parent = this.txtFirstName;
+            this.txtFirstName.Size = new System.Drawing.Size(317, 36);
+            this.txtFirstName.TabIndex = 1;
             // 
-            // txtboxlastname
+            // txtLastName
             // 
-            this.txtboxlastname.BackColor = System.Drawing.Color.Transparent;
-            this.txtboxlastname.BorderColor = System.Drawing.Color.Gray;
-            this.txtboxlastname.BorderRadius = 17;
-            this.txtboxlastname.BorderThickness = 3;
-            this.txtboxlastname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtboxlastname.DefaultText = "";
-            this.txtboxlastname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtboxlastname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtboxlastname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxlastname.DisabledState.Parent = this.txtboxlastname;
-            this.txtboxlastname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxlastname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxlastname.FocusedState.Parent = this.txtboxlastname;
-            this.txtboxlastname.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxlastname.ForeColor = System.Drawing.Color.Black;
-            this.txtboxlastname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxlastname.HoverState.Parent = this.txtboxlastname;
-            this.txtboxlastname.Location = new System.Drawing.Point(56, 223);
-            this.txtboxlastname.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtboxlastname.Name = "txtboxlastname";
-            this.txtboxlastname.PasswordChar = '\0';
-            this.txtboxlastname.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtboxlastname.PlaceholderText = "Last Name";
-            this.txtboxlastname.SelectedText = "";
-            this.txtboxlastname.ShadowDecoration.Parent = this.txtboxlastname;
-            this.txtboxlastname.Size = new System.Drawing.Size(317, 42);
-            this.txtboxlastname.TabIndex = 2;
+            this.txtLastName.BackColor = System.Drawing.Color.Transparent;
+            this.txtLastName.BorderColor = System.Drawing.Color.Gray;
+            this.txtLastName.BorderRadius = 13;
+            this.txtLastName.BorderThickness = 3;
+            this.txtLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLastName.DefaultText = "";
+            this.txtLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLastName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLastName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLastName.DisabledState.Parent = this.txtLastName;
+            this.txtLastName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLastName.FocusedState.Parent = this.txtLastName;
+            this.txtLastName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.ForeColor = System.Drawing.Color.Black;
+            this.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLastName.HoverState.Parent = this.txtLastName;
+            this.txtLastName.Location = new System.Drawing.Point(56, 205);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.PasswordChar = '\0';
+            this.txtLastName.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtLastName.PlaceholderText = "Last Name";
+            this.txtLastName.SelectedText = "";
+            this.txtLastName.ShadowDecoration.Parent = this.txtLastName;
+            this.txtLastName.Size = new System.Drawing.Size(317, 36);
+            this.txtLastName.TabIndex = 2;
             // 
-            // txtboxmiddlename
+            // txtMiddleName
             // 
-            this.txtboxmiddlename.BackColor = System.Drawing.Color.Transparent;
-            this.txtboxmiddlename.BorderColor = System.Drawing.Color.Gray;
-            this.txtboxmiddlename.BorderRadius = 17;
-            this.txtboxmiddlename.BorderThickness = 3;
-            this.txtboxmiddlename.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtboxmiddlename.DefaultText = "";
-            this.txtboxmiddlename.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtboxmiddlename.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtboxmiddlename.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxmiddlename.DisabledState.Parent = this.txtboxmiddlename;
-            this.txtboxmiddlename.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxmiddlename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxmiddlename.FocusedState.Parent = this.txtboxmiddlename;
-            this.txtboxmiddlename.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxmiddlename.ForeColor = System.Drawing.Color.Black;
-            this.txtboxmiddlename.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxmiddlename.HoverState.Parent = this.txtboxmiddlename;
-            this.txtboxmiddlename.Location = new System.Drawing.Point(56, 287);
-            this.txtboxmiddlename.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtboxmiddlename.Name = "txtboxmiddlename";
-            this.txtboxmiddlename.PasswordChar = '\0';
-            this.txtboxmiddlename.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtboxmiddlename.PlaceholderText = "Middle Name";
-            this.txtboxmiddlename.SelectedText = "";
-            this.txtboxmiddlename.ShadowDecoration.Parent = this.txtboxmiddlename;
-            this.txtboxmiddlename.Size = new System.Drawing.Size(317, 42);
-            this.txtboxmiddlename.TabIndex = 3;
+            this.txtMiddleName.BackColor = System.Drawing.Color.Transparent;
+            this.txtMiddleName.BorderColor = System.Drawing.Color.Gray;
+            this.txtMiddleName.BorderRadius = 13;
+            this.txtMiddleName.BorderThickness = 3;
+            this.txtMiddleName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMiddleName.DefaultText = "";
+            this.txtMiddleName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMiddleName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMiddleName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMiddleName.DisabledState.Parent = this.txtMiddleName;
+            this.txtMiddleName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMiddleName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMiddleName.FocusedState.Parent = this.txtMiddleName;
+            this.txtMiddleName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMiddleName.ForeColor = System.Drawing.Color.Black;
+            this.txtMiddleName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMiddleName.HoverState.Parent = this.txtMiddleName;
+            this.txtMiddleName.Location = new System.Drawing.Point(56, 249);
+            this.txtMiddleName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtMiddleName.Name = "txtMiddleName";
+            this.txtMiddleName.PasswordChar = '\0';
+            this.txtMiddleName.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtMiddleName.PlaceholderText = "Middle Name";
+            this.txtMiddleName.SelectedText = "";
+            this.txtMiddleName.ShadowDecoration.Parent = this.txtMiddleName;
+            this.txtMiddleName.Size = new System.Drawing.Size(317, 36);
+            this.txtMiddleName.TabIndex = 3;
             // 
-            // txtboxinstiaccount
+            // txtEmail
             // 
-            this.txtboxinstiaccount.BackColor = System.Drawing.Color.Transparent;
-            this.txtboxinstiaccount.BorderColor = System.Drawing.Color.Gray;
-            this.txtboxinstiaccount.BorderRadius = 17;
-            this.txtboxinstiaccount.BorderThickness = 3;
-            this.txtboxinstiaccount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtboxinstiaccount.DefaultText = "";
-            this.txtboxinstiaccount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtboxinstiaccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtboxinstiaccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxinstiaccount.DisabledState.Parent = this.txtboxinstiaccount;
-            this.txtboxinstiaccount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxinstiaccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxinstiaccount.FocusedState.Parent = this.txtboxinstiaccount;
-            this.txtboxinstiaccount.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxinstiaccount.ForeColor = System.Drawing.Color.Black;
-            this.txtboxinstiaccount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxinstiaccount.HoverState.Parent = this.txtboxinstiaccount;
-            this.txtboxinstiaccount.Location = new System.Drawing.Point(56, 353);
-            this.txtboxinstiaccount.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtboxinstiaccount.Name = "txtboxinstiaccount";
-            this.txtboxinstiaccount.PasswordChar = '\0';
-            this.txtboxinstiaccount.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtboxinstiaccount.PlaceholderText = "Institutional E-mail";
-            this.txtboxinstiaccount.SelectedText = "";
-            this.txtboxinstiaccount.ShadowDecoration.Parent = this.txtboxinstiaccount;
-            this.txtboxinstiaccount.Size = new System.Drawing.Size(317, 42);
-            this.txtboxinstiaccount.TabIndex = 4;
-            // 
-            // pg1SignUpBtnPg1
-            // 
-            this.pg1SignUpBtnPg1.BackColor = System.Drawing.Color.Transparent;
-            this.pg1SignUpBtnPg1.CheckedState.Parent = this.pg1SignUpBtnPg1;
-            this.pg1SignUpBtnPg1.CustomImages.Parent = this.pg1SignUpBtnPg1;
-            this.pg1SignUpBtnPg1.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.pg1SignUpBtnPg1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.pg1SignUpBtnPg1.ForeColor = System.Drawing.Color.White;
-            this.pg1SignUpBtnPg1.HoverState.Parent = this.pg1SignUpBtnPg1;
-            this.pg1SignUpBtnPg1.Location = new System.Drawing.Point(200, 618);
-            this.pg1SignUpBtnPg1.Name = "pg1SignUpBtnPg1";
-            this.pg1SignUpBtnPg1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pg1SignUpBtnPg1.ShadowDecoration.Parent = this.pg1SignUpBtnPg1;
-            this.pg1SignUpBtnPg1.Size = new System.Drawing.Size(15, 17);
-            this.pg1SignUpBtnPg1.TabIndex = 6;
-            // 
-            // pg1SignUpBtnPg2
-            // 
-            this.pg1SignUpBtnPg2.BackColor = System.Drawing.Color.Transparent;
-            this.pg1SignUpBtnPg2.CheckedState.Parent = this.pg1SignUpBtnPg2;
-            this.pg1SignUpBtnPg2.CustomImages.Parent = this.pg1SignUpBtnPg2;
-            this.pg1SignUpBtnPg2.FillColor = System.Drawing.Color.White;
-            this.pg1SignUpBtnPg2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.pg1SignUpBtnPg2.ForeColor = System.Drawing.Color.White;
-            this.pg1SignUpBtnPg2.HoverState.Parent = this.pg1SignUpBtnPg2;
-            this.pg1SignUpBtnPg2.Location = new System.Drawing.Point(221, 618);
-            this.pg1SignUpBtnPg2.Name = "pg1SignUpBtnPg2";
-            this.pg1SignUpBtnPg2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pg1SignUpBtnPg2.ShadowDecoration.Parent = this.pg1SignUpBtnPg2;
-            this.pg1SignUpBtnPg2.Size = new System.Drawing.Size(15, 17);
-            this.pg1SignUpBtnPg2.TabIndex = 7;
-            this.pg1SignUpBtnPg2.Click += new System.EventHandler(this.pg1SignUpBtnPg2_Click);
+            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
+            this.txtEmail.BorderColor = System.Drawing.Color.Gray;
+            this.txtEmail.BorderRadius = 13;
+            this.txtEmail.BorderThickness = 3;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.DefaultText = "";
+            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.DisabledState.Parent = this.txtEmail;
+            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.FocusedState.Parent = this.txtEmail;
+            this.txtEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.Black;
+            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.HoverState.Parent = this.txtEmail;
+            this.txtEmail.Location = new System.Drawing.Point(56, 349);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PasswordChar = '\0';
+            this.txtEmail.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtEmail.PlaceholderText = "Institutional E-mail";
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
+            this.txtEmail.Size = new System.Drawing.Size(317, 36);
+            this.txtEmail.TabIndex = 4;
             // 
             // pictureBoxSignUp
             // 
@@ -205,87 +193,465 @@
             this.pictureBoxSignUp.TabIndex = 0;
             this.pictureBoxSignUp.TabStop = false;
             // 
-            // txtboxaccounttype
+            // txtContactNumber
             // 
-            this.txtboxaccounttype.BackColor = System.Drawing.Color.Transparent;
-            this.txtboxaccounttype.BorderColor = System.Drawing.Color.Gray;
-            this.txtboxaccounttype.BorderRadius = 17;
-            this.txtboxaccounttype.BorderThickness = 3;
-            this.txtboxaccounttype.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtboxaccounttype.DefaultText = "";
-            this.txtboxaccounttype.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtboxaccounttype.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtboxaccounttype.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxaccounttype.DisabledState.Parent = this.txtboxaccounttype;
-            this.txtboxaccounttype.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxaccounttype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxaccounttype.FocusedState.Parent = this.txtboxaccounttype;
-            this.txtboxaccounttype.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxaccounttype.ForeColor = System.Drawing.Color.Black;
-            this.txtboxaccounttype.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxaccounttype.HoverState.Parent = this.txtboxaccounttype;
-            this.txtboxaccounttype.IconRightSize = new System.Drawing.Size(27, 27);
-            this.txtboxaccounttype.Location = new System.Drawing.Point(56, 418);
-            this.txtboxaccounttype.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtboxaccounttype.Name = "txtboxaccounttype";
-            this.txtboxaccounttype.PasswordChar = '\0';
-            this.txtboxaccounttype.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtboxaccounttype.PlaceholderText = "Phone Number";
-            this.txtboxaccounttype.SelectedText = "";
-            this.txtboxaccounttype.ShadowDecoration.Parent = this.txtboxaccounttype;
-            this.txtboxaccounttype.Size = new System.Drawing.Size(317, 42);
-            this.txtboxaccounttype.TabIndex = 5;
+            this.txtContactNumber.BackColor = System.Drawing.Color.Transparent;
+            this.txtContactNumber.BorderColor = System.Drawing.Color.Gray;
+            this.txtContactNumber.BorderRadius = 13;
+            this.txtContactNumber.BorderThickness = 3;
+            this.txtContactNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtContactNumber.DefaultText = "";
+            this.txtContactNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtContactNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtContactNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContactNumber.DisabledState.Parent = this.txtContactNumber;
+            this.txtContactNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContactNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContactNumber.FocusedState.Parent = this.txtContactNumber;
+            this.txtContactNumber.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContactNumber.ForeColor = System.Drawing.Color.Black;
+            this.txtContactNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContactNumber.HoverState.Parent = this.txtContactNumber;
+            this.txtContactNumber.IconRightSize = new System.Drawing.Size(27, 27);
+            this.txtContactNumber.Location = new System.Drawing.Point(56, 393);
+            this.txtContactNumber.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtContactNumber.Name = "txtContactNumber";
+            this.txtContactNumber.PasswordChar = '\0';
+            this.txtContactNumber.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtContactNumber.PlaceholderText = "Phone Number";
+            this.txtContactNumber.SelectedText = "";
+            this.txtContactNumber.ShadowDecoration.Parent = this.txtContactNumber;
+            this.txtContactNumber.Size = new System.Drawing.Size(317, 36);
+            this.txtContactNumber.TabIndex = 5;
             // 
-            // guna2TextBox1
+            // txtEmergencyContactNumber
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox1.BorderRadius = 17;
-            this.guna2TextBox1.BorderThickness = 3;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.IconRightSize = new System.Drawing.Size(27, 27);
-            this.guna2TextBox1.Location = new System.Drawing.Point(56, 482);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox1.PlaceholderText = "Emergency Contact Number";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(317, 42);
-            this.guna2TextBox1.TabIndex = 8;
+            this.txtEmergencyContactNumber.BackColor = System.Drawing.Color.Transparent;
+            this.txtEmergencyContactNumber.BorderColor = System.Drawing.Color.Gray;
+            this.txtEmergencyContactNumber.BorderRadius = 13;
+            this.txtEmergencyContactNumber.BorderThickness = 3;
+            this.txtEmergencyContactNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmergencyContactNumber.DefaultText = "";
+            this.txtEmergencyContactNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmergencyContactNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmergencyContactNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmergencyContactNumber.DisabledState.Parent = this.txtEmergencyContactNumber;
+            this.txtEmergencyContactNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmergencyContactNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmergencyContactNumber.FocusedState.Parent = this.txtEmergencyContactNumber;
+            this.txtEmergencyContactNumber.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmergencyContactNumber.ForeColor = System.Drawing.Color.Black;
+            this.txtEmergencyContactNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmergencyContactNumber.HoverState.Parent = this.txtEmergencyContactNumber;
+            this.txtEmergencyContactNumber.IconRightSize = new System.Drawing.Size(27, 27);
+            this.txtEmergencyContactNumber.Location = new System.Drawing.Point(56, 437);
+            this.txtEmergencyContactNumber.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtEmergencyContactNumber.Name = "txtEmergencyContactNumber";
+            this.txtEmergencyContactNumber.PasswordChar = '\0';
+            this.txtEmergencyContactNumber.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtEmergencyContactNumber.PlaceholderText = "Emergency Contact Number";
+            this.txtEmergencyContactNumber.SelectedText = "";
+            this.txtEmergencyContactNumber.ShadowDecoration.Parent = this.txtEmergencyContactNumber;
+            this.txtEmergencyContactNumber.Size = new System.Drawing.Size(317, 36);
+            this.txtEmergencyContactNumber.TabIndex = 8;
+            // 
+            // rbtnPageOne
+            // 
+            this.rbtnPageOne.Animated = true;
+            this.rbtnPageOne.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnPageOne.Checked = true;
+            this.rbtnPageOne.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.rbtnPageOne.CheckedState.BorderThickness = 0;
+            this.rbtnPageOne.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.rbtnPageOne.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.rbtnPageOne.CheckedState.Parent = this.rbtnPageOne;
+            this.rbtnPageOne.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbtnPageOne.Location = new System.Drawing.Point(205, 598);
+            this.rbtnPageOne.Name = "rbtnPageOne";
+            this.rbtnPageOne.ShadowDecoration.Parent = this.rbtnPageOne;
+            this.rbtnPageOne.Size = new System.Drawing.Size(13, 13);
+            this.rbtnPageOne.TabIndex = 9;
+            this.rbtnPageOne.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.rbtnPageOne.UncheckedState.BorderThickness = 2;
+            this.rbtnPageOne.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.rbtnPageOne.UncheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.rbtnPageOne.UncheckedState.Parent = this.rbtnPageOne;
+            this.rbtnPageOne.UseTransparentBackground = true;
+            this.rbtnPageOne.Click += new System.EventHandler(this.rbtnPageOne_Click);
+            // 
+            // rbtnPageTwo
+            // 
+            this.rbtnPageTwo.Animated = true;
+            this.rbtnPageTwo.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnPageTwo.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.rbtnPageTwo.CheckedState.BorderThickness = 0;
+            this.rbtnPageTwo.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.rbtnPageTwo.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.rbtnPageTwo.CheckedState.Parent = this.rbtnPageTwo;
+            this.rbtnPageTwo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbtnPageTwo.Location = new System.Drawing.Point(224, 598);
+            this.rbtnPageTwo.Name = "rbtnPageTwo";
+            this.rbtnPageTwo.ShadowDecoration.Parent = this.rbtnPageTwo;
+            this.rbtnPageTwo.Size = new System.Drawing.Size(13, 13);
+            this.rbtnPageTwo.TabIndex = 9;
+            this.rbtnPageTwo.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.rbtnPageTwo.UncheckedState.BorderThickness = 2;
+            this.rbtnPageTwo.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.rbtnPageTwo.UncheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.rbtnPageTwo.UncheckedState.Parent = this.rbtnPageTwo;
+            this.rbtnPageTwo.UseTransparentBackground = true;
+            this.rbtnPageTwo.Click += new System.EventHandler(this.rbtnPageTwo_Click);
+            // 
+            // piclblName
+            // 
+            this.piclblName.BackColor = System.Drawing.Color.Transparent;
+            this.piclblName.Image = ((System.Drawing.Image)(resources.GetObject("piclblName.Image")));
+            this.piclblName.Location = new System.Drawing.Point(56, 132);
+            this.piclblName.Name = "piclblName";
+            this.piclblName.ShadowDecoration.Parent = this.piclblName;
+            this.piclblName.Size = new System.Drawing.Size(49, 22);
+            this.piclblName.TabIndex = 12;
+            this.piclblName.TabStop = false;
+            this.piclblName.UseTransparentBackground = true;
+            // 
+            // piclblContacts
+            // 
+            this.piclblContacts.BackColor = System.Drawing.Color.Transparent;
+            this.piclblContacts.Image = ((System.Drawing.Image)(resources.GetObject("piclblContacts.Image")));
+            this.piclblContacts.Location = new System.Drawing.Point(56, 320);
+            this.piclblContacts.Name = "piclblContacts";
+            this.piclblContacts.ShadowDecoration.Parent = this.piclblContacts;
+            this.piclblContacts.Size = new System.Drawing.Size(91, 22);
+            this.piclblContacts.TabIndex = 12;
+            this.piclblContacts.TabStop = false;
+            this.piclblContacts.UseTransparentBackground = true;
+            // 
+            // piclblConfirmPassword
+            // 
+            this.piclblConfirmPassword.BackColor = System.Drawing.Color.Transparent;
+            this.piclblConfirmPassword.Image = ((System.Drawing.Image)(resources.GetObject("piclblConfirmPassword.Image")));
+            this.piclblConfirmPassword.Location = new System.Drawing.Point(57, 417);
+            this.piclblConfirmPassword.Name = "piclblConfirmPassword";
+            this.piclblConfirmPassword.ShadowDecoration.Parent = this.piclblConfirmPassword;
+            this.piclblConfirmPassword.Size = new System.Drawing.Size(178, 22);
+            this.piclblConfirmPassword.TabIndex = 20;
+            this.piclblConfirmPassword.TabStop = false;
+            this.piclblConfirmPassword.UseTransparentBackground = true;
+            // 
+            // piclblPassword
+            // 
+            this.piclblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.piclblPassword.Image = ((System.Drawing.Image)(resources.GetObject("piclblPassword.Image")));
+            this.piclblPassword.Location = new System.Drawing.Point(56, 337);
+            this.piclblPassword.Name = "piclblPassword";
+            this.piclblPassword.ShadowDecoration.Parent = this.piclblPassword;
+            this.piclblPassword.Size = new System.Drawing.Size(93, 22);
+            this.piclblPassword.TabIndex = 21;
+            this.piclblPassword.TabStop = false;
+            this.piclblPassword.UseTransparentBackground = true;
+            // 
+            // piclblDateOfBirth
+            // 
+            this.piclblDateOfBirth.BackColor = System.Drawing.Color.Transparent;
+            this.piclblDateOfBirth.Image = ((System.Drawing.Image)(resources.GetObject("piclblDateOfBirth.Image")));
+            this.piclblDateOfBirth.Location = new System.Drawing.Point(55, 207);
+            this.piclblDateOfBirth.Name = "piclblDateOfBirth";
+            this.piclblDateOfBirth.ShadowDecoration.Parent = this.piclblDateOfBirth;
+            this.piclblDateOfBirth.Size = new System.Drawing.Size(146, 22);
+            this.piclblDateOfBirth.TabIndex = 22;
+            this.piclblDateOfBirth.TabStop = false;
+            this.piclblDateOfBirth.UseTransparentBackground = true;
+            // 
+            // piclblSex
+            // 
+            this.piclblSex.BackColor = System.Drawing.Color.Transparent;
+            this.piclblSex.Image = ((System.Drawing.Image)(resources.GetObject("piclblSex.Image")));
+            this.piclblSex.Location = new System.Drawing.Point(55, 129);
+            this.piclblSex.Name = "piclblSex";
+            this.piclblSex.ShadowDecoration.Parent = this.piclblSex;
+            this.piclblSex.Size = new System.Drawing.Size(93, 22);
+            this.piclblSex.TabIndex = 23;
+            this.piclblSex.TabStop = false;
+            this.piclblSex.UseTransparentBackground = true;
+            // 
+            // cmbYear
+            // 
+            this.cmbYear.BackColor = System.Drawing.Color.Transparent;
+            this.cmbYear.BorderColor = System.Drawing.Color.Gray;
+            this.cmbYear.BorderRadius = 13;
+            this.cmbYear.BorderThickness = 3;
+            this.cmbYear.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbYear.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbYear.FocusedState.Parent = this.cmbYear;
+            this.cmbYear.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbYear.FormattingEnabled = true;
+            this.cmbYear.HoverState.Parent = this.cmbYear;
+            this.cmbYear.ItemHeight = 30;
+            this.cmbYear.Items.AddRange(new object[] {
+            "Year",
+            "1900",
+            "1901"});
+            this.cmbYear.ItemsAppearance.Parent = this.cmbYear;
+            this.cmbYear.Location = new System.Drawing.Point(284, 235);
+            this.cmbYear.Name = "cmbYear";
+            this.cmbYear.ShadowDecoration.Parent = this.cmbYear;
+            this.cmbYear.Size = new System.Drawing.Size(89, 36);
+            this.cmbYear.StartIndex = 0;
+            this.cmbYear.TabIndex = 16;
+            // 
+            // cmbDay
+            // 
+            this.cmbDay.BackColor = System.Drawing.Color.Transparent;
+            this.cmbDay.BorderColor = System.Drawing.Color.Gray;
+            this.cmbDay.BorderRadius = 13;
+            this.cmbDay.BorderThickness = 3;
+            this.cmbDay.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbDay.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbDay.FocusedState.Parent = this.cmbDay;
+            this.cmbDay.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbDay.FormattingEnabled = true;
+            this.cmbDay.HoverState.Parent = this.cmbDay;
+            this.cmbDay.ItemHeight = 30;
+            this.cmbDay.Items.AddRange(new object[] {
+            "Day",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cmbDay.ItemsAppearance.Parent = this.cmbDay;
+            this.cmbDay.Location = new System.Drawing.Point(189, 235);
+            this.cmbDay.Name = "cmbDay";
+            this.cmbDay.ShadowDecoration.Parent = this.cmbDay;
+            this.cmbDay.Size = new System.Drawing.Size(89, 36);
+            this.cmbDay.StartIndex = 0;
+            this.cmbDay.TabIndex = 17;
+            // 
+            // cmbMonth
+            // 
+            this.cmbMonth.BackColor = System.Drawing.Color.Transparent;
+            this.cmbMonth.BorderColor = System.Drawing.Color.Gray;
+            this.cmbMonth.BorderRadius = 13;
+            this.cmbMonth.BorderThickness = 3;
+            this.cmbMonth.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbMonth.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbMonth.FocusedState.Parent = this.cmbMonth;
+            this.cmbMonth.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbMonth.FormattingEnabled = true;
+            this.cmbMonth.HoverState.Parent = this.cmbMonth;
+            this.cmbMonth.ItemHeight = 30;
+            this.cmbMonth.Items.AddRange(new object[] {
+            "Month",
+            "January",
+            "February",
+            "March"});
+            this.cmbMonth.ItemsAppearance.Parent = this.cmbMonth;
+            this.cmbMonth.Location = new System.Drawing.Point(56, 235);
+            this.cmbMonth.Name = "cmbMonth";
+            this.cmbMonth.ShadowDecoration.Parent = this.cmbMonth;
+            this.cmbMonth.Size = new System.Drawing.Size(127, 36);
+            this.cmbMonth.StartIndex = 0;
+            this.cmbMonth.TabIndex = 18;
+            // 
+            // cmbSex
+            // 
+            this.cmbSex.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSex.BorderColor = System.Drawing.Color.Gray;
+            this.cmbSex.BorderRadius = 13;
+            this.cmbSex.BorderThickness = 3;
+            this.cmbSex.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbSex.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbSex.FocusedState.Parent = this.cmbSex;
+            this.cmbSex.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbSex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSex.FormattingEnabled = true;
+            this.cmbSex.HoverState.Parent = this.cmbSex;
+            this.cmbSex.ItemHeight = 30;
+            this.cmbSex.Items.AddRange(new object[] {
+            "Sex",
+            "Male",
+            "Female"});
+            this.cmbSex.ItemsAppearance.Parent = this.cmbSex;
+            this.cmbSex.Location = new System.Drawing.Point(55, 157);
+            this.cmbSex.Name = "cmbSex";
+            this.cmbSex.ShadowDecoration.Parent = this.cmbSex;
+            this.cmbSex.Size = new System.Drawing.Size(317, 36);
+            this.cmbSex.StartIndex = 0;
+            this.cmbSex.TabIndex = 19;
+            // 
+            // txtConfirmPassword
+            // 
+            this.txtConfirmPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtConfirmPassword.BorderColor = System.Drawing.Color.Gray;
+            this.txtConfirmPassword.BorderRadius = 13;
+            this.txtConfirmPassword.BorderThickness = 3;
+            this.txtConfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtConfirmPassword.DefaultText = "";
+            this.txtConfirmPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtConfirmPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtConfirmPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtConfirmPassword.DisabledState.Parent = this.txtConfirmPassword;
+            this.txtConfirmPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtConfirmPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtConfirmPassword.FocusedState.Parent = this.txtConfirmPassword;
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtConfirmPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtConfirmPassword.HoverState.Parent = this.txtConfirmPassword;
+            this.txtConfirmPassword.Location = new System.Drawing.Point(56, 446);
+            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.PasswordChar = '\0';
+            this.txtConfirmPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtConfirmPassword.PlaceholderText = "Confirm Password";
+            this.txtConfirmPassword.SelectedText = "";
+            this.txtConfirmPassword.ShadowDecoration.Parent = this.txtConfirmPassword;
+            this.txtConfirmPassword.Size = new System.Drawing.Size(317, 36);
+            this.txtConfirmPassword.TabIndex = 14;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtPassword.BorderColor = System.Drawing.Color.Gray;
+            this.txtPassword.BorderRadius = 13;
+            this.txtPassword.BorderThickness = 3;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.Parent = this.txtPassword;
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.FocusedState.Parent = this.txtPassword;
+            this.txtPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.HoverState.Parent = this.txtPassword;
+            this.txtPassword.Location = new System.Drawing.Point(57, 366);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
+            this.txtPassword.Size = new System.Drawing.Size(317, 36);
+            this.txtPassword.TabIndex = 15;
+            // 
+            // btnSignUp
+            // 
+            this.btnSignUp.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignUp.CheckedState.Parent = this.btnSignUp;
+            this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignUp.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnSignUp.HoverState.Image")));
+            this.btnSignUp.HoverState.ImageSize = new System.Drawing.Size(121, 40);
+            this.btnSignUp.HoverState.Parent = this.btnSignUp;
+            this.btnSignUp.Image = ((System.Drawing.Image)(resources.GetObject("btnSignUp.Image")));
+            this.btnSignUp.ImageSize = new System.Drawing.Size(121, 40);
+            this.btnSignUp.Location = new System.Drawing.Point(157, 509);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnSignUp.PressedState.Image")));
+            this.btnSignUp.PressedState.ImageSize = new System.Drawing.Size(121, 40);
+            this.btnSignUp.PressedState.Parent = this.btnSignUp;
+            this.btnSignUp.Size = new System.Drawing.Size(121, 55);
+            this.btnSignUp.TabIndex = 11;
+            this.btnSignUp.UseTransparentBackground = true;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.CheckedState.Parent = this.btnBack;
+            this.btnBack.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.HoverState.Image")));
+            this.btnBack.HoverState.ImageSize = new System.Drawing.Size(35, 21);
+            this.btnBack.HoverState.Parent = this.btnBack;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageSize = new System.Drawing.Size(35, 21);
+            this.btnBack.Location = new System.Drawing.Point(26, 543);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.PressedState.Image")));
+            this.btnBack.PressedState.ImageSize = new System.Drawing.Size(35, 21);
+            this.btnBack.PressedState.Parent = this.btnBack;
+            this.btnBack.Size = new System.Drawing.Size(35, 21);
+            this.btnBack.TabIndex = 24;
+            this.btnBack.UseTransparentBackground = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.Transparent;
+            this.btnNext.CheckedState.Parent = this.btnNext;
+            this.btnNext.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.HoverState.Image")));
+            this.btnNext.HoverState.ImageSize = new System.Drawing.Size(35, 21);
+            this.btnNext.HoverState.Parent = this.btnNext;
+            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
+            this.btnNext.ImageSize = new System.Drawing.Size(35, 21);
+            this.btnNext.Location = new System.Drawing.Point(378, 543);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.PressedState.Image")));
+            this.btnNext.PressedState.ImageSize = new System.Drawing.Size(35, 21);
+            this.btnNext.PressedState.Parent = this.btnNext;
+            this.btnNext.Size = new System.Drawing.Size(35, 21);
+            this.btnNext.TabIndex = 25;
+            this.btnNext.UseTransparentBackground = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // frmSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 647);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.pg1SignUpBtnPg2);
-            this.Controls.Add(this.pg1SignUpBtnPg1);
-            this.Controls.Add(this.txtboxaccounttype);
-            this.Controls.Add(this.txtboxinstiaccount);
-            this.Controls.Add(this.txtboxmiddlename);
-            this.Controls.Add(this.txtboxlastname);
-            this.Controls.Add(this.txtboxfirstname);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.piclblConfirmPassword);
+            this.Controls.Add(this.piclblPassword);
+            this.Controls.Add(this.piclblDateOfBirth);
+            this.Controls.Add(this.piclblSex);
+            this.Controls.Add(this.cmbYear);
+            this.Controls.Add(this.cmbDay);
+            this.Controls.Add(this.cmbMonth);
+            this.Controls.Add(this.cmbSex);
+            this.Controls.Add(this.txtConfirmPassword);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.piclblContacts);
+            this.Controls.Add(this.piclblName);
+            this.Controls.Add(this.rbtnPageTwo);
+            this.Controls.Add(this.rbtnPageOne);
+            this.Controls.Add(this.txtEmergencyContactNumber);
+            this.Controls.Add(this.txtContactNumber);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtMiddleName);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.pictureBoxSignUp);
             this.Name = "frmSignup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign Up";
             this.Load += new System.EventHandler(this.frmSignup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSignUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblContacts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblConfirmPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblDateOfBirth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclblSex)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -293,13 +659,28 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBoxSignUp;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxfirstname;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxlastname;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxmiddlename;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxinstiaccount;
-        public Guna.UI2.WinForms.Guna2CircleButton pg1SignUpBtnPg1;
-        public Guna.UI2.WinForms.Guna2CircleButton pg1SignUpBtnPg2;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxaccounttype;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtFirstName;
+        private Guna.UI2.WinForms.Guna2TextBox txtLastName;
+        private Guna.UI2.WinForms.Guna2TextBox txtMiddleName;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
+        private Guna.UI2.WinForms.Guna2TextBox txtContactNumber;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmergencyContactNumber;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rbtnPageOne;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rbtnPageTwo;
+        private Guna.UI2.WinForms.Guna2PictureBox piclblName;
+        private Guna.UI2.WinForms.Guna2PictureBox piclblContacts;
+        private Guna.UI2.WinForms.Guna2PictureBox piclblConfirmPassword;
+        private Guna.UI2.WinForms.Guna2PictureBox piclblPassword;
+        private Guna.UI2.WinForms.Guna2PictureBox piclblDateOfBirth;
+        private Guna.UI2.WinForms.Guna2PictureBox piclblSex;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbYear;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbDay;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbMonth;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbSex;
+        private Guna.UI2.WinForms.Guna2TextBox txtConfirmPassword;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private Guna.UI2.WinForms.Guna2ImageButton btnSignUp;
+        private Guna.UI2.WinForms.Guna2ImageButton btnBack;
+        private Guna.UI2.WinForms.Guna2ImageButton btnNext;
     }
 }
