@@ -382,6 +382,7 @@
             this.cmbYear.BorderThickness = 3;
             this.cmbYear.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbYear.DropDownWidth = 100;
             this.cmbYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbYear.FocusedColor = System.Drawing.Color.Empty;
             this.cmbYear.FocusedState.Parent = this.cmbYear;
@@ -389,11 +390,10 @@
             this.cmbYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbYear.FormattingEnabled = true;
             this.cmbYear.HoverState.Parent = this.cmbYear;
+            this.cmbYear.IntegralHeight = false;
             this.cmbYear.ItemHeight = 30;
             this.cmbYear.Items.AddRange(new object[] {
-            "Year",
-            "1900",
-            "1901"});
+            "Year"});
             this.cmbYear.ItemsAppearance.Parent = this.cmbYear;
             this.cmbYear.Location = new System.Drawing.Point(284, 235);
             this.cmbYear.Name = "cmbYear";
@@ -417,6 +417,7 @@
             this.cmbDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbDay.FormattingEnabled = true;
             this.cmbDay.HoverState.Parent = this.cmbDay;
+            this.cmbDay.IntegralHeight = false;
             this.cmbDay.ItemHeight = 30;
             this.cmbDay.Items.AddRange(new object[] {
             "Day",
@@ -429,7 +430,28 @@
             "7",
             "8",
             "9",
-            "10"});
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
             this.cmbDay.ItemsAppearance.Parent = this.cmbDay;
             this.cmbDay.Location = new System.Drawing.Point(189, 235);
             this.cmbDay.Name = "cmbDay";
@@ -446,6 +468,7 @@
             this.cmbMonth.BorderThickness = 3;
             this.cmbMonth.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMonth.DropDownWidth = 150;
             this.cmbMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbMonth.FocusedColor = System.Drawing.Color.Empty;
             this.cmbMonth.FocusedState.Parent = this.cmbMonth;
@@ -453,12 +476,22 @@
             this.cmbMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbMonth.FormattingEnabled = true;
             this.cmbMonth.HoverState.Parent = this.cmbMonth;
+            this.cmbMonth.IntegralHeight = false;
             this.cmbMonth.ItemHeight = 30;
             this.cmbMonth.Items.AddRange(new object[] {
             "Month",
             "January",
             "February",
-            "March"});
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
             this.cmbMonth.ItemsAppearance.Parent = this.cmbMonth;
             this.cmbMonth.Location = new System.Drawing.Point(56, 235);
             this.cmbMonth.Name = "cmbMonth";

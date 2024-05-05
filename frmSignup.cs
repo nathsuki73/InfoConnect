@@ -25,6 +25,11 @@ namespace InfoConnect
             {
                 ShowPageOne();
             }
+
+            for (int i = DateTime.Now.Year; i >= 1900; i--)
+            {
+                cmbYear.Items.Add(i);
+            }
         }
 
         public void ShowPageOne() //show controls in page one and hides controls in page two
