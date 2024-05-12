@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace InfoConnect
 {
-    public partial class SectionDash : Form
+    public partial class frmMain : Form
     {
-        public SectionDash()
+        public frmMain()
         {
             InitializeComponent();
         }
+
+   
     }
 }
