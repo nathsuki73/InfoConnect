@@ -13,7 +13,7 @@ namespace InfoConnect
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmFrontPage());
+            Application.Run(new frmMain());
         }
     }
 }
