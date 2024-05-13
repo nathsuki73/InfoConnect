@@ -69,16 +69,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAnnouncements.cs">
+    <Compile Include="Menu forms\frmAnnouncements.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAnnouncements.Designer.cs">
+    <Compile Include="Menu forms\frmAnnouncements.Designer.cs">
       <DependentUpon>frmAnnouncements.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDashboard.cs">
+    <Compile Include="Menu forms\frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDashboard.Designer.cs">
+    <Compile Include="Menu forms\frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFrontPage.cs">
@@ -105,42 +105,42 @@
     <Compile Include="frmSignup.Designer.cs">
       <DependentUpon>frmSignup.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEvents.cs">
+    <Compile Include="Menu forms\frmEvents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEvents.Designer.cs">
+    <Compile Include="Menu forms\frmEvents.Designer.cs">
       <DependentUpon>frmEvents.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHandbook.cs">
+    <Compile Include="Menu forms\frmHandbook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHandbook.Designer.cs">
+    <Compile Include="Menu forms\frmHandbook.Designer.cs">
       <DependentUpon>frmHandbook.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInformationBoard.cs">
+    <Compile Include="Menu forms\frmInformationBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInformationBoard.Designer.cs">
+    <Compile Include="Menu forms\frmInformationBoard.Designer.cs">
       <DependentUpon>frmInformationBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSection.cs">
+    <Compile Include="Menu forms\frmSection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSection.Designer.cs">
+    <Compile Include="Menu forms\frmSection.Designer.cs">
       <DependentUpon>frmSection.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmStatistics.cs">
+    <Compile Include="Menu forms\frmStatistics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmStatistics.Designer.cs">
+    <Compile Include="Menu forms\frmStatistics.Designer.cs">
       <DependentUpon>frmStatistics.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAnnouncements.resx">
+    <EmbeddedResource Include="Menu forms\frmAnnouncements.resx">
       <DependentUpon>frmAnnouncements.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDashboard.resx">
+    <EmbeddedResource Include="Menu forms\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFrontPage.resx">
@@ -155,19 +155,19 @@
     <EmbeddedResource Include="frmSignup.resx">
       <DependentUpon>frmSignup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEvents.resx">
+    <EmbeddedResource Include="Menu forms\frmEvents.resx">
       <DependentUpon>frmEvents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHandbook.resx">
+    <EmbeddedResource Include="Menu forms\frmHandbook.resx">
       <DependentUpon>frmHandbook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInformationBoard.resx">
+    <EmbeddedResource Include="Menu forms\frmInformationBoard.resx">
       <DependentUpon>frmInformationBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSection.resx">
+    <EmbeddedResource Include="Menu forms\frmSection.resx">
       <DependentUpon>frmSection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmStatistics.resx">
+    <EmbeddedResource Include="Menu forms\frmStatistics.resx">
       <DependentUpon>frmStatistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -259,8 +259,6 @@
   <ItemGroup>
     <None Include="Resources\topbar_InformationBoardTitle.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Menu forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

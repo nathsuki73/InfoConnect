@@ -94,7 +94,7 @@ namespace InfoConnect
         {
             if (this.pnlMain.Controls.Count > 0)
             {
-                this.pnlMain.Controls.RemoveAt(0);
+                this.pnlMain.Controls.Clear();
             }
             Form form = Form as Form;
             form.TopLevel = false;
