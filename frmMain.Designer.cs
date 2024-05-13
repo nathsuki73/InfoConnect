@@ -42,6 +42,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pnlMain = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTopbarTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -284,11 +285,22 @@
             this.guna2PictureBox3.TabIndex = 2;
             this.guna2PictureBox3.TabStop = false;
             // 
+            // pnlMain
+            // 
+            this.pnlMain.BackColor = System.Drawing.Color.Transparent;
+            this.pnlMain.Location = new System.Drawing.Point(289, 75);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.ShadowDecoration.Parent = this.pnlMain;
+            this.pnlMain.Size = new System.Drawing.Size(1060, 654);
+            this.pnlMain.TabIndex = 6;
+            this.pnlMain.UseTransparentBackground = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pcbTopbarTitle);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnSettings);
@@ -329,5 +341,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnSettings;
         private Guna.UI2.WinForms.Guna2ImageButton btnLogout;
         private Guna.UI2.WinForms.Guna2PictureBox pcbTopbarTitle;
+        private Guna.UI2.WinForms.Guna2Panel pnlMain;
     }
 }

@@ -69,6 +69,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAnnouncements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnnouncements.Designer.cs">
+      <DependentUpon>frmAnnouncements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFrontPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,8 +105,44 @@
     <Compile Include="frmSignup.Designer.cs">
       <DependentUpon>frmSignup.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvents.Designer.cs">
+      <DependentUpon>frmEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHandbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHandbook.Designer.cs">
+      <DependentUpon>frmHandbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformationBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformationBoard.Designer.cs">
+      <DependentUpon>frmInformationBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSection.Designer.cs">
+      <DependentUpon>frmSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatistics.Designer.cs">
+      <DependentUpon>frmStatistics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAnnouncements.resx">
+      <DependentUpon>frmAnnouncements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFrontPage.resx">
       <DependentUpon>frmFrontPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +154,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSignup.resx">
       <DependentUpon>frmSignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvents.resx">
+      <DependentUpon>frmEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHandbook.resx">
+      <DependentUpon>frmHandbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformationBoard.resx">
+      <DependentUpon>frmInformationBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSection.resx">
+      <DependentUpon>frmSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatistics.resx">
+      <DependentUpon>frmStatistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -195,6 +258,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\topbar_InformationBoardTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Menu forms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
