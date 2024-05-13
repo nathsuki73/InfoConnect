@@ -163,6 +163,76 @@ namespace InfoConnect.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap topbar_AnnouncementsTitle {
+            get {
+                object obj = ResourceManager.GetObject("topbar_AnnouncementsTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap topbar_DashboardTitle {
+            get {
+                object obj = ResourceManager.GetObject("topbar_DashboardTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap topbar_EventsTitle {
+            get {
+                object obj = ResourceManager.GetObject("topbar_EventsTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap topbar_HandbookTitle {
+            get {
+                object obj = ResourceManager.GetObject("topbar_HandbookTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap topbar_InformationBoardTitle {
+            get {
+                object obj = ResourceManager.GetObject("topbar_InformationBoardTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap topbar_SectionTitle {
+            get {
+                object obj = ResourceManager.GetObject("topbar_SectionTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap topbar_StatisticsTitle {
+            get {
+                object obj = ResourceManager.GetObject("topbar_StatisticsTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap welcome_page_bg {
             get {
                 object obj = ResourceManager.GetObject("welcome_page_bg", resourceCulture);

@@ -175,5 +175,26 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topbar_DashboardTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topbar_StatisticsTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topbar_EventsTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topbar_HandbookTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topbar_AnnouncementsTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topbar_SectionTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topbar_InformationBoardTitle.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,22 +29,227 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this.pcbTopbarTitle = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnSettings = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnInformationBoard = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.btnSection = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.btnAnnouncements = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.btnHandbook = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.btnEvents = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.btnStatistics = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.btnDashboard = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ImageRadioButton1 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
-            this.guna2ImageRadioButton2 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
-            this.guna2ImageRadioButton3 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
-            this.guna2ImageRadioButton4 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
-            this.guna2ImageRadioButton5 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
-            this.guna2ImageRadioButton6 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
-            this.guna2ImageRadioButton7 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTopbarTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pcbTopbarTitle
+            // 
+            this.pcbTopbarTitle.BackColor = System.Drawing.Color.Transparent;
+            this.pcbTopbarTitle.Location = new System.Drawing.Point(310, 22);
+            this.pcbTopbarTitle.Name = "pcbTopbarTitle";
+            this.pcbTopbarTitle.ShadowDecoration.Parent = this.pcbTopbarTitle;
+            this.pcbTopbarTitle.Size = new System.Drawing.Size(297, 31);
+            this.pcbTopbarTitle.TabIndex = 5;
+            this.pcbTopbarTitle.TabStop = false;
+            this.pcbTopbarTitle.UseTransparentBackground = true;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogout.CheckedState.Parent = this.btnLogout;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.HoverState.Image")));
+            this.btnLogout.HoverState.ImageSize = new System.Drawing.Size(120, 25);
+            this.btnLogout.HoverState.Parent = this.btnLogout;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.ImageSize = new System.Drawing.Size(120, 25);
+            this.btnLogout.Location = new System.Drawing.Point(54, 633);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.PressedState.Image")));
+            this.btnLogout.PressedState.ImageSize = new System.Drawing.Size(120, 25);
+            this.btnLogout.PressedState.Parent = this.btnLogout;
+            this.btnLogout.Size = new System.Drawing.Size(120, 25);
+            this.btnLogout.TabIndex = 4;
+            this.btnLogout.UseTransparentBackground = true;
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnSettings.CheckedState.Parent = this.btnSettings;
+            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSettings.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.HoverState.Image")));
+            this.btnSettings.HoverState.ImageSize = new System.Drawing.Size(120, 25);
+            this.btnSettings.HoverState.Parent = this.btnSettings;
+            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+            this.btnSettings.ImageSize = new System.Drawing.Size(120, 25);
+            this.btnSettings.Location = new System.Drawing.Point(54, 602);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.PressedState.Image")));
+            this.btnSettings.PressedState.ImageSize = new System.Drawing.Size(120, 25);
+            this.btnSettings.PressedState.Parent = this.btnSettings;
+            this.btnSettings.Size = new System.Drawing.Size(120, 25);
+            this.btnSettings.TabIndex = 4;
+            this.btnSettings.UseTransparentBackground = true;
+            // 
+            // btnInformationBoard
+            // 
+            this.btnInformationBoard.BackColor = System.Drawing.Color.Transparent;
+            this.btnInformationBoard.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnInformationBoard.CheckedState.Image")));
+            this.btnInformationBoard.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnInformationBoard.CheckedState.Parent = this.btnInformationBoard;
+            this.btnInformationBoard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInformationBoard.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnInformationBoard.HoverState.Image")));
+            this.btnInformationBoard.HoverState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnInformationBoard.HoverState.Parent = this.btnInformationBoard;
+            this.btnInformationBoard.Image = ((System.Drawing.Image)(resources.GetObject("btnInformationBoard.Image")));
+            this.btnInformationBoard.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnInformationBoard.Location = new System.Drawing.Point(49, 438);
+            this.btnInformationBoard.Name = "btnInformationBoard";
+            this.btnInformationBoard.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnInformationBoard.PressedState.Image")));
+            this.btnInformationBoard.PressedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnInformationBoard.PressedState.Parent = this.btnInformationBoard;
+            this.btnInformationBoard.Size = new System.Drawing.Size(182, 38);
+            this.btnInformationBoard.TabIndex = 3;
+            this.btnInformationBoard.UseTransparentBackground = true;
+            this.btnInformationBoard.CheckedChanged += new System.EventHandler(this.btnInformationBoard_CheckedChanged);
+            // 
+            // btnSection
+            // 
+            this.btnSection.BackColor = System.Drawing.Color.Transparent;
+            this.btnSection.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnSection.CheckedState.Image")));
+            this.btnSection.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnSection.CheckedState.Parent = this.btnSection;
+            this.btnSection.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSection.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnSection.HoverState.Image")));
+            this.btnSection.HoverState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnSection.HoverState.Parent = this.btnSection;
+            this.btnSection.Image = ((System.Drawing.Image)(resources.GetObject("btnSection.Image")));
+            this.btnSection.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnSection.Location = new System.Drawing.Point(49, 394);
+            this.btnSection.Name = "btnSection";
+            this.btnSection.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnSection.PressedState.Image")));
+            this.btnSection.PressedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnSection.PressedState.Parent = this.btnSection;
+            this.btnSection.Size = new System.Drawing.Size(182, 38);
+            this.btnSection.TabIndex = 3;
+            this.btnSection.UseTransparentBackground = true;
+            this.btnSection.CheckedChanged += new System.EventHandler(this.btnSection_CheckedChanged);
+            // 
+            // btnAnnouncements
+            // 
+            this.btnAnnouncements.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnnouncements.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnAnnouncements.CheckedState.Image")));
+            this.btnAnnouncements.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnAnnouncements.CheckedState.Parent = this.btnAnnouncements;
+            this.btnAnnouncements.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnnouncements.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnAnnouncements.HoverState.Image")));
+            this.btnAnnouncements.HoverState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnAnnouncements.HoverState.Parent = this.btnAnnouncements;
+            this.btnAnnouncements.Image = ((System.Drawing.Image)(resources.GetObject("btnAnnouncements.Image")));
+            this.btnAnnouncements.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnAnnouncements.Location = new System.Drawing.Point(49, 350);
+            this.btnAnnouncements.Name = "btnAnnouncements";
+            this.btnAnnouncements.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnAnnouncements.PressedState.Image")));
+            this.btnAnnouncements.PressedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnAnnouncements.PressedState.Parent = this.btnAnnouncements;
+            this.btnAnnouncements.Size = new System.Drawing.Size(182, 38);
+            this.btnAnnouncements.TabIndex = 3;
+            this.btnAnnouncements.UseTransparentBackground = true;
+            this.btnAnnouncements.CheckedChanged += new System.EventHandler(this.btnAnnouncements_CheckedChanged);
+            // 
+            // btnHandbook
+            // 
+            this.btnHandbook.BackColor = System.Drawing.Color.Transparent;
+            this.btnHandbook.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.CheckedState.Image")));
+            this.btnHandbook.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnHandbook.CheckedState.Parent = this.btnHandbook;
+            this.btnHandbook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHandbook.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.HoverState.Image")));
+            this.btnHandbook.HoverState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnHandbook.HoverState.Parent = this.btnHandbook;
+            this.btnHandbook.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.Image")));
+            this.btnHandbook.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnHandbook.Location = new System.Drawing.Point(49, 306);
+            this.btnHandbook.Name = "btnHandbook";
+            this.btnHandbook.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.PressedState.Image")));
+            this.btnHandbook.PressedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnHandbook.PressedState.Parent = this.btnHandbook;
+            this.btnHandbook.Size = new System.Drawing.Size(182, 38);
+            this.btnHandbook.TabIndex = 3;
+            this.btnHandbook.UseTransparentBackground = true;
+            this.btnHandbook.CheckedChanged += new System.EventHandler(this.btnHandbook_CheckedChanged);
+            // 
+            // btnEvents
+            // 
+            this.btnEvents.BackColor = System.Drawing.Color.Transparent;
+            this.btnEvents.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEvents.CheckedState.Image")));
+            this.btnEvents.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnEvents.CheckedState.Parent = this.btnEvents;
+            this.btnEvents.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEvents.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEvents.HoverState.Image")));
+            this.btnEvents.HoverState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnEvents.HoverState.Parent = this.btnEvents;
+            this.btnEvents.Image = ((System.Drawing.Image)(resources.GetObject("btnEvents.Image")));
+            this.btnEvents.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnEvents.Location = new System.Drawing.Point(49, 262);
+            this.btnEvents.Name = "btnEvents";
+            this.btnEvents.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEvents.PressedState.Image")));
+            this.btnEvents.PressedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnEvents.PressedState.Parent = this.btnEvents;
+            this.btnEvents.Size = new System.Drawing.Size(182, 38);
+            this.btnEvents.TabIndex = 3;
+            this.btnEvents.UseTransparentBackground = true;
+            this.btnEvents.CheckedChanged += new System.EventHandler(this.btnEvents_CheckedChanged);
+            // 
+            // btnStatistics
+            // 
+            this.btnStatistics.BackColor = System.Drawing.Color.Transparent;
+            this.btnStatistics.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistics.CheckedState.Image")));
+            this.btnStatistics.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnStatistics.CheckedState.Parent = this.btnStatistics;
+            this.btnStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStatistics.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistics.HoverState.Image")));
+            this.btnStatistics.HoverState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnStatistics.HoverState.Parent = this.btnStatistics;
+            this.btnStatistics.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistics.Image")));
+            this.btnStatistics.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnStatistics.Location = new System.Drawing.Point(49, 218);
+            this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistics.PressedState.Image")));
+            this.btnStatistics.PressedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnStatistics.PressedState.Parent = this.btnStatistics;
+            this.btnStatistics.Size = new System.Drawing.Size(182, 38);
+            this.btnStatistics.TabIndex = 3;
+            this.btnStatistics.UseTransparentBackground = true;
+            this.btnStatistics.CheckedChanged += new System.EventHandler(this.btnStatistics_CheckedChanged);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.CheckedState.Image")));
+            this.btnDashboard.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnDashboard.CheckedState.Parent = this.btnDashboard;
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.HoverState.Image")));
+            this.btnDashboard.HoverState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnDashboard.HoverState.Parent = this.btnDashboard;
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnDashboard.Location = new System.Drawing.Point(49, 174);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.PressedState.Image")));
+            this.btnDashboard.PressedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnDashboard.PressedState.Parent = this.btnDashboard;
+            this.btnDashboard.Size = new System.Drawing.Size(182, 38);
+            this.btnDashboard.TabIndex = 3;
+            this.btnDashboard.UseTransparentBackground = true;
+            this.btnDashboard.CheckedChanged += new System.EventHandler(this.btnDashboard_CheckedChanged);
             // 
             // guna2PictureBox1
             // 
@@ -79,211 +284,29 @@
             this.guna2PictureBox3.TabIndex = 2;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // guna2ImageRadioButton1
-            // 
-            this.guna2ImageRadioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageRadioButton1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.CheckedState.Image")));
-            this.guna2ImageRadioButton1.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton1.CheckedState.Parent = this.guna2ImageRadioButton1;
-            this.guna2ImageRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageRadioButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.HoverState.Image")));
-            this.guna2ImageRadioButton1.HoverState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton1.HoverState.Parent = this.guna2ImageRadioButton1;
-            this.guna2ImageRadioButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.Image")));
-            this.guna2ImageRadioButton1.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton1.Location = new System.Drawing.Point(49, 174);
-            this.guna2ImageRadioButton1.Name = "guna2ImageRadioButton1";
-            this.guna2ImageRadioButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.PressedState.Image")));
-            this.guna2ImageRadioButton1.PressedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton1.PressedState.Parent = this.guna2ImageRadioButton1;
-            this.guna2ImageRadioButton1.Size = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton1.TabIndex = 3;
-            this.guna2ImageRadioButton1.UseTransparentBackground = true;
-            // 
-            // guna2ImageRadioButton2
-            // 
-            this.guna2ImageRadioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageRadioButton2.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton2.CheckedState.Image")));
-            this.guna2ImageRadioButton2.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton2.CheckedState.Parent = this.guna2ImageRadioButton2;
-            this.guna2ImageRadioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageRadioButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton2.HoverState.Image")));
-            this.guna2ImageRadioButton2.HoverState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton2.HoverState.Parent = this.guna2ImageRadioButton2;
-            this.guna2ImageRadioButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton2.Image")));
-            this.guna2ImageRadioButton2.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton2.Location = new System.Drawing.Point(49, 218);
-            this.guna2ImageRadioButton2.Name = "guna2ImageRadioButton2";
-            this.guna2ImageRadioButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton2.PressedState.Image")));
-            this.guna2ImageRadioButton2.PressedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton2.PressedState.Parent = this.guna2ImageRadioButton2;
-            this.guna2ImageRadioButton2.Size = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton2.TabIndex = 3;
-            this.guna2ImageRadioButton2.UseTransparentBackground = true;
-            // 
-            // guna2ImageRadioButton3
-            // 
-            this.guna2ImageRadioButton3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageRadioButton3.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton3.CheckedState.Image")));
-            this.guna2ImageRadioButton3.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton3.CheckedState.Parent = this.guna2ImageRadioButton3;
-            this.guna2ImageRadioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageRadioButton3.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton3.HoverState.Image")));
-            this.guna2ImageRadioButton3.HoverState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton3.HoverState.Parent = this.guna2ImageRadioButton3;
-            this.guna2ImageRadioButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton3.Image")));
-            this.guna2ImageRadioButton3.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton3.Location = new System.Drawing.Point(49, 262);
-            this.guna2ImageRadioButton3.Name = "guna2ImageRadioButton3";
-            this.guna2ImageRadioButton3.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton3.PressedState.Image")));
-            this.guna2ImageRadioButton3.PressedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton3.PressedState.Parent = this.guna2ImageRadioButton3;
-            this.guna2ImageRadioButton3.Size = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton3.TabIndex = 3;
-            this.guna2ImageRadioButton3.UseTransparentBackground = true;
-            // 
-            // guna2ImageRadioButton4
-            // 
-            this.guna2ImageRadioButton4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageRadioButton4.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton4.CheckedState.Image")));
-            this.guna2ImageRadioButton4.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton4.CheckedState.Parent = this.guna2ImageRadioButton4;
-            this.guna2ImageRadioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageRadioButton4.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton4.HoverState.Image")));
-            this.guna2ImageRadioButton4.HoverState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton4.HoverState.Parent = this.guna2ImageRadioButton4;
-            this.guna2ImageRadioButton4.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton4.Image")));
-            this.guna2ImageRadioButton4.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton4.Location = new System.Drawing.Point(49, 306);
-            this.guna2ImageRadioButton4.Name = "guna2ImageRadioButton4";
-            this.guna2ImageRadioButton4.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton4.PressedState.Image")));
-            this.guna2ImageRadioButton4.PressedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton4.PressedState.Parent = this.guna2ImageRadioButton4;
-            this.guna2ImageRadioButton4.Size = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton4.TabIndex = 3;
-            this.guna2ImageRadioButton4.UseTransparentBackground = true;
-            // 
-            // guna2ImageRadioButton5
-            // 
-            this.guna2ImageRadioButton5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageRadioButton5.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton5.CheckedState.Image")));
-            this.guna2ImageRadioButton5.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton5.CheckedState.Parent = this.guna2ImageRadioButton5;
-            this.guna2ImageRadioButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageRadioButton5.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton5.HoverState.Image")));
-            this.guna2ImageRadioButton5.HoverState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton5.HoverState.Parent = this.guna2ImageRadioButton5;
-            this.guna2ImageRadioButton5.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton5.Image")));
-            this.guna2ImageRadioButton5.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton5.Location = new System.Drawing.Point(49, 350);
-            this.guna2ImageRadioButton5.Name = "guna2ImageRadioButton5";
-            this.guna2ImageRadioButton5.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton5.PressedState.Image")));
-            this.guna2ImageRadioButton5.PressedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton5.PressedState.Parent = this.guna2ImageRadioButton5;
-            this.guna2ImageRadioButton5.Size = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton5.TabIndex = 3;
-            this.guna2ImageRadioButton5.UseTransparentBackground = true;
-            // 
-            // guna2ImageRadioButton6
-            // 
-            this.guna2ImageRadioButton6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageRadioButton6.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton6.CheckedState.Image")));
-            this.guna2ImageRadioButton6.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton6.CheckedState.Parent = this.guna2ImageRadioButton6;
-            this.guna2ImageRadioButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageRadioButton6.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton6.HoverState.Image")));
-            this.guna2ImageRadioButton6.HoverState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton6.HoverState.Parent = this.guna2ImageRadioButton6;
-            this.guna2ImageRadioButton6.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton6.Image")));
-            this.guna2ImageRadioButton6.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton6.Location = new System.Drawing.Point(49, 394);
-            this.guna2ImageRadioButton6.Name = "guna2ImageRadioButton6";
-            this.guna2ImageRadioButton6.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton6.PressedState.Image")));
-            this.guna2ImageRadioButton6.PressedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton6.PressedState.Parent = this.guna2ImageRadioButton6;
-            this.guna2ImageRadioButton6.Size = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton6.TabIndex = 3;
-            this.guna2ImageRadioButton6.UseTransparentBackground = true;
-            // 
-            // guna2ImageRadioButton7
-            // 
-            this.guna2ImageRadioButton7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageRadioButton7.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton7.CheckedState.Image")));
-            this.guna2ImageRadioButton7.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton7.CheckedState.Parent = this.guna2ImageRadioButton7;
-            this.guna2ImageRadioButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageRadioButton7.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton7.HoverState.Image")));
-            this.guna2ImageRadioButton7.HoverState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton7.HoverState.Parent = this.guna2ImageRadioButton7;
-            this.guna2ImageRadioButton7.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton7.Image")));
-            this.guna2ImageRadioButton7.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton7.Location = new System.Drawing.Point(49, 438);
-            this.guna2ImageRadioButton7.Name = "guna2ImageRadioButton7";
-            this.guna2ImageRadioButton7.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton7.PressedState.Image")));
-            this.guna2ImageRadioButton7.PressedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton7.PressedState.Parent = this.guna2ImageRadioButton7;
-            this.guna2ImageRadioButton7.Size = new System.Drawing.Size(182, 38);
-            this.guna2ImageRadioButton7.TabIndex = 3;
-            this.guna2ImageRadioButton7.UseTransparentBackground = true;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(120, 25);
-            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(120, 25);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(54, 602);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(120, 25);
-            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(120, 25);
-            this.guna2ImageButton1.TabIndex = 4;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            // 
-            // guna2ImageButton2
-            // 
-            this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(120, 25);
-            this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(120, 25);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(54, 633);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(120, 25);
-            this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Size = new System.Drawing.Size(120, 25);
-            this.guna2ImageButton2.TabIndex = 4;
-            this.guna2ImageButton2.UseTransparentBackground = true;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.guna2ImageButton2);
-            this.Controls.Add(this.guna2ImageButton1);
-            this.Controls.Add(this.guna2ImageRadioButton7);
-            this.Controls.Add(this.guna2ImageRadioButton6);
-            this.Controls.Add(this.guna2ImageRadioButton5);
-            this.Controls.Add(this.guna2ImageRadioButton4);
-            this.Controls.Add(this.guna2ImageRadioButton3);
-            this.Controls.Add(this.guna2ImageRadioButton2);
-            this.Controls.Add(this.guna2ImageRadioButton1);
+            this.Controls.Add(this.pcbTopbarTitle);
+            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.btnSettings);
+            this.Controls.Add(this.btnInformationBoard);
+            this.Controls.Add(this.btnSection);
+            this.Controls.Add(this.btnAnnouncements);
+            this.Controls.Add(this.btnHandbook);
+            this.Controls.Add(this.btnEvents);
+            this.Controls.Add(this.btnStatistics);
+            this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmMain";
-            this.Text = "frmMain";
+            this.Text = "InfoConnect";
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTopbarTitle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
@@ -296,14 +319,15 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButton1;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButton2;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButton3;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButton4;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButton5;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButton6;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButton7;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton btnDashboard;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton btnStatistics;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton btnEvents;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton btnHandbook;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton btnAnnouncements;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton btnSection;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton btnInformationBoard;
+        private Guna.UI2.WinForms.Guna2ImageButton btnSettings;
+        private Guna.UI2.WinForms.Guna2ImageButton btnLogout;
+        private Guna.UI2.WinForms.Guna2PictureBox pcbTopbarTitle;
     }
 }
