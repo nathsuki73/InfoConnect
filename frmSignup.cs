@@ -13,135 +13,64 @@ namespace InfoConnect
 {
     public partial class frmSignup : Form
     {
+
+        private ucSignupPageOne page1;
+        private ucSignupPageTwo page2;
+
         public frmSignup()
         {
             InitializeComponent();
+            pnlSignup.Parent = pictureBoxSignUp;
+            page1 = new ucSignupPageOne();
+            page2 = new ucSignupPageTwo();
+            ShowPageOne();
         }
 
         private void frmSignup_Load(object sender, EventArgs e)
         {
-            signupPg1DesignFix();
+            rbtnPageOne.Checked = true;
+        }
+
+
+        private void rbtnPageOne_CheckedChanged(object sender, EventArgs e)
+        {
             if (rbtnPageOne.Checked == true)
             {
                 ShowPageOne();
+                btnBack.Visible = false;
+                btnSignUp.Visible = false;
+                btnNext.Visible = true;
             }
-
-            for (int i = DateTime.Now.Year; i >= 1900; i--)
+            else
             {
-                cmbYear.Items.Add(i);
+                ShowPageTwo();
+                btnBack.Visible = true;
+                btnSignUp.Visible = true;
+                btnNext.Visible = false;
             }
         }
 
-        public void ShowPageOne() //show controls in page one and hides controls in page two
+        private void ShowPageOne()
         {
-            piclblName.Visible = true;
-            piclblContacts.Visible = true;
-
-            txtFirstName.Visible = true;
-            txtMiddleName.Visible = true;
-            txtLastName.Visible = true;
-            txtEmail.Visible = true;
-            txtContactNumber.Visible = true;
-            txtEmergencyContactNumber.Visible = true;
-            btnNext.Visible = true;
-            HidePageTwo();
+            pnlSignup.Controls.Clear(); // Clear any existing controls
+            pnlSignup.Controls.Add(page1);
         }
 
-        public void ShowPageTwo() //show controls in page two and hides controls in page one
+        private void ShowPageTwo()
         {
-            piclblSex.Visible = true;
-            piclblPassword.Visible = true;
-            piclblDateOfBirth.Visible = true;
-            piclblConfirmPassword.Visible = true;
-
-            cmbSex.Visible = true;
-            cmbDay.Visible = true;
-            cmbMonth.Visible = true;
-            cmbYear.Visible = true;
-
-            txtPassword.Visible = true;
-            txtConfirmPassword.Visible = true;
-
-            btnSignUp.Visible = true;
-            btnBack.Visible = true;
-            HidePageOne();
+            pnlSignup.Controls.Clear(); // Clear any existing controls
+            pnlSignup.Controls.Add(page2);
         }
 
-        public void HidePageTwo()
+
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            piclblSex.Visible = false;
-            piclblPassword.Visible = false;
-            piclblDateOfBirth.Visible = false;
-            piclblConfirmPassword.Visible = false;
-
-            cmbSex.Visible = false;
-            cmbDay.Visible = false;
-            cmbMonth.Visible = false;
-            cmbYear.Visible = false;
-
-            txtPassword.Visible = false;
-            txtConfirmPassword.Visible = false;
-
-            btnSignUp.Visible = false;
-            btnBack.Visible = false;
-
-        }
-
-        public void HidePageOne()
-        {
-            piclblName.Visible = false;
-            piclblContacts.Visible = false;
-
-            txtFirstName.Visible = false;
-            txtMiddleName.Visible = false;
-            txtLastName.Visible = false;
-
-            txtEmail.Visible = false;
-            txtContactNumber.Visible = false;
-            txtEmergencyContactNumber.Visible = false;
-            btnNext.Visible = false;
-        }
-
-        private void signupPg1DesignFix()
-        {
-            txtFirstName.Parent = pictureBoxSignUp;
-            txtLastName.Parent = pictureBoxSignUp;
-            txtMiddleName.Parent = pictureBoxSignUp;
-            txtEmail.Parent = pictureBoxSignUp;
-            txtContactNumber.Parent = pictureBoxSignUp;
-            txtEmergencyContactNumber.Parent = pictureBoxSignUp;
-
-            cmbSex.Parent = pictureBoxSignUp;
-            cmbDay.Parent = pictureBoxSignUp;
-            cmbMonth.Parent = pictureBoxSignUp;
-            cmbYear.Parent = pictureBoxSignUp;
-
-            txtPassword.Parent = pictureBoxSignUp;
-            txtConfirmPassword.Parent = pictureBoxSignUp;
-        }
-
-        
-
-        private void btnBack_Click(object sender, EventArgs e) 
-        {
-            ShowPageOne();
-            rbtnPageOne.Checked = true; 
+            rbtnPageOne.Checked = true;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            ShowPageTwo();
             rbtnPageTwo.Checked = true;
-        }
-
-        private void rbtnPageOne_Click(object sender, EventArgs e)
-        {
-            ShowPageOne();
-        }
-
-        private void rbtnPageTwo_Click(object sender, EventArgs e)
-        {
-            ShowPageTwo();
         }
     }
 }
