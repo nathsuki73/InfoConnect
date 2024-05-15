@@ -103,5 +103,16 @@ namespace InfoConnect
             this.pnlMain.Tag = form;
             form.Show();
         }
+
+        //opens the frmSettings
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            frmSettings Settings = new frmSettings();
+            Settings.Show();
+            //this.Enabled = false;
+            //this.Opacity = 0.5;
+        }
+
+
     }
 }

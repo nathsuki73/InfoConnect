@@ -107,6 +107,7 @@
             this.btnSettings.Size = new System.Drawing.Size(120, 25);
             this.btnSettings.TabIndex = 4;
             this.btnSettings.UseTransparentBackground = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnInformationBoard
             // 
