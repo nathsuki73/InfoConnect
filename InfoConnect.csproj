@@ -137,6 +137,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucSignupPageOne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSignupPageOne.Designer.cs">
+      <DependentUpon>ucSignupPageOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSignupPageTwo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSignupPageTwo.Designer.cs">
+      <DependentUpon>ucSignupPageTwo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Menu forms\frmAnnouncements.resx">
       <DependentUpon>frmAnnouncements.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +192,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ucSignupPageOne.resx">
+      <DependentUpon>ucSignupPageOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSignupPageTwo.resx">
+      <DependentUpon>ucSignupPageTwo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
