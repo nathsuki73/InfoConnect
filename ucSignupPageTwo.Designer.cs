@@ -106,7 +106,7 @@
             this.cmbYear.FocusedColor = System.Drawing.Color.Empty;
             this.cmbYear.FocusedState.Parent = this.cmbYear;
             this.cmbYear.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbYear.ForeColor = System.Drawing.Color.Black;
             this.cmbYear.FormattingEnabled = true;
             this.cmbYear.HoverState.Parent = this.cmbYear;
             this.cmbYear.IntegralHeight = false;
@@ -133,7 +133,7 @@
             this.cmbDay.FocusedColor = System.Drawing.Color.Empty;
             this.cmbDay.FocusedState.Parent = this.cmbDay;
             this.cmbDay.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbDay.ForeColor = System.Drawing.Color.Black;
             this.cmbDay.FormattingEnabled = true;
             this.cmbDay.HoverState.Parent = this.cmbDay;
             this.cmbDay.IntegralHeight = false;
@@ -192,7 +192,7 @@
             this.cmbMonth.FocusedColor = System.Drawing.Color.Empty;
             this.cmbMonth.FocusedState.Parent = this.cmbMonth;
             this.cmbMonth.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbMonth.ForeColor = System.Drawing.Color.Black;
             this.cmbMonth.FormattingEnabled = true;
             this.cmbMonth.HoverState.Parent = this.cmbMonth;
             this.cmbMonth.IntegralHeight = false;
@@ -231,7 +231,7 @@
             this.cmbSex.FocusedColor = System.Drawing.Color.Empty;
             this.cmbSex.FocusedState.Parent = this.cmbSex;
             this.cmbSex.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbSex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSex.ForeColor = System.Drawing.Color.Black;
             this.cmbSex.FormattingEnabled = true;
             this.cmbSex.HoverState.Parent = this.cmbSex;
             this.cmbSex.ItemHeight = 30;
@@ -262,7 +262,7 @@
             this.txtConfirmPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtConfirmPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtConfirmPassword.FocusedState.Parent = this.txtConfirmPassword;
-            this.txtConfirmPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmPassword.ForeColor = System.Drawing.Color.Black;
             this.txtConfirmPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtConfirmPassword.HoverState.Parent = this.txtConfirmPassword;
@@ -292,7 +292,7 @@
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.FocusedState.Parent = this.txtPassword;
-            this.txtPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.HoverState.Parent = this.txtPassword;
@@ -324,7 +324,6 @@
             this.Controls.Add(this.txtPassword);
             this.Name = "ucSignupPageTwo";
             this.Size = new System.Drawing.Size(326, 365);
-            this.Load += new System.EventHandler(this.ucSignupPageTwo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.piclblConfirmPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piclblPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piclblDateOfBirth)).EndInit();

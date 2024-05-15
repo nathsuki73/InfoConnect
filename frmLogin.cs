@@ -17,14 +17,18 @@ namespace InfoConnect
         private void FixDesign()
         {
             //para maging transparent background nung textbox
-            guna2TextBox1.Parent = guna2PictureBox1;
-            guna2TextBox2.Parent = guna2PictureBox1;
+            txtEmail.Parent = guna2PictureBox1;
+            txtPassword.Parent = guna2PictureBox1;
 
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-
+            if (txtEmail.Text == "admin" && txtPassword.Text == "12345")
+            {
+                frmMain main = new frmMain();
+                main.Show();
+            }
         }
     }
 }

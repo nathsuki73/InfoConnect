@@ -15,51 +15,18 @@ namespace InfoConnect
         public ucSignupPageTwo()
         {
             InitializeComponent();
+            AddYears();
         }
 
-        private void ucSignupPageTwo_Load(object sender, EventArgs e)
+        private void AddYears()
         {
-
+            for (int i = DateTime.Now.Year; i >= 1900; i--)
+            {
+                cmbYear.Items.Add(i);
+            }
         }
 
-        private void piclblName_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void txtFirstName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtLastName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMiddleName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void piclblContacts_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtContactNumber_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtEmergencyContactNumber_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
