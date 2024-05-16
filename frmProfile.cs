@@ -17,7 +17,7 @@ namespace InfoConnect
             InitializeComponent();
         }
 
-        private void btnProfileBack_CheckedChanged(object sender, EventArgs e)
+        private void btnProfileBack_Click(object sender, EventArgs e)
         {
             this.Close();
         }

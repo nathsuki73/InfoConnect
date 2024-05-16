@@ -43,7 +43,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnProfile = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.btnProfile = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTopbarTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -304,13 +304,13 @@
             this.btnProfile.HoverState.Parent = this.btnProfile;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageSize = new System.Drawing.Size(24, 24);
-            this.btnProfile.Location = new System.Drawing.Point(1230, 30);
+            this.btnProfile.Location = new System.Drawing.Point(1195, 30);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.PressedState.Parent = this.btnProfile;
-            this.btnProfile.Size = new System.Drawing.Size(35, 23);
+            this.btnProfile.Size = new System.Drawing.Size(75, 23);
             this.btnProfile.TabIndex = 0;
             this.btnProfile.UseTransparentBackground = true;
-            this.btnProfile.CheckedChanged += new System.EventHandler(this.btnProfile_CheckedChanged);
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // frmMain
             // 
@@ -361,6 +361,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnLogout;
         private Guna.UI2.WinForms.Guna2PictureBox pcbTopbarTitle;
         private Guna.UI2.WinForms.Guna2Panel pnlMain;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton btnProfile;
+        private Guna.UI2.WinForms.Guna2ImageButton btnProfile;
     }
 }

@@ -113,7 +113,7 @@ namespace InfoConnect
             //this.Opacity = 0.5;
         }
 
-        private void btnProfile_CheckedChanged(object sender, EventArgs e)
+        private void btnProfile_Click(object sender, EventArgs e)
         {
             frmProfile Profile = new frmProfile();
             Profile.Show();

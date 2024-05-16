@@ -50,20 +50,20 @@
             this.btnProfileBack.BackColor = System.Drawing.Color.Transparent;
             this.btnProfileBack.CheckedState.Parent = this.btnProfileBack;
             this.btnProfileBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProfileBack.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.HoverState.Image")));
+            this.btnProfileBack.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnProfileBack.HoverState.Image")));
             this.btnProfileBack.HoverState.ImageSize = new System.Drawing.Size(106, 55);
             this.btnProfileBack.HoverState.Parent = this.btnProfileBack;
             this.btnProfileBack.Image = ((System.Drawing.Image)(resources.GetObject("btnProfileBack.Image")));
             this.btnProfileBack.ImageSize = new System.Drawing.Size(106, 55);
             this.btnProfileBack.Location = new System.Drawing.Point(1099, 501);
             this.btnProfileBack.Name = "btnProfileBack";
-            this.btnProfileBack.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.PressedState.Image")));
+            this.btnProfileBack.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnProfileBack.PressedState.Image")));
             this.btnProfileBack.PressedState.ImageSize = new System.Drawing.Size(106, 55);
             this.btnProfileBack.PressedState.Parent = this.btnProfileBack;
             this.btnProfileBack.Size = new System.Drawing.Size(114, 56);
             this.btnProfileBack.TabIndex = 1;
             this.btnProfileBack.UseTransparentBackground = true;
-            this.btnProfileBack.CheckedChanged += new System.EventHandler(this.btnProfileBack_CheckedChanged);
+            this.btnProfileBack.Click += new System.EventHandler(this.btnProfileBack_Click);
             // 
             // frmProfile
             // 
