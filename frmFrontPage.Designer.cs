@@ -96,6 +96,7 @@
             this.Name = "frmFrontPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InfoConnect";
+            this.Load += new System.EventHandler(this.frmFrontPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
