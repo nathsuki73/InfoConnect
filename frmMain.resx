@@ -12063,6 +12063,16 @@
         i9EXvnjz6/8Bf8ieD3CmnKUAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="btnProfile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAQVJREFUSEvllN0NgjAUhRmBERyFTXQEN9ANYBPdgBEcgREcoZ6PnvpSIBR8MPol
+        J+H+Um5vqP6DEEIj9dJTAp6PDu9DjS5jy9i0swYc4uK0bajBKfYJV7ve4Iuh0NhVjoo59WAzw/HeZjkq
+        hs5mBjHpabMcile8INgsR7WLI1CMy941ItYTsm3BF0M711UN0rZw2rSmfBlk27UJNWJdU1Puheft6/kb
+        MAKJed88kjmRc3DZOlTQSsC8H9JU46TEuv8SiTF/PFlt9yzKOUhp01q7p1ECyVC8fqrhQDC/XQqmpLKZ
+        CtXU0uKvhaRxrjaLUS33dbeZ84EXLNcreEY2i9lb/41U1QuNaaDv6rPWuAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

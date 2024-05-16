@@ -120,6 +120,7 @@
             this.cmbYear.Size = new System.Drawing.Size(89, 36);
             this.cmbYear.StartIndex = 0;
             this.cmbYear.TabIndex = 36;
+            this.cmbYear.SelectedValueChanged += new System.EventHandler(this.cmbYear_SelectedValueChanged);
             // 
             // cmbDay
             // 
@@ -139,38 +140,7 @@
             this.cmbDay.IntegralHeight = false;
             this.cmbDay.ItemHeight = 30;
             this.cmbDay.Items.AddRange(new object[] {
-            "Day",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
+            "Day"});
             this.cmbDay.ItemsAppearance.Parent = this.cmbDay;
             this.cmbDay.Location = new System.Drawing.Point(138, 112);
             this.cmbDay.Name = "cmbDay";
@@ -218,6 +188,7 @@
             this.cmbMonth.Size = new System.Drawing.Size(127, 36);
             this.cmbMonth.StartIndex = 0;
             this.cmbMonth.TabIndex = 38;
+            this.cmbMonth.SelectedValueChanged += new System.EventHandler(this.cmbMonth_SelectedValueChanged);
             // 
             // cmbSex
             // 

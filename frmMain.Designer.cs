@@ -43,6 +43,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnProfile = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTopbarTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -296,12 +297,28 @@
             this.guna2PictureBox3.TabIndex = 2;
             this.guna2PictureBox3.TabStop = false;
             // 
+            // btnProfile
+            // 
+            this.btnProfile.BackColor = System.Drawing.Color.Transparent;
+            this.btnProfile.CheckedState.Parent = this.btnProfile;
+            this.btnProfile.HoverState.Parent = this.btnProfile;
+            this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
+            this.btnProfile.ImageSize = new System.Drawing.Size(24, 24);
+            this.btnProfile.Location = new System.Drawing.Point(1230, 30);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.PressedState.Parent = this.btnProfile;
+            this.btnProfile.Size = new System.Drawing.Size(35, 23);
+            this.btnProfile.TabIndex = 0;
+            this.btnProfile.UseTransparentBackground = true;
+            this.btnProfile.CheckedChanged += new System.EventHandler(this.btnProfile_CheckedChanged);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.btnProfile);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pcbTopbarTitle);
             this.Controls.Add(this.btnLogout);
@@ -344,5 +361,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnLogout;
         private Guna.UI2.WinForms.Guna2PictureBox pcbTopbarTitle;
         private Guna.UI2.WinForms.Guna2Panel pnlMain;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton btnProfile;
     }
 }
