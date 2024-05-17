@@ -30,11 +30,11 @@ namespace InfoConnect
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM user WHERE user_name=@username AND user_password=@password";
+            string query = "SELECT * FROM users WHERE user_email=@email AND user_password=@password";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
             commandDatabase.CommandTimeout = 60;
-            commandDatabase.Parameters.AddWithValue("@username", txtEmail.Text);
+            commandDatabase.Parameters.AddWithValue("@email", txtEmail.Text);
             commandDatabase.Parameters.AddWithValue("@password", txtPassword.Text);
             MySqlDataReader reader;
 

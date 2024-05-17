@@ -103,6 +103,7 @@
             this.btnSignUp.Size = new System.Drawing.Size(121, 55);
             this.btnSignUp.TabIndex = 11;
             this.btnSignUp.UseTransparentBackground = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // btnBack
             // 

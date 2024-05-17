@@ -12,6 +12,12 @@ namespace InfoConnect
 {
     public partial class ucSignupPageTwo : UserControl
     {
+
+        public string TextPassword
+        {
+            get { return txtPassword.Text; }
+            set { txtPassword.Text = value; }
+        }
         public ucSignupPageTwo()
         {
             InitializeComponent();

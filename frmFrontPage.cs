@@ -6,7 +6,6 @@ namespace InfoConnect
 {
     public partial class frmFrontPage : Form
     {
-                string connectionString = "datasource=192.168.1.18;port=3306;username=root;password=;database=dbstudio";
 
         public frmFrontPage()
         {
