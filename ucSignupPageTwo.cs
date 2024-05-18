@@ -12,12 +12,53 @@ namespace InfoConnect
 {
     public partial class ucSignupPageTwo : UserControl
     {
+        public string TextSex
+        {
+            get { return txtPassword.Text; }
+            set { txtPassword.Text = value; }
+        }
 
+        public int TextMonth
+        {
+            get { return cmbMonth.SelectedIndex; }
+            set {
+                if (value >= 0 && value < cmbMonth.Items.Count)
+                {
+                    cmbMonth.SelectedIndex = value;
+                }
+                else
+                {
+                    throw new ArgumentOutOfRangeException("value", "Value must be within the range of available indices.");
+                }
+            }
+        }
+
+        public string TextDay
+        {
+            get { return cmbDay.Text; }
+            set { cmbDay.Text = value; }
+        }
+
+        public string TextYear
+        {
+            get { return cmbYear.Text; }
+            set { cmbYear.Text = value; }
+        }
         public string TextPassword
         {
             get { return txtPassword.Text; }
             set { txtPassword.Text = value; }
         }
+
+        public string TextConfirmPassword
+        {
+            get { return txtPassword.Text; }
+            set { txtPassword.Text = value; }
+        }
+
+
+
+
         public ucSignupPageTwo()
         {
             InitializeComponent();

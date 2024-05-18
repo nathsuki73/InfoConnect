@@ -10,21 +10,35 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Xml.Linq;
 
 namespace InfoConnect
 {
     public partial class frmSignup : Form
     {
-        string connectionString = "datasource=192.168.1.13;port=3306;username=root;password=;database=infoconnect";
+        string connectionString = "datasource=192.168.1.18;port=3306;username=root;password=;database=infoconnect";
 
         private ucSignupPageOne page1;
         private ucSignupPageTwo page2;
 
-        string email;
-        string password;
+        
+        
+
         string firstName;
         string middleName;
         string lastName;
+        string email;
+        string contact;
+        string emergencyContact;
+
+        string sex;
+        int month;
+        string day;
+        string year;
+
+        DateTime dateBirth; // month day year will be converted to date of birth here in validation method;
+        string password;
+        string confirmPassword;
 
         public frmSignup()
         {
@@ -94,25 +108,78 @@ namespace InfoConnect
                 middleName = ucPageOne.TextMiddleName;
                 lastName = ucPageOne.TextLastName;
                 email = ucPageOne.TextEmail;
+                contact = ucPageOne.TextContactNumber;
+                emergencyContact = ucPageOne.TextEmergencyContactNumber;
             }
 
             // Assuming the textboxes for first name, middle name, and last name are directly on ucSignupPageTwo
             ucSignupPageTwo ucPageTwo = pnlSignup.Controls.OfType<ucSignupPageTwo>().FirstOrDefault();
             if (ucPageTwo != null)
             {
+                sex = ucPageTwo.TextSex;
+                // date here
+                month = ucPageTwo.TextMonth;
+                day = ucPageTwo.TextDay;
+                year = ucPageTwo.TextYear;
 
                 password = ucPageTwo.TextPassword;
+                confirmPassword = ucPageTwo.TextConfirmPassword;
 
             }
+        }
+
+
+        // TODO: update this validation
+        private bool ValidateInputs()
+        {
+            if (string.IsNullOrWhiteSpace(firstName) 
+                || string.IsNullOrWhiteSpace(middleName) 
+                || string.IsNullOrWhiteSpace(lastName)
+                || string.IsNullOrEmpty(contact)
+                || string.IsNullOrEmpty(emergencyContact))
+            {
+                MessageBox.Show("Name cannot be null or empty.");
+                return false;
+            }
+
+            if (sex == "Sex")
+            {
+                MessageBox.Show("Please choose your gender.");
+                return false;
+            }
+
+            if (day != "Day" && month != 0 && year != "Year")
+            {
+                dateBirth = new DateTime(int.Parse(year), month, int.Parse(day));
+            }
+            else
+            {
+                MessageBox.Show("Please choose your birthday.");
+                return false;
+            }
+
+            if (password != confirmPassword)
+            {
+                MessageBox.Show("Password don't match.");
+                return false;
+            }
+
+            return true;
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             PopulateDetails();
-            
+
+            if (!ValidateInputs())
+            {
+                return;
+            }
+
             // Define the queries to insert a new user and a new user profile into the database.
             string insertUserQuery = "INSERT INTO users (user_email, user_password) VALUES (@Email, @Password);";
-            string insertUserProfileQuery = "INSERT INTO users_profile (user_first_name, user_middle_name, user_last_name) VALUES (@FirstName, @MiddleName, @LastName);";
+            string insertUserProfileQuery = "INSERT INTO users_profile (user_first_name, user_middle_name, user_last_name, user_sex, user_birth_date, user_contact)" +
+                                                              " VALUES (@FirstName, @MiddleName, @LastName, @Sex, @DateBirth, @Contact);";
 
             // Create a new MySqlConnection object using the provided connection string.
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
@@ -130,15 +197,16 @@ namespace InfoConnect
             commandInsertUserProfile.Parameters.AddWithValue("@MiddleName", middleName);
             commandInsertUserProfile.Parameters.AddWithValue("@LastName", lastName);
 
+            commandInsertUserProfile.Parameters.AddWithValue("@Contact", contact);
+            commandInsertUserProfile.Parameters.AddWithValue("@Sex", sex);
+            commandInsertUserProfile.Parameters.AddWithValue("@DateBirth", dateBirth);
+
+
             commandInsertUser.ExecuteNonQuery();
             commandInsertUserProfile.ExecuteNonQuery();
             databaseConnection.Close();
             MessageBox.Show("Success");
             
-            
-
-            
-
         }
     }
 }
