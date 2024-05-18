@@ -15,7 +15,7 @@ namespace InfoConnect
 {
     public partial class frmSignup : Form
     {
-        string connectionString = "datasource=192.168.1.18;port=3306;username=root;password=;database=infoconnect";
+        string connectionString = "datasource=192.168.1.13;port=3306;username=root;password=;database=infoconnect";
 
         private ucSignupPageOne page1;
         private ucSignupPageTwo page2;

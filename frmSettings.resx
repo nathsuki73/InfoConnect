@@ -5999,7 +5999,7 @@
   <data name="btnNotification.CheckedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAABChJREFUeF7tnD9v00AYh7PEf5g6M6EuSDA2IxNiBJWFsWxlYGiZoFu7IBiROlSZ
+        EQAACxEBf2RfkQAABChJREFUeF7tnD9v00AYh7PEf5g6M6EuSDA2IxNiBJWFsWxlYGiZoFu7IBiROlSZ
         ksDeL9ChM18AxizsUfoFjvf32medL2c3tQjJpT9Lj1rbd47PefzmvcvFvdZlZHaSH+a0PzHXycRMBUPI
         uhAPZ3BROBY3H5WW3mGRSirz8Makh2OTv3hv8qfPzYOHjwlZG3Awf3Zg0qNLk3z7Y/rfzWhpwVO5G5KL
         +Sx7e27y3UHwBQjZBOCoRPJZOjIfSn3DixQ6xZ3A6ExiAa7CWaTMpcb1RSM1pSYRYuVejNxFTj2j1CRW
@@ -6023,7 +6023,7 @@
   <data name="btnNotification.HoverState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAABBlJREFUeF7tnetRGzEUhT1DbPhJCSkhJaSD0EHSAekAOggdrO0UAB24BEpwCS5B
+        DQAACw0B7QfALAAABBlJREFUeF7tnetRGzEUhT1DbPhJCSkhJaSD0EHSAekAOggdrO0UAB24BEpwCS5B
         OefulUb7sp0dMKvlfDMC62lpdRBX2rv24ihVuF39DQ/LTditNmGPEBQUPipAhwdqEeEe2vzqKv0PUMkb
         OFxvwtNVFe5uRjUkxNtBDX6pwneIfI2wX25DdbbAIeR7VlpV4fEWK7YnCzE5qFFo9XBdhd+e1A8KPVDU
         Wp1FKVCrthDDZPakJnGllqhFaURxd1duZNCelqhFqURxN2xuiJrG+KNHhSgS2tw89KhjUelClE4Vbml5
@@ -6062,7 +6062,7 @@
   <data name="btnNotification.PressedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAABChJREFUeF7tnD9v00AYh7PEf5g6M6EuSDA2IxNiBJWFsWxlYGiZoFu7IBiROlSZ
+        EQAACxEBf2RfkQAABChJREFUeF7tnD9v00AYh7PEf5g6M6EuSDA2IxNiBJWFsWxlYGiZoFu7IBiROlSZ
         ksDeL9ChM18AxizsUfoFjvf32medL2c3tQjJpT9Lj1rbd47PefzmvcvFvdZlZHaSH+a0PzHXycRMBUPI
         uhAPZ3BROBY3H5WW3mGRSirz8Makh2OTv3hv8qfPzYOHjwlZG3Awf3Zg0qNLk3z7Y/rfzWhpwVO5G5KL
         +Sx7e27y3UHwBQjZBOCoRPJZOjIfSn3DixQ6xZ3A6ExiAa7CWaTMpcb1RSM1pSYRYuVejNxFTj2j1CRW
@@ -6086,10 +6086,10 @@
   <metadata name="btnPrivacyAndSecurity.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="guna2ImageRadioButton2.CheckedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPrivacyAndSecurity.CheckedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAABZJJREFUeF7tnD1zHEUQhi+5LyLFRJQTqiC0MjuiCKEgIRQZBAQyETiTEwpCVzlw
+        EQAACxEBf2RfkQAABZJJREFUeF7tnD1zHEUQhi+5LyLFRJQTqiC0MjuiCKEgIRQZBAQyETiTEwpCVzlw
         XXQnyP0HHCjmD0CoxPnV6Q8M/b7aXnrbs3u30n2N3Fv1lHTb89nzTt/s7N4OOo95Ohn9lS6Gl+lqdJmu
         hRQEh0J0uIQWhWeizU8qlfY4JBPFPLtJ4x8WafrlT2n6+Rfpo48/DYKDAQ1On56l8fmbNHr5Lg3/TPON
         BT6W2TB6vVpOvn+Vpo9OsxUEwTEAjUokX47n6edKvvlDEl1gJkR0DkoBWoVmsWSuZNw8GKlD1EGBqLjf
@@ -6116,10 +6116,10 @@
         x/BSjFDgpJQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2ImageRadioButton2.HoverState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPrivacyAndSecurity.HoverState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAABX5JREFUeF7tnf1xEzEQxTMDMfyZEiiBEugAOoAOQgehA9zBnUMB0EFKcAkpwSWI
+        DgAACw4BQL7hQQAABX5JREFUeF7tnf1xEzEQxTMDMfyZEiiBEugAOoAOQgehA9zBnUMB0EFKcAkpwSWI
         91YreaX78F24JD6zvxnF1slaSat3sqQT5mqUJtxsfoW761142OzCI0Lw4OG1AnR4oBYRbqHND6rSGSCT
         Gji824XtmyZ8ef8kQ46zHNTg2yZ8gshbhMfr+9BMFjiEfMtMmyb8uMGIrZcd5+ygRqHVw7smfNdL/eBD
         dxS1j87OWqBWZSDGlFkvlaSR2kXtrI0k7u7IjQTOp13UzlpJ4i7m3BA1J+M/NOo4q4Rzbm56xFhSuuOs
@@ -6169,7 +6169,7 @@
   <data name="btnPrivacyAndSecurity.PressedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAABZJJREFUeF7tnD1zHEUQhi+5LyLFRJQTqiC0MjuiCKEgIRQZBAQyETiTEwpCVzlw
+        EQAACxEBf2RfkQAABZJJREFUeF7tnD1zHEUQhi+5LyLFRJQTqiC0MjuiCKEgIRQZBAQyETiTEwpCVzlw
         XXQnyP0HHCjmD0CoxPnV6Q8M/b7aXnrbs3u30n2N3Fv1lHTb89nzTt/s7N4OOo95Ohn9lS6Gl+lqdJmu
         hRQEh0J0uIQWhWeizU8qlfY4JBPFPLtJ4x8WafrlT2n6+Rfpo48/DYKDAQ1On56l8fmbNHr5Lg3/TPON
         BT6W2TB6vVpOvn+Vpo9OsxUEwTEAjUokX47n6edKvvlDEl1gJkR0DkoBWoVmsWSuZNw8GKlD1EGBqLjf
@@ -6199,10 +6199,10 @@
   <metadata name="btnHelpAndSupport.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="guna2ImageRadioButton3.CheckedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnHelpAndSupport.CheckedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAABLtJREFUeF7tnL9v00AUx7PEdpg6M6EuSDC2IxNiBMHCWLYyMLRM0K1dEIyVOlSZ
+        EQAACxEBf2RfkQAABLtJREFUeF7tnL9v00AUx7PEdpg6M6EuSDC2IxNiBMHCWLYyMLRM0K1dEIyVOlSZ
         ksDef6BDZ/4BGLN0j9J/4Hjfl3vus3N27IokdvIsfdSm98N350/O72zXndJt4HaiX+60O3I30ciNCWcY
         64I8nMBF4pjcfOItrbFRIZa5f+fiw6Hrvfrkes9fukePnxrG2oCDvRcHLj66ctH5rev+dIPKgsf0bYgu
         p5Pkw4Xr7e4Hd2AYTQCO0kw+iQfus9c3vFGmU3wTbHY22gJchbMImb3G2Y1napPaaCEi9/zMPYupJya1
@@ -6225,10 +6225,10 @@
         R+4YFWAWx61Kw1gjY7iIkHkHb1Qt3Dqdf7BYI+Xl0gIHAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2ImageRadioButton3.HoverState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnHelpAndSupport.HoverState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAABM1JREFUeF7tnf1V2zAUxXMOJPRPRugIjNANygbtBnQD2KDZwA4dgG7ACIzACB5B
+        DwAACw8BkvkDpQAABM1JREFUeF7tnf1V2zAUxXMOJPRPRugIjNANygbtBnQD2KDZwA4dgG7ACIzACB5B
         vff5PUdS4thui2M773eOQmRZ8pN0UZ4+CKuTFOF28ys8rnfhdbML7wjBg4dzBeiwohYRHqDNz6rSASCT
         FlDd7ML2qgj3n/6qIMf5f1CD10X4ApGXCO/r51D0FjiE/MBMmyI83WLE1suOMzmoUWi1uinCD710HNz0
         SFH76OzMBWpVBmK4zHopxUZqF7UzN0zchyM3EuhPu6iduWLiTnxuiJrO+JNGHWeW0OfmokcdM6U7ztwp
@@ -6273,7 +6273,7 @@
   <data name="btnHelpAndSupport.PressedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAABLtJREFUeF7tnL9v00AUx7PEdpg6M6EuSDC2IxNiBMHCWLYyMLRM0K1dEIyVOlSZ
+        EQAACxEBf2RfkQAABLtJREFUeF7tnL9v00AUx7PEdpg6M6EuSDC2IxNiBMHCWLYyMLRM0K1dEIyVOlSZ
         ksDef6BDZ/4BGLN0j9J/4Hjfl3vus3N27IokdvIsfdSm98N350/O72zXndJt4HaiX+60O3I30ciNCWcY
         64I8nMBF4pjcfOItrbFRIZa5f+fiw6Hrvfrkes9fukePnxrG2oCDvRcHLj66ctH5rev+dIPKgsf0bYgu
         p5Pkw4Xr7e4Hd2AYTQCO0kw+iQfus9c3vFGmU3wTbHY22gJchbMImb3G2Y1napPaaCEi9/zMPYupJya1

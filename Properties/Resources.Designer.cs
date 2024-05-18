@@ -63,6 +63,16 @@ namespace InfoConnect.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ABOUT_US_DASH {
+            get {
+                object obj = ResourceManager.GetObject("ABOUT_US_DASH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_forgotpass_frmlogin_default {
             get {
                 object obj = ResourceManager.GetObject("btn_forgotpass_frmlogin_default", resourceCulture);

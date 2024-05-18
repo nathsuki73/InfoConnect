@@ -73,7 +73,10 @@
             this.Controls.Add(this.btnProfileBack);
             this.Controls.Add(this.guna2PictureBox1);
             this.Name = "frmProfile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProfile";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProfile_FormClosing);
+            this.Load += new System.EventHandler(this.frmProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 

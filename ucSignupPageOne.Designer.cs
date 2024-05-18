@@ -176,7 +176,7 @@
             this.txtMiddleName.ForeColor = System.Drawing.Color.Black;
             this.txtMiddleName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMiddleName.HoverState.Parent = this.txtMiddleName;
-            this.txtMiddleName.Location = new System.Drawing.Point(5, 129);
+            this.txtMiddleName.Location = new System.Drawing.Point(5, 85);
             this.txtMiddleName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtMiddleName.Name = "txtMiddleName";
             this.txtMiddleName.PasswordChar = '\0';
@@ -206,7 +206,7 @@
             this.txtLastName.ForeColor = System.Drawing.Color.Black;
             this.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLastName.HoverState.Parent = this.txtLastName;
-            this.txtLastName.Location = new System.Drawing.Point(5, 85);
+            this.txtLastName.Location = new System.Drawing.Point(5, 129);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';

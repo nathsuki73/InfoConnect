@@ -14,8 +14,9 @@ namespace InfoConnect
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            Form frmLogin = new frmLogin();
+            Form frmLogin = new frmLogin(this);
             frmLogin.Show();
+            
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -28,5 +29,6 @@ namespace InfoConnect
         {
 
         }
+
     }
 }

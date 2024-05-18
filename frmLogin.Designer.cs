@@ -34,6 +34,7 @@
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnLogIn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.chckbxPassword = new Guna.UI2.WinForms.Guna2CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.txtEmail.FocusedState.Parent = this.txtEmail;
-            this.txtEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.HoverState.Parent = this.txtEmail;
@@ -84,7 +85,7 @@
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.txtPassword.FocusedState.Parent = this.txtPassword;
-            this.txtPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.HoverState.Parent = this.txtPassword;
@@ -110,7 +111,7 @@
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(136, 15);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(233, 402);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(154, 592);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(136, 15);
@@ -124,17 +125,17 @@
             this.btnLogIn.BackColor = System.Drawing.Color.Transparent;
             this.btnLogIn.CheckedState.Parent = this.btnLogIn;
             this.btnLogIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogIn.HoverState.Image = global::InfoConnect.Properties.Resources.btn_login_frmlogin_hover;
-            this.btnLogIn.HoverState.ImageSize = new System.Drawing.Size(111, 40);
+            this.btnLogIn.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnLogIn.HoverState.Image")));
+            this.btnLogIn.HoverState.ImageSize = new System.Drawing.Size(327, 40);
             this.btnLogIn.HoverState.Parent = this.btnLogIn;
-            this.btnLogIn.Image = global::InfoConnect.Properties.Resources.btn_login_frmlogin_default;
-            this.btnLogIn.ImageSize = new System.Drawing.Size(111, 40);
-            this.btnLogIn.Location = new System.Drawing.Point(166, 458);
+            this.btnLogIn.Image = ((System.Drawing.Image)(resources.GetObject("btnLogIn.Image")));
+            this.btnLogIn.ImageSize = new System.Drawing.Size(327, 40);
+            this.btnLogIn.Location = new System.Drawing.Point(43, 465);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.PressedState.Image = global::InfoConnect.Properties.Resources.btn_login_frmlogin_hover;
-            this.btnLogIn.PressedState.ImageSize = new System.Drawing.Size(111, 40);
+            this.btnLogIn.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnLogIn.PressedState.Image")));
+            this.btnLogIn.PressedState.ImageSize = new System.Drawing.Size(327, 40);
             this.btnLogIn.PressedState.Parent = this.btnLogIn;
-            this.btnLogIn.Size = new System.Drawing.Size(111, 40);
+            this.btnLogIn.Size = new System.Drawing.Size(345, 40);
             this.btnLogIn.TabIndex = 2;
             this.btnLogIn.UseTransparentBackground = true;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
@@ -150,11 +151,34 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // chckbxPassword
+            // 
+            this.chckbxPassword.AutoSize = true;
+            this.chckbxPassword.BackColor = System.Drawing.Color.Transparent;
+            this.chckbxPassword.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chckbxPassword.CheckedState.BorderRadius = 2;
+            this.chckbxPassword.CheckedState.BorderThickness = 0;
+            this.chckbxPassword.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chckbxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckbxPassword.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.chckbxPassword.Location = new System.Drawing.Point(262, 403);
+            this.chckbxPassword.Name = "chckbxPassword";
+            this.chckbxPassword.Size = new System.Drawing.Size(114, 19);
+            this.chckbxPassword.TabIndex = 3;
+            this.chckbxPassword.Text = "Show Password";
+            this.chckbxPassword.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chckbxPassword.UncheckedState.BorderRadius = 2;
+            this.chckbxPassword.UncheckedState.BorderThickness = 0;
+            this.chckbxPassword.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chckbxPassword.UseVisualStyleBackColor = false;
+            this.chckbxPassword.CheckedChanged += new System.EventHandler(this.chckbxPassword_CheckedChanged);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 647);
+            this.Controls.Add(this.chckbxPassword);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.txtPassword);
@@ -163,9 +187,11 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
             this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -176,5 +202,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnLogIn;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private Guna.UI2.WinForms.Guna2CheckBox chckbxPassword;
     }
 }

@@ -71,11 +71,11 @@
             // btnPrivacyAndSecurity
             // 
             this.btnPrivacyAndSecurity.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrivacyAndSecurity.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton2.CheckedState.Image")));
+            this.btnPrivacyAndSecurity.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnPrivacyAndSecurity.CheckedState.Image")));
             this.btnPrivacyAndSecurity.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
             this.btnPrivacyAndSecurity.CheckedState.Parent = this.btnPrivacyAndSecurity;
             this.btnPrivacyAndSecurity.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrivacyAndSecurity.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton2.HoverState.Image")));
+            this.btnPrivacyAndSecurity.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnPrivacyAndSecurity.HoverState.Image")));
             this.btnPrivacyAndSecurity.HoverState.ImageSize = new System.Drawing.Size(182, 38);
             this.btnPrivacyAndSecurity.HoverState.Parent = this.btnPrivacyAndSecurity;
             this.btnPrivacyAndSecurity.Image = ((System.Drawing.Image)(resources.GetObject("btnPrivacyAndSecurity.Image")));
@@ -92,11 +92,11 @@
             // btnHelpAndSupport
             // 
             this.btnHelpAndSupport.BackColor = System.Drawing.Color.Transparent;
-            this.btnHelpAndSupport.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton3.CheckedState.Image")));
+            this.btnHelpAndSupport.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHelpAndSupport.CheckedState.Image")));
             this.btnHelpAndSupport.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
             this.btnHelpAndSupport.CheckedState.Parent = this.btnHelpAndSupport;
             this.btnHelpAndSupport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHelpAndSupport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton3.HoverState.Image")));
+            this.btnHelpAndSupport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnHelpAndSupport.HoverState.Image")));
             this.btnHelpAndSupport.HoverState.ImageSize = new System.Drawing.Size(182, 38);
             this.btnHelpAndSupport.HoverState.Parent = this.btnHelpAndSupport;
             this.btnHelpAndSupport.Image = ((System.Drawing.Image)(resources.GetObject("btnHelpAndSupport.Image")));
@@ -122,6 +122,7 @@
             this.Name = "frmSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSettings";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSettings_FormClosing);
             this.Load += new System.EventHandler(this.frmSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);

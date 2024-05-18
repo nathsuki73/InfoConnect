@@ -122,7 +122,7 @@
             this.btnInformationBoard.HoverState.Parent = this.btnInformationBoard;
             this.btnInformationBoard.Image = ((System.Drawing.Image)(resources.GetObject("btnInformationBoard.Image")));
             this.btnInformationBoard.ImageSize = new System.Drawing.Size(182, 38);
-            this.btnInformationBoard.Location = new System.Drawing.Point(49, 438);
+            this.btnInformationBoard.Location = new System.Drawing.Point(49, 394);
             this.btnInformationBoard.Name = "btnInformationBoard";
             this.btnInformationBoard.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnInformationBoard.PressedState.Image")));
             this.btnInformationBoard.PressedState.ImageSize = new System.Drawing.Size(182, 38);
@@ -144,7 +144,7 @@
             this.btnSection.HoverState.Parent = this.btnSection;
             this.btnSection.Image = ((System.Drawing.Image)(resources.GetObject("btnSection.Image")));
             this.btnSection.ImageSize = new System.Drawing.Size(182, 38);
-            this.btnSection.Location = new System.Drawing.Point(49, 394);
+            this.btnSection.Location = new System.Drawing.Point(49, 350);
             this.btnSection.Name = "btnSection";
             this.btnSection.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnSection.PressedState.Image")));
             this.btnSection.PressedState.ImageSize = new System.Drawing.Size(182, 38);
@@ -166,7 +166,7 @@
             this.btnAnnouncements.HoverState.Parent = this.btnAnnouncements;
             this.btnAnnouncements.Image = ((System.Drawing.Image)(resources.GetObject("btnAnnouncements.Image")));
             this.btnAnnouncements.ImageSize = new System.Drawing.Size(182, 38);
-            this.btnAnnouncements.Location = new System.Drawing.Point(49, 350);
+            this.btnAnnouncements.Location = new System.Drawing.Point(49, 306);
             this.btnAnnouncements.Name = "btnAnnouncements";
             this.btnAnnouncements.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnAnnouncements.PressedState.Image")));
             this.btnAnnouncements.PressedState.ImageSize = new System.Drawing.Size(182, 38);
@@ -188,7 +188,7 @@
             this.btnHandbook.HoverState.Parent = this.btnHandbook;
             this.btnHandbook.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.Image")));
             this.btnHandbook.ImageSize = new System.Drawing.Size(182, 38);
-            this.btnHandbook.Location = new System.Drawing.Point(49, 306);
+            this.btnHandbook.Location = new System.Drawing.Point(49, 438);
             this.btnHandbook.Name = "btnHandbook";
             this.btnHandbook.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.PressedState.Image")));
             this.btnHandbook.PressedState.ImageSize = new System.Drawing.Size(182, 38);
@@ -335,6 +335,7 @@
             this.Controls.Add(this.guna2PictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InfoConnect";
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbTopbarTitle)).EndInit();

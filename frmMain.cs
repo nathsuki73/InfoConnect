@@ -56,7 +56,7 @@ namespace InfoConnect
         private void btnHandbook_CheckedChanged(object sender, EventArgs e)
         {
             // Change Title in top bar if button Check state Changes
-            pcbTopbarTitle.Image = Properties.Resources.topbar_HandbookTitle;
+            pcbTopbarTitle.Image = Properties.Resources.ABOUT_US_DASH;
 
             // Change the current form
             loadform(new frmHandbook());
@@ -107,7 +107,7 @@ namespace InfoConnect
         //opens the frmSettings
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            frmSettings Settings = new frmSettings();
+            frmSettings Settings = new frmSettings(this);
             Settings.Show();
             //this.Enabled = false;
             //this.Opacity = 0.5;
@@ -115,7 +115,7 @@ namespace InfoConnect
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            frmProfile Profile = new frmProfile();
+            frmProfile Profile = new frmProfile(this);
             Profile.Show();
         }
     }

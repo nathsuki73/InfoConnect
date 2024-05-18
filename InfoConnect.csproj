@@ -299,6 +299,8 @@
   <ItemGroup>
     <None Include="Resources\topbar_InformationBoardTitle.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ABOUT US DASH.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
