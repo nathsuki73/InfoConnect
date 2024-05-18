@@ -36,46 +36,40 @@ namespace InfoConnect
         {
             cmbDay.Items.Clear();
 
-            if (cmbMonth.SelectedIndex == 1 || cmbMonth.SelectedIndex == 3 || cmbMonth.SelectedIndex == 5 || cmbMonth.SelectedIndex == 7 || cmbMonth.SelectedIndex == 8 || cmbMonth.SelectedIndex == 10 || cmbMonth.SelectedIndex == 12)
+            int selectedMonth = cmbMonth.SelectedIndex;
+            int selectedYear;
+
+            if (!int.TryParse(cmbYear.SelectedItem.ToString(), out selectedYear))
             {
-                for (int i = 1; i <= 31; i++)
+                selectedYear = 2000;
+            }
+
+            bool isLeapYear = DateTime.IsLeapYear(selectedYear);
+
+            cmbDay.Items.Add("Day");
+            if (selectedMonth != 0)
+            {
+                int daysInMonth = DateTime.DaysInMonth(selectedYear, selectedMonth);
+                for (int i = 1; i <= daysInMonth; i++)
                 {
                     cmbDay.Items.Add(i);
                 }
             }
-            else if (cmbMonth.SelectedIndex == 2)
-            {
-                if ((string)cmbYear.SelectedItem == "Year" || (int)(cmbYear.SelectedItem) % 4 != 0)
-                {
-                    for (int i = 1; i <= 28; i++)
-                    {
-                        cmbDay.Items.Add(i);
-                    }
-                }
-                else if ((int)(cmbYear.SelectedItem) % 4 == 0)
-                {
-                    for (int i = 1; i <= 29; i++)
-                    {
-                        cmbDay.Items.Add(i);
-                    }
-                }
-                
-            }
-            else
-            {
-                for (int i = 1; i <= 30; i++)
-                {
-                    cmbDay.Items.Add(i);
-                }
-            }
+
+
+            cmbDay.SelectedIndex = 0;
+            cmbDay.Refresh();
+
+
         }
 
-        private void cmbMonth_SelectedValueChanged(object sender, EventArgs e)
+
+        private void cmbMonth_SelectedIndexChanged(object sender, EventArgs e)
         {
             AddDays();
         }
 
-        private void cmbYear_SelectedValueChanged(object sender, EventArgs e)
+        private void cmbYear_SelectedIndexChanged(object sender, EventArgs e)
         {
             AddDays();
         }

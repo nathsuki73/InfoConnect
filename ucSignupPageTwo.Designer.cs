@@ -120,7 +120,7 @@
             this.cmbYear.Size = new System.Drawing.Size(89, 36);
             this.cmbYear.StartIndex = 0;
             this.cmbYear.TabIndex = 36;
-            this.cmbYear.SelectedValueChanged += new System.EventHandler(this.cmbYear_SelectedValueChanged);
+            this.cmbYear.SelectedIndexChanged += new System.EventHandler(this.cmbYear_SelectedIndexChanged);
             // 
             // cmbDay
             // 
@@ -188,7 +188,7 @@
             this.cmbMonth.Size = new System.Drawing.Size(127, 36);
             this.cmbMonth.StartIndex = 0;
             this.cmbMonth.TabIndex = 38;
-            this.cmbMonth.SelectedValueChanged += new System.EventHandler(this.cmbMonth_SelectedValueChanged);
+            this.cmbMonth.SelectedIndexChanged += new System.EventHandler(this.cmbMonth_SelectedIndexChanged);
             // 
             // cmbSex
             // 
