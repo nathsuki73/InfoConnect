@@ -108,8 +108,6 @@ namespace InfoConnect
                 middleName = ucPageOne.TextMiddleName;
                 lastName = ucPageOne.TextLastName;
                 email = ucPageOne.TextEmail;
-                contact = ucPageOne.TextContactNumber;
-                emergencyContact = ucPageOne.TextEmergencyContactNumber;
             }
 
             // Assuming the textboxes for first name, middle name, and last name are directly on ucSignupPageTwo

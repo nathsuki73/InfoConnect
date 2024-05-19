@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucSignupPageOne));
             this.piclblContacts = new Guna.UI2.WinForms.Guna2PictureBox();
             this.piclblName = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.txtEmergencyContactNumber = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtContactNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMiddleName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtFirstName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cmbAccountType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbSection = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.piclblContacts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piclblName)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +45,7 @@
             // 
             this.piclblContacts.BackColor = System.Drawing.Color.Transparent;
             this.piclblContacts.Image = ((System.Drawing.Image)(resources.GetObject("piclblContacts.Image")));
-            this.piclblContacts.Location = new System.Drawing.Point(5, 200);
+            this.piclblContacts.Location = new System.Drawing.Point(6, 281);
             this.piclblContacts.Name = "piclblContacts";
             this.piclblContacts.ShadowDecoration.Parent = this.piclblContacts;
             this.piclblContacts.Size = new System.Drawing.Size(91, 22);
@@ -64,68 +64,6 @@
             this.piclblName.TabIndex = 42;
             this.piclblName.TabStop = false;
             this.piclblName.UseTransparentBackground = true;
-            // 
-            // txtEmergencyContactNumber
-            // 
-            this.txtEmergencyContactNumber.BackColor = System.Drawing.Color.Transparent;
-            this.txtEmergencyContactNumber.BorderColor = System.Drawing.Color.Gray;
-            this.txtEmergencyContactNumber.BorderRadius = 13;
-            this.txtEmergencyContactNumber.BorderThickness = 3;
-            this.txtEmergencyContactNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmergencyContactNumber.DefaultText = "";
-            this.txtEmergencyContactNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmergencyContactNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmergencyContactNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmergencyContactNumber.DisabledState.Parent = this.txtEmergencyContactNumber;
-            this.txtEmergencyContactNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmergencyContactNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmergencyContactNumber.FocusedState.Parent = this.txtEmergencyContactNumber;
-            this.txtEmergencyContactNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmergencyContactNumber.ForeColor = System.Drawing.Color.Black;
-            this.txtEmergencyContactNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmergencyContactNumber.HoverState.Parent = this.txtEmergencyContactNumber;
-            this.txtEmergencyContactNumber.IconRightSize = new System.Drawing.Size(27, 27);
-            this.txtEmergencyContactNumber.Location = new System.Drawing.Point(5, 317);
-            this.txtEmergencyContactNumber.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtEmergencyContactNumber.Name = "txtEmergencyContactNumber";
-            this.txtEmergencyContactNumber.PasswordChar = '\0';
-            this.txtEmergencyContactNumber.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtEmergencyContactNumber.PlaceholderText = "Emergency Contact Number";
-            this.txtEmergencyContactNumber.SelectedText = "";
-            this.txtEmergencyContactNumber.ShadowDecoration.Parent = this.txtEmergencyContactNumber;
-            this.txtEmergencyContactNumber.Size = new System.Drawing.Size(317, 36);
-            this.txtEmergencyContactNumber.TabIndex = 40;
-            // 
-            // txtContactNumber
-            // 
-            this.txtContactNumber.BackColor = System.Drawing.Color.Transparent;
-            this.txtContactNumber.BorderColor = System.Drawing.Color.Gray;
-            this.txtContactNumber.BorderRadius = 13;
-            this.txtContactNumber.BorderThickness = 3;
-            this.txtContactNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContactNumber.DefaultText = "";
-            this.txtContactNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtContactNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtContactNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtContactNumber.DisabledState.Parent = this.txtContactNumber;
-            this.txtContactNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtContactNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContactNumber.FocusedState.Parent = this.txtContactNumber;
-            this.txtContactNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContactNumber.ForeColor = System.Drawing.Color.Black;
-            this.txtContactNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContactNumber.HoverState.Parent = this.txtContactNumber;
-            this.txtContactNumber.IconRightSize = new System.Drawing.Size(27, 27);
-            this.txtContactNumber.Location = new System.Drawing.Point(5, 273);
-            this.txtContactNumber.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtContactNumber.Name = "txtContactNumber";
-            this.txtContactNumber.PasswordChar = '\0';
-            this.txtContactNumber.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtContactNumber.PlaceholderText = "Phone Number";
-            this.txtContactNumber.SelectedText = "";
-            this.txtContactNumber.ShadowDecoration.Parent = this.txtContactNumber;
-            this.txtContactNumber.Size = new System.Drawing.Size(317, 36);
-            this.txtContactNumber.TabIndex = 39;
             // 
             // txtEmail
             // 
@@ -146,7 +84,7 @@
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.HoverState.Parent = this.txtEmail;
-            this.txtEmail.Location = new System.Drawing.Point(5, 229);
+            this.txtEmail.Location = new System.Drawing.Point(6, 310);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -248,15 +186,77 @@
             this.txtFirstName.Size = new System.Drawing.Size(317, 36);
             this.txtFirstName.TabIndex = 35;
             // 
+            // cmbAccountType
+            // 
+            this.cmbAccountType.BackColor = System.Drawing.Color.Transparent;
+            this.cmbAccountType.BorderColor = System.Drawing.Color.Gray;
+            this.cmbAccountType.BorderRadius = 13;
+            this.cmbAccountType.BorderThickness = 3;
+            this.cmbAccountType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbAccountType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAccountType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbAccountType.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbAccountType.FocusedState.Parent = this.cmbAccountType;
+            this.cmbAccountType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbAccountType.ForeColor = System.Drawing.Color.Black;
+            this.cmbAccountType.FormattingEnabled = true;
+            this.cmbAccountType.HoverState.Parent = this.cmbAccountType;
+            this.cmbAccountType.ItemHeight = 30;
+            this.cmbAccountType.Items.AddRange(new object[] {
+            "Account Type",
+            "Student",
+            "Teacher"});
+            this.cmbAccountType.ItemsAppearance.Parent = this.cmbAccountType;
+            this.cmbAccountType.Location = new System.Drawing.Point(6, 181);
+            this.cmbAccountType.Name = "cmbAccountType";
+            this.cmbAccountType.ShadowDecoration.Parent = this.cmbAccountType;
+            this.cmbAccountType.Size = new System.Drawing.Size(317, 36);
+            this.cmbAccountType.StartIndex = 0;
+            this.cmbAccountType.TabIndex = 43;
+            // 
+            // cmbSection
+            // 
+            this.cmbSection.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSection.BorderColor = System.Drawing.Color.Gray;
+            this.cmbSection.BorderRadius = 13;
+            this.cmbSection.BorderThickness = 3;
+            this.cmbSection.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbSection.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbSection.FocusedState.Parent = this.cmbSection;
+            this.cmbSection.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbSection.ForeColor = System.Drawing.Color.Black;
+            this.cmbSection.FormattingEnabled = true;
+            this.cmbSection.HoverState.Parent = this.cmbSection;
+            this.cmbSection.ItemHeight = 30;
+            this.cmbSection.Items.AddRange(new object[] {
+            "Section",
+            "BS COMSCI 1A",
+            "BS COMSCI 1B",
+            "BS INFO 1A",
+            "BS INFO 1B",
+            "BS INFO 1C",
+            "BS INFO 1D",
+            "BS INFO 1E",
+            "BS INFO 1F"});
+            this.cmbSection.ItemsAppearance.Parent = this.cmbSection;
+            this.cmbSection.Location = new System.Drawing.Point(6, 223);
+            this.cmbSection.Name = "cmbSection";
+            this.cmbSection.ShadowDecoration.Parent = this.cmbSection;
+            this.cmbSection.Size = new System.Drawing.Size(317, 36);
+            this.cmbSection.StartIndex = 0;
+            this.cmbSection.TabIndex = 43;
+            // 
             // ucSignupPageOne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.cmbSection);
+            this.Controls.Add(this.cmbAccountType);
             this.Controls.Add(this.piclblContacts);
             this.Controls.Add(this.piclblName);
-            this.Controls.Add(this.txtEmergencyContactNumber);
-            this.Controls.Add(this.txtContactNumber);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtMiddleName);
             this.Controls.Add(this.txtLastName);
@@ -273,11 +273,11 @@
 
         private Guna.UI2.WinForms.Guna2PictureBox piclblContacts;
         private Guna.UI2.WinForms.Guna2PictureBox piclblName;
-        private Guna.UI2.WinForms.Guna2TextBox txtEmergencyContactNumber;
-        private Guna.UI2.WinForms.Guna2TextBox txtContactNumber;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtMiddleName;
         private Guna.UI2.WinForms.Guna2TextBox txtLastName;
         private Guna.UI2.WinForms.Guna2TextBox txtFirstName;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbAccountType;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbSection;
     }
 }
