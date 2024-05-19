@@ -14,8 +14,8 @@ namespace InfoConnect
     {
         public string TextSex
         {
-            get { return txtPassword.Text; }
-            set { txtPassword.Text = value; }
+            get { return cmbSex.Text; }
+            set { cmbSex.Text = value; }
         }
 
         public int TextMonth
@@ -52,8 +52,8 @@ namespace InfoConnect
 
         public string TextConfirmPassword
         {
-            get { return txtPassword.Text; }
-            set { txtPassword.Text = value; }
+            get { return txtConfirmPassword.Text; }
+            set { txtConfirmPassword.Text = value; }
         }
 
 

@@ -21,8 +21,8 @@ namespace InfoConnect
         private ucSignupPageOne page1;
         private ucSignupPageTwo page2;
 
-        
-        
+
+
 
         string firstName;
         string middleName;
@@ -108,6 +108,8 @@ namespace InfoConnect
                 middleName = ucPageOne.TextMiddleName;
                 lastName = ucPageOne.TextLastName;
                 email = ucPageOne.TextEmail;
+                accountType = ucPageOne.TextAccountType;
+                section = ucPageOne.TextSection;
             }
 
             // Assuming the textboxes for first name, middle name, and last name are directly on ucSignupPageTwo
@@ -130,11 +132,23 @@ namespace InfoConnect
         // TODO: update this validation
         private bool ValidateInputs()
         {
-            if (string.IsNullOrWhiteSpace(firstName) 
-                || string.IsNullOrWhiteSpace(middleName) 
+            if (string.IsNullOrWhiteSpace(firstName)
+                || string.IsNullOrWhiteSpace(middleName)
                 || string.IsNullOrWhiteSpace(lastName))
             {
                 MessageBox.Show("Name cannot be null or empty.");
+                return false;
+            }
+
+            if (accountType == "Account Type")
+            {
+                MessageBox.Show("Please choose your account type.");
+                return false;
+            }
+
+            if (section == "Section")
+            {
+                MessageBox.Show("Please choose your section.");
                 return false;
             }
 
@@ -160,7 +174,31 @@ namespace InfoConnect
                 return false;
             }
 
+
             return true;
+        }
+
+        private bool EmailAlreadyExist()
+        {
+            string checkEmailQuery = "SELECT COUNT(*) FROM users WHERE user_email = @Email";
+            using (MySqlConnection databaseConnection = new MySqlConnection(connectionString))
+            {
+                databaseConnection.Open();
+                using (MySqlCommand commandCheckEmail = new MySqlCommand(checkEmailQuery, databaseConnection))
+                {
+                    commandCheckEmail.Parameters.AddWithValue("@Email", email);
+                    int emailCount = Convert.ToInt32(commandCheckEmail.ExecuteScalar());
+                    if (emailCount > 0)
+                    {
+                        MessageBox.Show("Email Already exist.");
+                        return true;
+                    }
+                    return false;
+
+
+
+                }
+            }
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -172,10 +210,15 @@ namespace InfoConnect
                 return;
             }
 
+            if (EmailAlreadyExist())
+            {
+                return;
+            }
+
             // Define the queries to insert a new user and a new user profile into the database.
             string insertUserQuery = "INSERT INTO users (user_email, user_password) VALUES (@Email, @Password);";
-            string insertUserProfileQuery = "INSERT INTO users_profile (user_first_name, user_middle_name, user_last_name, user_sex, user_birth_date)" +
-                                                              " VALUES (@FirstName, @MiddleName, @LastName, @Sex, @DateBirth);";
+            string insertUserProfileQuery = "INSERT INTO users_profile (user_first_name, user_middle_name, user_last_name, user_account_type, user_section, user_sex, user_birth_date)" +
+                                                              " VALUES (@FirstName, @MiddleName, @LastName, @AccountType, @Section, @Sex, @DateBirth);";
 
             // Create a new MySqlConnection object using the provided connection string.
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
@@ -192,6 +235,8 @@ namespace InfoConnect
             commandInsertUserProfile.Parameters.AddWithValue("@FirstName", firstName);
             commandInsertUserProfile.Parameters.AddWithValue("@MiddleName", middleName);
             commandInsertUserProfile.Parameters.AddWithValue("@LastName", lastName);
+            commandInsertUserProfile.Parameters.AddWithValue("@AccountType", accountType);
+            commandInsertUserProfile.Parameters.AddWithValue("@Section", section);
 
             commandInsertUserProfile.Parameters.AddWithValue("@Sex", sex);
             commandInsertUserProfile.Parameters.AddWithValue("@DateBirth", dateBirth);

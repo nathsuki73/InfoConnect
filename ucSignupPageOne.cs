@@ -37,7 +37,17 @@ namespace InfoConnect
             set { txtEmail.Text = value; }
         }
 
-        
+        public string TextAccountType
+        {
+            get { return cmbAccountType.Text; }
+            set { cmbAccountType.Text = value; }
+        }
+
+        public string TextSection
+        {
+            get { return cmbSection.Text; }
+            set { cmbSection.Text = value; }
+        }
 
         //TODO:add contact and emergency return
         public ucSignupPageOne()
