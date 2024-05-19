@@ -16,7 +16,7 @@ namespace InfoConnect
 {
     public partial class frmSignup : Form
     {
-        string connectionString = "datasource=192.168.1.18;port=3306;username=root;password=;database=infoconnect";
+        string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
 
         private ucSignupPageOne page1;
         private ucSignupPageTwo page2;
@@ -28,8 +28,8 @@ namespace InfoConnect
         string middleName;
         string lastName;
         string email;
-        string contact;
-        string emergencyContact;
+        string accountType;
+        string section;
 
         string sex;
         int month;
@@ -132,9 +132,7 @@ namespace InfoConnect
         {
             if (string.IsNullOrWhiteSpace(firstName) 
                 || string.IsNullOrWhiteSpace(middleName) 
-                || string.IsNullOrWhiteSpace(lastName)
-                || string.IsNullOrEmpty(contact)
-                || string.IsNullOrEmpty(emergencyContact))
+                || string.IsNullOrWhiteSpace(lastName))
             {
                 MessageBox.Show("Name cannot be null or empty.");
                 return false;
@@ -176,8 +174,8 @@ namespace InfoConnect
 
             // Define the queries to insert a new user and a new user profile into the database.
             string insertUserQuery = "INSERT INTO users (user_email, user_password) VALUES (@Email, @Password);";
-            string insertUserProfileQuery = "INSERT INTO users_profile (user_first_name, user_middle_name, user_last_name, user_sex, user_birth_date, user_contact)" +
-                                                              " VALUES (@FirstName, @MiddleName, @LastName, @Sex, @DateBirth, @Contact);";
+            string insertUserProfileQuery = "INSERT INTO users_profile (user_first_name, user_middle_name, user_last_name, user_sex, user_birth_date)" +
+                                                              " VALUES (@FirstName, @MiddleName, @LastName, @Sex, @DateBirth);";
 
             // Create a new MySqlConnection object using the provided connection string.
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
@@ -195,7 +193,6 @@ namespace InfoConnect
             commandInsertUserProfile.Parameters.AddWithValue("@MiddleName", middleName);
             commandInsertUserProfile.Parameters.AddWithValue("@LastName", lastName);
 
-            commandInsertUserProfile.Parameters.AddWithValue("@Contact", contact);
             commandInsertUserProfile.Parameters.AddWithValue("@Sex", sex);
             commandInsertUserProfile.Parameters.AddWithValue("@DateBirth", dateBirth);
 
