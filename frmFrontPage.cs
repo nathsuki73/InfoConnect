@@ -21,7 +21,7 @@ namespace InfoConnect
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            Form frmSignup = new frmSignup();
+            Form frmSignup = new frmSignup(this);
             frmSignup.Show();
         }
 

@@ -16,6 +16,7 @@ namespace InfoConnect
 {
     public partial class frmSignup : Form
     {
+        private frmFrontPage frmfrontpage;
         string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
 
         private ucSignupPageOne page1;
@@ -40,18 +41,20 @@ namespace InfoConnect
         string password;
         string confirmPassword;
 
-        public frmSignup()
+        public frmSignup(frmFrontPage frmFrontPage)
         {
             InitializeComponent();
             pnlSignup.Parent = pictureBoxSignUp;
             page1 = new ucSignupPageOne();
             page2 = new ucSignupPageTwo();
             ShowPageOne();
+            this.frmfrontpage = frmFrontPage;
         }
 
         private void frmSignup_Load(object sender, EventArgs e)
         {
             rbtnPageOne.Checked = true;
+            frmfrontpage.Enabled = false;
         }
 
 
@@ -132,11 +135,27 @@ namespace InfoConnect
         // TODO: update this validation
         private bool ValidateInputs()
         {
+            string firstname = firstName.Trim();
+            string middlename = middleName.Trim();
+            string lastname = lastName.Trim();
+
             if (string.IsNullOrWhiteSpace(firstName)
                 || string.IsNullOrWhiteSpace(middleName)
                 || string.IsNullOrWhiteSpace(lastName))
             {
                 MessageBox.Show("Name cannot be null or empty.");
+                return false;
+            }
+
+            if (firstname.Any(char.IsDigit) || middlename.Any(char.IsDigit) || lastname.Any(char.IsDigit))
+            {
+                MessageBox.Show("Name cannot contain a digit");
+                return false;
+            }
+
+            if (firstname.Any(char.IsSymbol) || middlename.Any(char.IsSymbol) || lastname.Any(char.IsSymbol))
+            {
+                MessageBox.Show("Name cannot contain any symbol");
                 return false;
             }
 
@@ -155,6 +174,7 @@ namespace InfoConnect
             if (sex == "Sex")
             {
                 MessageBox.Show("Please choose your gender.");
+                
                 return false;
             }
 
@@ -194,8 +214,6 @@ namespace InfoConnect
                         return true;
                     }
                     return false;
-
-
 
                 }
             }
@@ -247,6 +265,11 @@ namespace InfoConnect
             databaseConnection.Close();
             MessageBox.Show("Success");
             
+        }
+
+        private void frmSignup_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmfrontpage.Enabled = true;
         }
     }
 }

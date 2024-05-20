@@ -301,6 +301,8 @@
             // 
             this.btnProfile.BackColor = System.Drawing.Color.Transparent;
             this.btnProfile.CheckedState.Parent = this.btnProfile;
+            this.btnProfile.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.HoverState.Image")));
+            this.btnProfile.HoverState.ImageSize = new System.Drawing.Size(24, 24);
             this.btnProfile.HoverState.Parent = this.btnProfile;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageSize = new System.Drawing.Size(24, 24);

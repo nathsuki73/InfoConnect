@@ -39,6 +39,8 @@
             this.cmbSex = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtConfirmPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.eyeBtnPass = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.eyeBtnConfirmPass = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.piclblConfirmPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piclblPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piclblDateOfBirth)).BeginInit();
@@ -247,6 +249,7 @@
             this.txtConfirmPassword.ShadowDecoration.Parent = this.txtConfirmPassword;
             this.txtConfirmPassword.Size = new System.Drawing.Size(317, 36);
             this.txtConfirmPassword.TabIndex = 34;
+            this.txtConfirmPassword.UseSystemPasswordChar = true;
             // 
             // txtPassword
             // 
@@ -277,12 +280,54 @@
             this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
             this.txtPassword.Size = new System.Drawing.Size(317, 36);
             this.txtPassword.TabIndex = 35;
+            this.txtPassword.UseSystemPasswordChar = true;
+            // 
+            // eyeBtnPass
+            // 
+            this.eyeBtnPass.CheckedState.ImageSize = new System.Drawing.Size(22, 10);
+            this.eyeBtnPass.CheckedState.Parent = this.eyeBtnPass;
+            this.eyeBtnPass.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("eyeBtnPass.HoverState.Image")));
+            this.eyeBtnPass.HoverState.ImageSize = new System.Drawing.Size(24, 13);
+            this.eyeBtnPass.HoverState.Parent = this.eyeBtnPass;
+            this.eyeBtnPass.Image = ((System.Drawing.Image)(resources.GetObject("eyeBtnPass.Image")));
+            this.eyeBtnPass.ImageSize = new System.Drawing.Size(24, 13);
+            this.eyeBtnPass.Location = new System.Drawing.Point(263, 252);
+            this.eyeBtnPass.Name = "eyeBtnPass";
+            this.eyeBtnPass.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("eyeBtnPass.PressedState.Image")));
+            this.eyeBtnPass.PressedState.ImageSize = new System.Drawing.Size(22, 10);
+            this.eyeBtnPass.PressedState.Parent = this.eyeBtnPass;
+            this.eyeBtnPass.Size = new System.Drawing.Size(44, 23);
+            this.eyeBtnPass.TabIndex = 44;
+            this.eyeBtnPass.UseTransparentBackground = true;
+            this.eyeBtnPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.eyeBtnPass_MouseDown);
+            this.eyeBtnPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.eyeBtnPass_MouseUp);
+            // 
+            // eyeBtnConfirmPass
+            // 
+            this.eyeBtnConfirmPass.CheckedState.Parent = this.eyeBtnConfirmPass;
+            this.eyeBtnConfirmPass.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("eyeBtnConfirmPass.HoverState.Image")));
+            this.eyeBtnConfirmPass.HoverState.ImageSize = new System.Drawing.Size(24, 13);
+            this.eyeBtnConfirmPass.HoverState.Parent = this.eyeBtnConfirmPass;
+            this.eyeBtnConfirmPass.Image = ((System.Drawing.Image)(resources.GetObject("eyeBtnConfirmPass.Image")));
+            this.eyeBtnConfirmPass.ImageSize = new System.Drawing.Size(24, 13);
+            this.eyeBtnConfirmPass.Location = new System.Drawing.Point(263, 332);
+            this.eyeBtnConfirmPass.Name = "eyeBtnConfirmPass";
+            this.eyeBtnConfirmPass.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("eyeBtnConfirmPass.PressedState.Image")));
+            this.eyeBtnConfirmPass.PressedState.ImageSize = new System.Drawing.Size(22, 10);
+            this.eyeBtnConfirmPass.PressedState.Parent = this.eyeBtnConfirmPass;
+            this.eyeBtnConfirmPass.Size = new System.Drawing.Size(44, 23);
+            this.eyeBtnConfirmPass.TabIndex = 45;
+            this.eyeBtnConfirmPass.UseTransparentBackground = true;
+            this.eyeBtnConfirmPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.eyeBtnConfirmPass_MouseDown);
+            this.eyeBtnConfirmPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.eyeBtnConfirmPass_MouseUp);
             // 
             // ucSignupPageTwo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.eyeBtnConfirmPass);
+            this.Controls.Add(this.eyeBtnPass);
             this.Controls.Add(this.piclblConfirmPassword);
             this.Controls.Add(this.piclblPassword);
             this.Controls.Add(this.piclblDateOfBirth);
@@ -315,5 +360,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbSex;
         private Guna.UI2.WinForms.Guna2TextBox txtConfirmPassword;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private Guna.UI2.WinForms.Guna2ImageButton eyeBtnPass;
+        private Guna.UI2.WinForms.Guna2ImageButton eyeBtnConfirmPass;
     }
 }

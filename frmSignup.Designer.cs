@@ -176,6 +176,7 @@
             this.Name = "frmSignup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign Up";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSignup_FormClosing);
             this.Load += new System.EventHandler(this.frmSignup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSignUp)).EndInit();
             this.ResumeLayout(false);

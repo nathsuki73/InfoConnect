@@ -75,10 +75,11 @@ namespace InfoConnect
 
         private void AddDays()
         {
-            cmbDay.Items.Clear();
-
             int selectedMonth = cmbMonth.SelectedIndex;
+            int selectedDay = cmbDay.SelectedIndex;
             int selectedYear;
+
+            cmbDay.Items.Clear();
 
             if (!int.TryParse(cmbYear.SelectedItem.ToString(), out selectedYear))
             {
@@ -98,7 +99,7 @@ namespace InfoConnect
             }
 
 
-            cmbDay.SelectedIndex = 0;
+            cmbDay.SelectedIndex = selectedDay;
             cmbDay.Refresh();
 
 
@@ -113,6 +114,26 @@ namespace InfoConnect
         private void cmbYear_SelectedIndexChanged(object sender, EventArgs e)
         {
             AddDays();
+        }
+
+        private void eyeBtnPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = false;
+        }
+
+        private void eyeBtnPass_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = true;
+        }
+
+        private void eyeBtnConfirmPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtConfirmPassword.UseSystemPasswordChar = false;
+        }
+
+        private void eyeBtnConfirmPass_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtConfirmPassword.UseSystemPasswordChar = true;
         }
     }
 }

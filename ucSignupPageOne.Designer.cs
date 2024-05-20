@@ -198,7 +198,7 @@
             this.cmbAccountType.FocusedColor = System.Drawing.Color.Empty;
             this.cmbAccountType.FocusedState.Parent = this.cmbAccountType;
             this.cmbAccountType.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbAccountType.ForeColor = System.Drawing.Color.Black;
+            this.cmbAccountType.ForeColor = System.Drawing.Color.Gray;
             this.cmbAccountType.FormattingEnabled = true;
             this.cmbAccountType.HoverState.Parent = this.cmbAccountType;
             this.cmbAccountType.ItemHeight = 30;
@@ -226,7 +226,7 @@
             this.cmbSection.FocusedColor = System.Drawing.Color.Empty;
             this.cmbSection.FocusedState.Parent = this.cmbSection;
             this.cmbSection.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbSection.ForeColor = System.Drawing.Color.Black;
+            this.cmbSection.ForeColor = System.Drawing.Color.Gray;
             this.cmbSection.FormattingEnabled = true;
             this.cmbSection.HoverState.Parent = this.cmbSection;
             this.cmbSection.ItemHeight = 30;
