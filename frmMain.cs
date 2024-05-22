@@ -59,7 +59,7 @@ namespace InfoConnect
             pcbTopbarTitle.Image = Properties.Resources.ABOUT_US_DASH;
 
             // Change the current form
-            loadform(new frmHandbook());
+            loadform(new frmAboutUs());
         }
 
         private void btnAnnouncements_CheckedChanged(object sender, EventArgs e)

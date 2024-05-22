@@ -85,6 +85,12 @@
     <Compile Include="frmSettings.Designer.cs">
       <DependentUpon>frmSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu forms\frmAboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu forms\frmAboutUs.Designer.cs">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu forms\frmAnnouncements.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu forms\frmAboutUs.resx">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu forms\frmAnnouncements.resx">
       <DependentUpon>frmAnnouncements.cs</DependentUpon>

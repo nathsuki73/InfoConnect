@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pnlMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnProfile = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pcbTopbarTitle = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnLogout = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnSettings = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnInformationBoard = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.btnSection = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.btnAnnouncements = new Guna.UI2.WinForms.Guna2ImageRadioButton();
-            this.btnHandbook = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.btnAboutUs = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.btnEvents = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.btnStatistics = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnProfile = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTopbarTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -59,6 +59,23 @@
             this.pnlMain.Size = new System.Drawing.Size(1060, 654);
             this.pnlMain.TabIndex = 6;
             this.pnlMain.UseTransparentBackground = true;
+            // 
+            // btnProfile
+            // 
+            this.btnProfile.BackColor = System.Drawing.Color.Transparent;
+            this.btnProfile.CheckedState.Parent = this.btnProfile;
+            this.btnProfile.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.HoverState.Image")));
+            this.btnProfile.HoverState.ImageSize = new System.Drawing.Size(24, 24);
+            this.btnProfile.HoverState.Parent = this.btnProfile;
+            this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
+            this.btnProfile.ImageSize = new System.Drawing.Size(24, 24);
+            this.btnProfile.Location = new System.Drawing.Point(1195, 30);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.PressedState.Parent = this.btnProfile;
+            this.btnProfile.Size = new System.Drawing.Size(75, 23);
+            this.btnProfile.TabIndex = 0;
+            this.btnProfile.UseTransparentBackground = true;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // pcbTopbarTitle
             // 
@@ -176,27 +193,27 @@
             this.btnAnnouncements.UseTransparentBackground = true;
             this.btnAnnouncements.CheckedChanged += new System.EventHandler(this.btnAnnouncements_CheckedChanged);
             // 
-            // btnHandbook
+            // btnAboutUs
             // 
-            this.btnHandbook.BackColor = System.Drawing.Color.Transparent;
-            this.btnHandbook.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.CheckedState.Image")));
-            this.btnHandbook.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.btnHandbook.CheckedState.Parent = this.btnHandbook;
-            this.btnHandbook.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHandbook.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.HoverState.Image")));
-            this.btnHandbook.HoverState.ImageSize = new System.Drawing.Size(182, 38);
-            this.btnHandbook.HoverState.Parent = this.btnHandbook;
-            this.btnHandbook.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.Image")));
-            this.btnHandbook.ImageSize = new System.Drawing.Size(182, 38);
-            this.btnHandbook.Location = new System.Drawing.Point(49, 438);
-            this.btnHandbook.Name = "btnHandbook";
-            this.btnHandbook.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.PressedState.Image")));
-            this.btnHandbook.PressedState.ImageSize = new System.Drawing.Size(182, 38);
-            this.btnHandbook.PressedState.Parent = this.btnHandbook;
-            this.btnHandbook.Size = new System.Drawing.Size(182, 38);
-            this.btnHandbook.TabIndex = 3;
-            this.btnHandbook.UseTransparentBackground = true;
-            this.btnHandbook.CheckedChanged += new System.EventHandler(this.btnHandbook_CheckedChanged);
+            this.btnAboutUs.BackColor = System.Drawing.Color.Transparent;
+            this.btnAboutUs.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.CheckedState.Image")));
+            this.btnAboutUs.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnAboutUs.CheckedState.Parent = this.btnAboutUs;
+            this.btnAboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAboutUs.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.HoverState.Image")));
+            this.btnAboutUs.HoverState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
+            this.btnAboutUs.Image = ((System.Drawing.Image)(resources.GetObject("btnAboutUs.Image")));
+            this.btnAboutUs.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnAboutUs.Location = new System.Drawing.Point(49, 438);
+            this.btnAboutUs.Name = "btnAboutUs";
+            this.btnAboutUs.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.PressedState.Image")));
+            this.btnAboutUs.PressedState.ImageSize = new System.Drawing.Size(182, 38);
+            this.btnAboutUs.PressedState.Parent = this.btnAboutUs;
+            this.btnAboutUs.Size = new System.Drawing.Size(182, 38);
+            this.btnAboutUs.TabIndex = 3;
+            this.btnAboutUs.UseTransparentBackground = true;
+            this.btnAboutUs.CheckedChanged += new System.EventHandler(this.btnHandbook_CheckedChanged);
             // 
             // btnEvents
             // 
@@ -297,23 +314,6 @@
             this.guna2PictureBox3.TabIndex = 2;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // btnProfile
-            // 
-            this.btnProfile.BackColor = System.Drawing.Color.Transparent;
-            this.btnProfile.CheckedState.Parent = this.btnProfile;
-            this.btnProfile.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.HoverState.Image")));
-            this.btnProfile.HoverState.ImageSize = new System.Drawing.Size(24, 24);
-            this.btnProfile.HoverState.Parent = this.btnProfile;
-            this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
-            this.btnProfile.ImageSize = new System.Drawing.Size(24, 24);
-            this.btnProfile.Location = new System.Drawing.Point(1195, 30);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.PressedState.Parent = this.btnProfile;
-            this.btnProfile.Size = new System.Drawing.Size(75, 23);
-            this.btnProfile.TabIndex = 0;
-            this.btnProfile.UseTransparentBackground = true;
-            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,7 +328,7 @@
             this.Controls.Add(this.btnInformationBoard);
             this.Controls.Add(this.btnSection);
             this.Controls.Add(this.btnAnnouncements);
-            this.Controls.Add(this.btnHandbook);
+            this.Controls.Add(this.btnAboutUs);
             this.Controls.Add(this.btnEvents);
             this.Controls.Add(this.btnStatistics);
             this.Controls.Add(this.btnDashboard);
@@ -356,7 +356,7 @@
         private Guna.UI2.WinForms.Guna2ImageRadioButton btnDashboard;
         private Guna.UI2.WinForms.Guna2ImageRadioButton btnStatistics;
         private Guna.UI2.WinForms.Guna2ImageRadioButton btnEvents;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton btnHandbook;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton btnAboutUs;
         private Guna.UI2.WinForms.Guna2ImageRadioButton btnAnnouncements;
         private Guna.UI2.WinForms.Guna2ImageRadioButton btnSection;
         private Guna.UI2.WinForms.Guna2ImageRadioButton btnInformationBoard;
