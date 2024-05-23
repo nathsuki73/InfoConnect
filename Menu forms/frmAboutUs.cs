@@ -16,11 +16,14 @@ namespace InfoConnect.Menu_forms
         {
             InitializeComponent();
             FixDesign();
+            DoubleBuffered = true;
         }
 
         private void FixDesign()
         {
-            pnlAboutUs.Parent = guna2PictureBox2;
+           pnlAboutUs.Parent = guna2PictureBox1;
         }
+
+
     }
 }

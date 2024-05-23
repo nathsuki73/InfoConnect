@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Drawing.Text;
 using System.IO;
 using Guna.UI2.WinForms;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace InfoConnect
 {
@@ -36,8 +37,18 @@ namespace InfoConnect
         private void AddVisualFont()
         {
             // Define the path to the font file
-            string fontFilePath = "C:\\Users\\Angelo\\Downloads\\share-tech-mono\\ShareTechMono-Regular.ttf";
-            privateFont.AddFontFile(fontFilePath);
+            string fontFilePathNath = "C:\\Users\\Angelo\\Downloads\\share-tech-mono\\ShareTechMono-Regular.ttf";
+            string fontFilePathGio = "C:\\Users\\gioan\\OneDrive\\Pictures\\InfoConnect\\share-tech-mono\\ShareTechMono-Regular.ttf";
+            
+
+            if (Directory.Exists(fontFilePathNath))
+            {
+                privateFont.AddFontFile(fontFilePathNath);
+            }
+            else
+            {
+                privateFont.AddFontFile(fontFilePathGio);
+            }
 
             // Create a new font using the private font collection
             Font customFont = new Font(privateFont.Families[0], 10, FontStyle.Regular);

@@ -29,53 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAboutUs));
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlAboutUs = new Guna.UI2.WinForms.Guna2Panel();
-            this.pcbxSegovia = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pcbxBriones = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.pcbxBriones = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pcbxSegovia = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlAboutUs.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbxSegovia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbxBriones)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxBriones)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxSegovia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.guna2PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(1060, 654);
-            this.guna2PictureBox2.TabIndex = 3;
-            this.guna2PictureBox2.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1060, 654);
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // pnlAboutUs
             // 
             this.pnlAboutUs.AutoScroll = true;
             this.pnlAboutUs.BackColor = System.Drawing.Color.Transparent;
-            this.pnlAboutUs.Controls.Add(this.guna2PictureBox5);
+            this.pnlAboutUs.Controls.Add(this.pcbxSegovia);
+            this.pnlAboutUs.Controls.Add(this.guna2PictureBox6);
+            this.pnlAboutUs.Controls.Add(this.guna2PictureBox4);
             this.pnlAboutUs.Controls.Add(this.pcbxBriones);
             this.pnlAboutUs.Controls.Add(this.guna2PictureBox3);
-            this.pnlAboutUs.Controls.Add(this.pcbxSegovia);
-            this.pnlAboutUs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAboutUs.Controls.Add(this.guna2PictureBox5);
             this.pnlAboutUs.Location = new System.Drawing.Point(0, 0);
             this.pnlAboutUs.Name = "pnlAboutUs";
             this.pnlAboutUs.ShadowDecoration.Parent = this.pnlAboutUs;
@@ -83,15 +64,49 @@
             this.pnlAboutUs.TabIndex = 4;
             this.pnlAboutUs.UseTransparentBackground = true;
             // 
-            // pcbxSegovia
+            // guna2PictureBox6
             // 
-            this.pcbxSegovia.Image = ((System.Drawing.Image)(resources.GetObject("pcbxSegovia.Image")));
-            this.pcbxSegovia.Location = new System.Drawing.Point(51, 166);
-            this.pcbxSegovia.Name = "pcbxSegovia";
-            this.pcbxSegovia.ShadowDecoration.Parent = this.pcbxSegovia;
-            this.pcbxSegovia.Size = new System.Drawing.Size(272, 651);
-            this.pcbxSegovia.TabIndex = 0;
-            this.pcbxSegovia.TabStop = false;
+            this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
+            this.guna2PictureBox6.Location = new System.Drawing.Point(12, 1146);
+            this.guna2PictureBox6.Name = "guna2PictureBox6";
+            this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
+            this.guna2PictureBox6.Size = new System.Drawing.Size(1018, 884);
+            this.guna2PictureBox6.TabIndex = 5;
+            this.guna2PictureBox6.TabStop = false;
+            this.guna2PictureBox6.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
+            this.guna2PictureBox4.Location = new System.Drawing.Point(-2, 1015);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
+            this.guna2PictureBox4.Size = new System.Drawing.Size(1045, 59);
+            this.guna2PictureBox4.TabIndex = 4;
+            this.guna2PictureBox4.TabStop = false;
+            this.guna2PictureBox4.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
+            this.guna2PictureBox5.Location = new System.Drawing.Point(719, 166);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
+            this.guna2PictureBox5.Size = new System.Drawing.Size(271, 643);
+            this.guna2PictureBox5.TabIndex = 3;
+            this.guna2PictureBox5.TabStop = false;
+            this.guna2PictureBox5.UseTransparentBackground = true;
+            // 
+            // pcbxBriones
+            // 
+            this.pcbxBriones.Image = ((System.Drawing.Image)(resources.GetObject("pcbxBriones.Image")));
+            this.pcbxBriones.Location = new System.Drawing.Point(389, 166);
+            this.pcbxBriones.Name = "pcbxBriones";
+            this.pcbxBriones.ShadowDecoration.Parent = this.pcbxBriones;
+            this.pcbxBriones.Size = new System.Drawing.Size(271, 643);
+            this.pcbxBriones.TabIndex = 2;
+            this.pcbxBriones.TabStop = false;
+            this.pcbxBriones.UseTransparentBackground = true;
             // 
             // guna2PictureBox3
             // 
@@ -102,26 +117,29 @@
             this.guna2PictureBox3.Size = new System.Drawing.Size(1076, 71);
             this.guna2PictureBox3.TabIndex = 1;
             this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.UseTransparentBackground = true;
             // 
-            // pcbxBriones
+            // pcbxSegovia
             // 
-            this.pcbxBriones.Image = ((System.Drawing.Image)(resources.GetObject("pcbxBriones.Image")));
-            this.pcbxBriones.Location = new System.Drawing.Point(378, 166);
-            this.pcbxBriones.Name = "pcbxBriones";
-            this.pcbxBriones.ShadowDecoration.Parent = this.pcbxBriones;
-            this.pcbxBriones.Size = new System.Drawing.Size(271, 643);
-            this.pcbxBriones.TabIndex = 2;
-            this.pcbxBriones.TabStop = false;
+            this.pcbxSegovia.Image = ((System.Drawing.Image)(resources.GetObject("pcbxSegovia.Image")));
+            this.pcbxSegovia.Location = new System.Drawing.Point(51, 166);
+            this.pcbxSegovia.Name = "pcbxSegovia";
+            this.pcbxSegovia.ShadowDecoration.Parent = this.pcbxSegovia;
+            this.pcbxSegovia.Size = new System.Drawing.Size(272, 651);
+            this.pcbxSegovia.TabIndex = 0;
+            this.pcbxSegovia.TabStop = false;
+            this.pcbxSegovia.UseTransparentBackground = true;
             // 
-            // guna2PictureBox5
+            // guna2PictureBox1
             // 
-            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
-            this.guna2PictureBox5.Location = new System.Drawing.Point(713, 166);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
-            this.guna2PictureBox5.Size = new System.Drawing.Size(271, 643);
-            this.guna2PictureBox5.TabIndex = 3;
-            this.guna2PictureBox5.TabStop = false;
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1060, 654);
+            this.guna2PictureBox1.TabIndex = 5;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // frmAboutUs
             // 
@@ -129,30 +147,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 654);
             this.Controls.Add(this.pnlAboutUs);
-            this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAboutUs";
             this.Text = "frmAboutUs";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlAboutUs.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbxSegovia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbxBriones)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxBriones)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbxSegovia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2Panel pnlAboutUs;
         private Guna.UI2.WinForms.Guna2PictureBox pcbxSegovia;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox pcbxBriones;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }
