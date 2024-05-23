@@ -58,6 +58,7 @@
             // 
             this.lblFullName.AutoSize = true;
             this.lblFullName.BackColor = System.Drawing.Color.Transparent;
+            this.lblFullName.ForeColor = System.Drawing.Color.White;
             this.lblFullName.Location = new System.Drawing.Point(149, 68);
             this.lblFullName.Name = "lblFullName";
             this.lblFullName.Size = new System.Drawing.Size(61, 13);
@@ -68,6 +69,7 @@
             // 
             this.lblCourseSection.AutoSize = true;
             this.lblCourseSection.BackColor = System.Drawing.Color.Transparent;
+            this.lblCourseSection.ForeColor = System.Drawing.Color.White;
             this.lblCourseSection.Location = new System.Drawing.Point(149, 99);
             this.lblCourseSection.Name = "lblCourseSection";
             this.lblCourseSection.Size = new System.Drawing.Size(86, 13);
@@ -78,16 +80,20 @@
             // 
             this.lblAboutMe.AutoSize = true;
             this.lblAboutMe.BackColor = System.Drawing.Color.Transparent;
+            this.lblAboutMe.ForeColor = System.Drawing.Color.White;
             this.lblAboutMe.Location = new System.Drawing.Point(63, 254);
             this.lblAboutMe.Name = "lblAboutMe";
-            this.lblAboutMe.Size = new System.Drawing.Size(86, 13);
+            this.lblAboutMe.Size = new System.Drawing.Size(283, 52);
             this.lblAboutMe.TabIndex = 15;
-            this.lblAboutMe.Text = "lblCourseSection";
+            this.lblAboutMe.Text = "1234567890123456789012345678901234567890123456\r\n123456789012345678901234567890123" +
+    "4567890123456\r\n1234567890123456789012345678901234567890123456\r\n12345678901234567" +
+    "89012345678901234567890123456";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
             this.lblEmail.Location = new System.Drawing.Point(63, 348);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(86, 13);
@@ -98,6 +104,7 @@
             // 
             this.lblAccountDateCreated.AutoSize = true;
             this.lblAccountDateCreated.BackColor = System.Drawing.Color.Transparent;
+            this.lblAccountDateCreated.ForeColor = System.Drawing.Color.White;
             this.lblAccountDateCreated.Location = new System.Drawing.Point(63, 416);
             this.lblAccountDateCreated.Name = "lblAccountDateCreated";
             this.lblAccountDateCreated.Size = new System.Drawing.Size(86, 13);
@@ -161,6 +168,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profile    ";
             this.Deactivate += new System.EventHandler(this.frmProfileView_Deactivate);
+            this.Load += new System.EventHandler(this.frmProfileView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

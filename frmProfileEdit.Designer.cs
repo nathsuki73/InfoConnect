@@ -663,6 +663,7 @@
             this.Text = "frmProfile";
             this.Deactivate += new System.EventHandler(this.frmProfileEdit_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProfile_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmProfileEdit_FormClosed);
             this.Load += new System.EventHandler(this.frmProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLastName)).EndInit();

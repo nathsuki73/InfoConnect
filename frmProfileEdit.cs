@@ -100,6 +100,7 @@ namespace InfoConnect
 
         private void frmProfile_FormClosing(object sender, FormClosingEventArgs e)
         {
+
             
         }
 
@@ -184,7 +185,11 @@ namespace InfoConnect
 
         private void frmProfileEdit_Deactivate(object sender, EventArgs e)
         {
-            this.Close();//Close form when focus is gone
+
+        }
+
+        private void frmProfileEdit_FormClosed(object sender, FormClosedEventArgs e)
+        {
             frmProfileView frmProfileView = new frmProfileView();
             frmProfileView.Show();
         }
