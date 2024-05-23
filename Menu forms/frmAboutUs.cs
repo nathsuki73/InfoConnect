@@ -21,9 +21,12 @@ namespace InfoConnect.Menu_forms
 
         private void FixDesign()
         {
-           pnlAboutUs.Parent = guna2PictureBox1;
+           //pnlAboutUs.Parent = guna2PictureBox1;
         }
 
-
+        private void frmAboutUs_Scroll(object sender, ScrollEventArgs e)
+        {
+            //DoubleBuffered = true;
+        }
     }
 }
