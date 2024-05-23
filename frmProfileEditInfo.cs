@@ -17,7 +17,7 @@ namespace InfoConnect
         string fontFilePath = "C:\\Users\\Angelo\\Downloads\\share-tech-mono\\ShareTechMono-Regular.ttf";
         PrivateFontCollection privateFont = new PrivateFontCollection();
 
-        public frmProfileEditInfo(Size newFormSize, Image newImageContainer)
+        public frmProfileEditInfo(Size newFormSize, Image newImageContainer, string id)
         {
             InitializeComponent();
             //1366,768
@@ -25,11 +25,16 @@ namespace InfoConnect
             // 16, 37  // additional size when I changed the Formborderstyle
             int formWidth = newFormSize.Width + 16;
             int formHeight = newFormSize.Height + 37;
-            this.Size = new Size(formWidth, formHeight);
+            this.Size = new Size(formWidth, formHeight); // set the size of the form based on the picture
             pcbContainer.Image = newImageContainer;
 
+            txtDate.Visible = false;
+
+            //Change form title
+            this.Text = "New " + id;
+
             //365, 175
-            if (newFormSize == new Size(365, 175))
+            if (id == "About Me")
             {
                 txtNewInfo.Width = newFormSize.Width - 22;
                 txtNewInfo.Height = 100;
@@ -37,29 +42,76 @@ namespace InfoConnect
                 txtNewInfo.MaxLength = 184;
                 lbltextCount.Location = new Point(300, 140);
                 lbltextCount.Visible = true;
+                lbltextCount.Text = $"{txtNewInfo.Text.Length}/184";
+
             }
+            else if (id == "Birth Date")
+            {
+                txtDate.Visible = true;
+                txtDate.Width = newFormSize.Width - 20;
+
+            }
+            else if (id == "Account Type")
+            {
+                txtNewInfo.Visible = false;
+                cmbBox.Visible = true;
+                cmbBox.Items.Add("Teacher");
+                cmbBox.Items.Add("Student");
+            }
+            else if (id == "Sex")
+            {
+                txtNewInfo.Visible = false;
+                cmbBox.Visible = true;
+                cmbBox.Width = 170;
+                cmbBox.Items.Add("Male");
+                cmbBox.Items.Add("Female");
+            }
+            
             else
             {
-                txtNewInfo.Width = newFormSize.Width - 20;
+                txtNewInfo.Width = newFormSize.Width - 23;
+                //Changing the placeholder for specific form
+                if (id == "Address")
+                {
+                    txtNewInfo.PlaceholderText = $"(House Number) (Street) (Barangay) (City/Municipality) (Province))";
+
+                }
+                else if (id == "Email")
+                {
+                    txtNewInfo.PlaceholderText = $"0000-0000@lspu.edu.ph";
+                }
+                else if (id == "Contact")
+                {
+                    txtNewInfo.PlaceholderText = $"09XXXXXXXXX";
+                }
+                else
+                {
+                    txtNewInfo.PlaceholderText = $"Type your {id} here...";
+                }
             }
 
             privateFont.AddFontFile(fontFilePath);
 
             // Create a new font using the private font collection
             txtNewInfo.Font = new Font(privateFont.Families[0], 10, FontStyle.Regular);
+            txtDate.Font = new Font(privateFont.Families[0], 10, FontStyle.Regular);
             lbltextCount.Font = new Font(privateFont.Families[0], 7, FontStyle.Regular);
+
+            cmbBox.Font = new Font(privateFont.Families[0], 12, FontStyle.Regular);
+
+
 
         }
 
         private void frmProfileEditInfo_Load(object sender, EventArgs e)
         {
-            lbltextCount.Text = $"{txtNewInfo.Text.Length}/184";
 
         }
 
         private void frmProfileEditInfo_Deactivate(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();//Close form when focus is gone
+
         }
 
         private void txtNewInfo_TextChanged(object sender, EventArgs e)

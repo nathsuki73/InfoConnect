@@ -92,12 +92,12 @@ namespace InfoConnect
 
 
         private frmProfileEditInfo newInfo;
-        private void ShowFormEditor(Guna2PictureBox image)
+        private void ShowFormEditor(Guna2PictureBox image, string id)
         {
             // Close the currently open form if it exists
             if (newInfo == null || newInfo.IsDisposed)
             {
-                newInfo = new frmProfileEditInfo(image.Size, image.Image);
+                newInfo = new frmProfileEditInfo(image.Size, image.Image, id);
                 newInfo.Show();
             }
             else
@@ -111,62 +111,62 @@ namespace InfoConnect
 
         private void btnEditLastName_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbLastName);
+            ShowFormEditor(pcbLastName, "Last Name");
 
         }
 
         private void btnEditFirstName_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbFirstName);
+            ShowFormEditor(pcbFirstName, "First Name");
 
         }
 
         private void btnEditMiddleName_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbMiddleName);
+            ShowFormEditor(pcbMiddleName, "Middle Name");
 
         }
 
         private void btnEditSex_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbSex);
+            ShowFormEditor(pcbSex, "Sex");
         }
 
         
 
         private void btnEditAccountType_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbAccountType);
+            ShowFormEditor(pcbAccountType, "Account Type");
         }
 
         private void btnEditBirthDate_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbBirthDate);
+            ShowFormEditor(pcbBirthDate, "Birth Date");
         }
 
         private void btnEditEmail_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbEmail);
+            ShowFormEditor(pcbEmail, "Email");
         }
 
         private void btnEditContact_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbContact);
+            ShowFormEditor(pcbContact, "Contact");
         }
 
         private void btnEditAddress_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbAddress);
+            ShowFormEditor(pcbAddress, "Address");
         }
 
         private void btnEditAboutMe_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbAboutMe);
+            ShowFormEditor(pcbAboutMe, "About Me");
         }
 
         private void btnEditPassword_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbPassword);
+            ShowFormEditor(pcbPassword, "Password");
         }
     }
 }
