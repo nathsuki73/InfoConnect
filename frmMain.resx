@@ -124,7 +124,7 @@
   <data name="btnProfile.HoverState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAR1JREFUSEvllM0NwjAMhXughSMjMAqbwAhsUDYgG4SWAWCDjtARGKEjGL/0BSGV
+        DwAACw8BkvkDpQAAAR1JREFUSEvllM0NwjAMhXughSMjMAqbwAhsUDYgG4SWAWCDjtARGKEjGL/0BSGV
         0qS5IPgkS7Xz59ivyf6DhZVtXkmj1hWVCL93HE5DNyzdpmdplpUYmPp3xIqLlJw2j9zK3m1UyZGhJ4WV
         I8ZwO4biQdbIlu4AjKNcdONBhrqBoTtAb4hydXTjQVMDDhC68UyVAOVLKhEaiAzfqUXjvbpS5erVwmwN
         Dc1/q65ZQK5UFDLu8J0kz9+A748parmi5h/MZFY2XBZGXsvppd6tk+uIsdnh75JO9vIzaytrhkdZafZe
@@ -573,10 +573,10 @@
         12gRl/mEL6p2HpPJf7Vm18XyG5XyAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnHandbook.CheckedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAboutUs.CheckedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAABPRJREFUeF7tnL+PE0cUgN3Y6011NVVEg5SUXAdVRJkIGspLdxQpIFVCdzQRlJEo
+        DgAACw4BQL7hQQAABPRJREFUeF7tnL+PE0cUgN3Y6011NVVEg5SUXAdVRJkIGspLdxQpIFVCdzQRlJEo
         kCv7oOcfoLiafyApr6G3zD8wme95nvO8N/vDNrZvpbfSJzjP7Hp9883bN2/PO2jcpuFk9CFcDC/D1egy
         XEeC4xyL6OEcFyMvopvfJ0s32OJOIvPkayjOZ6F89Fsof/wpfHfnnuMcDRwsH56F4vnHMPr7Sxi+D9PO
         ghdxNozeLebjX9+G8u5p9g0c5zaAozGSz4tp+D3pm99ipwtmgkdnpy/gKs6SMieN1zeJ1C6100NU7puR
@@ -600,10 +600,10 @@
         gCiuN2Ic50hc4yIp8wlPVK3dBoP/AIBwD7Hkst2gAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnHandbook.HoverState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAboutUs.HoverState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAABNZJREFUeF7tneFV2zAUhTmHJvQnI3QERugG7QZ0g3QD2KDZwIEOQDdghHaDjJAR
+        DgAACw4BQL7hQQAABNZJREFUeF7tneFV2zAUhTmHJvQnI3QERugG7QZ0g3QD2KDZwIEOQDdghHaDjJAR
         1Huf33PlxHZshzi4537niNiSrBh09fT05ISrTop0u/yZHhZP6XX5lLZISUnpUgk63FGLSCto85OrdAC4
         yBvY3Tyl9XWRvn4c1ZAQbwc1+KFInyHyDdJ28ZyK3gKHkFe8aFmkx1tYbM8W4t1BjUKru5siffesZlDp
         gaKWdRZzgVo1QwyX2bPqhKWWqMXcCHEfWm4U0J+WqMVcCXHXfG6Ims74o58KMUvoczPoUZ6F0oWYO0W6
@@ -630,7 +630,7 @@
   <data name="btnAboutUs.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAA0pJREFUeF7tmoFx2zAMRT1CRsgIGSEbNBskG7QbNBskG6QbpBtkhHSDjtAR3P8o
+        DgAACw4BQL7hQQAAA0pJREFUeF7tmoFx2zAMRT1CRsgIGSEbNBskG7QbNBskG6QbpBtkhHSDjtAR3P8o
         gEfLkizLjSNf/7vDiQRJW5Y+IZDyxhhjjDHGGGOMMcYYY4wxxlwA2+32SvZV9ir7LUso47uPrsZcBhLt
         neyP7BCI3AI360dCfSqS7XiTEbWvo5n2G9mDrI3i36PZmPWBQDudlmj9Ldyj0Cf6wlO4jVkPEiZRGBDq
         Tbgr8pFz18id0DfGwF24F6HxfAdPiZ1Jojrf8RbV1aBzupc9RpX6rew1qmYN6IZkarEXqeW77poKQ+Im
@@ -647,10 +647,10 @@
         xhhjjDHGGGOMMeb/YLP5C0m69xMKpnqSAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnHandbook.PressedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAboutUs.PressedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAmCAYAAABplmFHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAABNZJREFUeF7tneFV2zAUhTmHJvQnI3QERugG7QZ0g3QD2KDZwIEOQDdghHaDjJAR
+        DgAACw4BQL7hQQAABNZJREFUeF7tneFV2zAUhTmHJvQnI3QERugG7QZ0g3QD2KDZwIEOQDdghHaDjJAR
         1Huf33PlxHZshzi4537niNiSrBh09fT05ISrTop0u/yZHhZP6XX5lLZISUnpUgk63FGLSCto85OrdAC4
         yBvY3Tyl9XWRvn4c1ZAQbwc1+KFInyHyDdJ28ZyK3gKHkFe8aFmkx1tYbM8W4t1BjUKru5siffesZlDp
         gaKWdRZzgVo1QwyX2bPqhKWWqMXcCHEfWm4U0J+WqMVcCXHXfG6Ims74o58KMUvoczPoUZ6F0oWYO0W6

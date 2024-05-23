@@ -73,11 +73,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmProfile.cs">
+    <Compile Include="frmProfileEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProfile.Designer.cs">
-      <DependentUpon>frmProfile.cs</DependentUpon>
+    <Compile Include="frmProfileEdit.Designer.cs">
+      <DependentUpon>frmProfileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfileEditInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfileEditInfo.Designer.cs">
+      <DependentUpon>frmProfileEditInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSettings.cs">
       <SubType>Form</SubType>
@@ -171,8 +177,11 @@
     <Compile Include="ucSignupPageTwo.Designer.cs">
       <DependentUpon>ucSignupPageTwo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmProfile.resx">
-      <DependentUpon>frmProfile.cs</DependentUpon>
+    <EmbeddedResource Include="frmProfileEdit.resx">
+      <DependentUpon>frmProfileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfileEditInfo.resx">
+      <DependentUpon>frmProfileEditInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>

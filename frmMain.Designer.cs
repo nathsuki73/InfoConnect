@@ -196,18 +196,18 @@
             // btnAboutUs
             // 
             this.btnAboutUs.BackColor = System.Drawing.Color.Transparent;
-            this.btnAboutUs.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.CheckedState.Image")));
+            this.btnAboutUs.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnAboutUs.CheckedState.Image")));
             this.btnAboutUs.CheckedState.ImageSize = new System.Drawing.Size(182, 38);
             this.btnAboutUs.CheckedState.Parent = this.btnAboutUs;
             this.btnAboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAboutUs.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.HoverState.Image")));
+            this.btnAboutUs.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnAboutUs.HoverState.Image")));
             this.btnAboutUs.HoverState.ImageSize = new System.Drawing.Size(182, 38);
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
             this.btnAboutUs.Image = ((System.Drawing.Image)(resources.GetObject("btnAboutUs.Image")));
             this.btnAboutUs.ImageSize = new System.Drawing.Size(182, 38);
             this.btnAboutUs.Location = new System.Drawing.Point(49, 438);
             this.btnAboutUs.Name = "btnAboutUs";
-            this.btnAboutUs.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHandbook.PressedState.Image")));
+            this.btnAboutUs.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnAboutUs.PressedState.Image")));
             this.btnAboutUs.PressedState.ImageSize = new System.Drawing.Size(182, 38);
             this.btnAboutUs.PressedState.Parent = this.btnAboutUs;
             this.btnAboutUs.Size = new System.Drawing.Size(182, 38);

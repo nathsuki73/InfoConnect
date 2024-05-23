@@ -12,13 +12,13 @@ using System.IO;
 
 namespace InfoConnect
 {
-    public partial class frmProfile : Form
+    public partial class frmProfileEdit : Form
     {
         PrivateFontCollection privateFont = new PrivateFontCollection();
 
         private frmMain frmmain;
         private int userId;
-        public frmProfile(frmMain frmMain)
+        public frmProfileEdit(frmMain frmMain)
         {
             InitializeComponent();
             this.frmmain = frmMain;
@@ -39,6 +39,8 @@ namespace InfoConnect
 
             // Create a new font using the private font collection
             Font customFont = new Font(privateFont.Families[0], 10, FontStyle.Regular);
+            Font aboutMeCountFont = new Font(privateFont.Families[0], 8, FontStyle.Regular);
+
 
             Label[] labels = { lblLastName, lblFirstName, lblMiddleName, lblSex, lblBirthDate, lblAccountType, lblPassword, lblEmail, lblContact, lblAddress };
 
@@ -46,8 +48,9 @@ namespace InfoConnect
             {
                 lbl.Font = customFont;
             }
+            lblAboutMeCount.Font = aboutMeCountFont;
 
-            Dictionary<Label, PictureBox> labelParentMap = new Dictionary<Label, PictureBox>
+            /*Dictionary<Label, PictureBox> labelParentMap = new Dictionary<Label, PictureBox>
             {
                 { lblLastName, guna2PictureBox1 },
                 { lblFirstName, guna2PictureBox1 },
@@ -59,12 +62,12 @@ namespace InfoConnect
                 { lblEmail, guna2PictureBox1 },
                 { lblContact, guna2PictureBox1 },
                 { lblAddress, guna2PictureBox1 }
-            };
-
-            foreach (var entry in labelParentMap)
+            };*/
+            foreach (Label label in labels)
             {
-                entry.Key.Parent = entry.Value;
+                label.Parent = guna2PictureBox1;
             }
+            lblAboutMeCount.Parent = guna2PictureBox1;
 
 
         }
@@ -83,6 +86,13 @@ namespace InfoConnect
         private void frmProfile_FormClosing(object sender, FormClosingEventArgs e)
         {
             frmmain.Enabled = true;
+        }
+
+        private void btnEditLastName_Click(object sender, EventArgs e)
+        {
+            frmProfileEditInfo newInfo = new frmProfileEditInfo(pcbLastName.Size, pcbLastName.Image);
+            newInfo.Show();
+
         }
     }
 }
