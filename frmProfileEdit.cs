@@ -100,8 +100,7 @@ namespace InfoConnect
 
         private void frmProfile_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frmProfileView frmProfileView = new frmProfileView();
-            frmProfileView.Show();
+            
         }
 
 
@@ -181,6 +180,13 @@ namespace InfoConnect
         private void btnEditPassword_Click(object sender, EventArgs e)
         {
             ShowFormEditor(pcbPassword, "Password");
+        }
+
+        private void frmProfileEdit_Deactivate(object sender, EventArgs e)
+        {
+            this.Close();//Close form when focus is gone
+            frmProfileView frmProfileView = new frmProfileView();
+            frmProfileView.Show();
         }
     }
 }
