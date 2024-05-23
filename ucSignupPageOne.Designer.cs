@@ -232,14 +232,14 @@
             this.cmbSection.ItemHeight = 30;
             this.cmbSection.Items.AddRange(new object[] {
             "Section",
-            "BS COMSCI 1A",
-            "BS COMSCI 1B",
-            "BS INFO 1A",
-            "BS INFO 1B",
-            "BS INFO 1C",
-            "BS INFO 1D",
-            "BS INFO 1E",
-            "BS INFO 1F"});
+            "BS in Computer Science 1A",
+            "BS in Computer Science 1A",
+            "BS in Information Technology 1A",
+            "BS in Information Technology 1B",
+            "BS in Information Technology 1C",
+            "BS in Information Technology 1D",
+            "BS in Information Technology 1E",
+            "BS in Information Technology 1F"});
             this.cmbSection.ItemsAppearance.Parent = this.cmbSection;
             this.cmbSection.Location = new System.Drawing.Point(6, 223);
             this.cmbSection.Name = "cmbSection";
