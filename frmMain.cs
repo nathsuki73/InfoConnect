@@ -115,7 +115,7 @@ namespace InfoConnect
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            frmProfileView Profile = new frmProfileView();
+            frmProfileView Profile = new frmProfileView(this);
             Profile.Show();
         }
     }

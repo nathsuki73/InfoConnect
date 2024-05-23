@@ -17,18 +17,22 @@ namespace InfoConnect
     public partial class frmProfileEdit : Form
     {
         PrivateFontCollection privateFont = new PrivateFontCollection();
+        frmMain formMain;
 
-
+        private bool isNewFormOpen = false;
         private int userId;
-        public frmProfileEdit()
+        public frmProfileEdit(frmMain frmMain)
         {
             InitializeComponent();
+            formMain = frmMain;
+            formMain.Enabled = false;
            //userId = userID;
         }
 
         private void frmProfile_Load(object sender, EventArgs e)
         {
             AddVisualFont();
+           
         }
 
         private void AddVisualFont()
@@ -93,10 +97,6 @@ namespace InfoConnect
         {
             this.Close();
         }
-
-     
-
-        
 
         private void frmProfile_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -190,7 +190,8 @@ namespace InfoConnect
 
         private void frmProfileEdit_FormClosed(object sender, FormClosedEventArgs e)
         {
-            frmProfileView frmProfileView = new frmProfileView();
+            frmProfileView frmProfileView = new frmProfileView(formMain);
+            formMain.Enabled = true;
             frmProfileView.Show();
         }
     }
