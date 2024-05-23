@@ -85,6 +85,12 @@
     <Compile Include="frmProfileEditInfo.Designer.cs">
       <DependentUpon>frmProfileEditInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProfileView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfileView.Designer.cs">
+      <DependentUpon>frmProfileView.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProfileEditInfo.resx">
       <DependentUpon>frmProfileEditInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfileView.resx">
+      <DependentUpon>frmProfileView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>
