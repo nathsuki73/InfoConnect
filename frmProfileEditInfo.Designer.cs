@@ -30,6 +30,7 @@
         {
             this.pcbContainer = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtNewInfo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lbltextCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbContainer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +70,18 @@
             this.txtNewInfo.ShadowDecoration.Parent = this.txtNewInfo;
             this.txtNewInfo.Size = new System.Drawing.Size(50, 26);
             this.txtNewInfo.TabIndex = 2;
+            this.txtNewInfo.TextChanged += new System.EventHandler(this.txtNewInfo_TextChanged);
+            // 
+            // lbltextCount
+            // 
+            this.lbltextCount.AutoSize = true;
+            this.lbltextCount.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbltextCount.Location = new System.Drawing.Point(200, 167);
+            this.lbltextCount.Name = "lbltextCount";
+            this.lbltextCount.Size = new System.Drawing.Size(48, 13);
+            this.lbltextCount.TabIndex = 3;
+            this.lbltextCount.Text = "123/184";
+            this.lbltextCount.Visible = false;
             // 
             // frmProfileEditInfo
             // 
@@ -76,15 +89,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(452, 349);
+            this.Controls.Add(this.lbltextCount);
             this.Controls.Add(this.txtNewInfo);
             this.Controls.Add(this.pcbContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmProfileEditInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProfileEditInfo";
+            this.Deactivate += new System.EventHandler(this.frmProfileEditInfo_Deactivate);
             this.Load += new System.EventHandler(this.frmProfileEditInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbContainer)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,5 +108,6 @@
 
         private Guna.UI2.WinForms.Guna2PictureBox pcbContainer;
         private Guna.UI2.WinForms.Guna2TextBox txtNewInfo;
+        private System.Windows.Forms.Label lbltextCount;
     }
 }

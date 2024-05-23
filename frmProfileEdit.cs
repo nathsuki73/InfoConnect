@@ -9,12 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Text;
 using System.IO;
+using Guna.UI2.WinForms;
 
 namespace InfoConnect
 {
     public partial class frmProfileEdit : Form
     {
         PrivateFontCollection privateFont = new PrivateFontCollection();
+
 
         private frmMain frmmain;
         private int userId;
@@ -88,11 +90,83 @@ namespace InfoConnect
             frmmain.Enabled = true;
         }
 
+
+        private frmProfileEditInfo newInfo;
+        private void ShowFormEditor(Guna2PictureBox image)
+        {
+            // Close the currently open form if it exists
+            if (newInfo == null || newInfo.IsDisposed)
+            {
+                newInfo = new frmProfileEditInfo(image.Size, image.Image);
+                newInfo.Show();
+            }
+            else
+            {
+                newInfo.Close();
+            }
+            
+
+            
+        }
+
         private void btnEditLastName_Click(object sender, EventArgs e)
         {
-            frmProfileEditInfo newInfo = new frmProfileEditInfo(pcbLastName.Size, pcbLastName.Image);
-            newInfo.Show();
+            ShowFormEditor(pcbLastName);
 
+        }
+
+        private void btnEditFirstName_Click(object sender, EventArgs e)
+        {
+            ShowFormEditor(pcbFirstName);
+
+        }
+
+        private void btnEditMiddleName_Click(object sender, EventArgs e)
+        {
+            ShowFormEditor(pcbMiddleName);
+
+        }
+
+        private void btnEditSex_Click(object sender, EventArgs e)
+        {
+            ShowFormEditor(pcbSex);
+        }
+
+        
+
+        private void btnEditAccountType_Click(object sender, EventArgs e)
+        {
+            ShowFormEditor(pcbAccountType);
+        }
+
+        private void btnEditBirthDate_Click(object sender, EventArgs e)
+        {
+            ShowFormEditor(pcbBirthDate);
+        }
+
+        private void btnEditEmail_Click(object sender, EventArgs e)
+        {
+            ShowFormEditor(pcbEmail);
+        }
+
+        private void btnEditContact_Click(object sender, EventArgs e)
+        {
+            ShowFormEditor(pcbContact);
+        }
+
+        private void btnEditAddress_Click(object sender, EventArgs e)
+        {
+            ShowFormEditor(pcbAddress);
+        }
+
+        private void btnEditAboutMe_Click(object sender, EventArgs e)
+        {
+            ShowFormEditor(pcbAboutMe);
+        }
+
+        private void btnEditPassword_Click(object sender, EventArgs e)
+        {
+            ShowFormEditor(pcbPassword);
         }
     }
 }

@@ -37,7 +37,7 @@
             this.pcbSex = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbBirthDate = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbAccountType = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnEditPassword = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pcbPassword = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbEmail = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbAddress = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbContact = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -60,7 +60,7 @@
             this.btnEditSex = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditBirthDate = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditAccountType = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton6 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnEditPassword = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditContact = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditEmail = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditAddress = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -72,7 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbSex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBirthDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAccountType)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEditPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAddress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbContact)).BeginInit();
@@ -189,18 +189,18 @@
             this.pcbAccountType.TabStop = false;
             this.pcbAccountType.UseTransparentBackground = true;
             // 
-            // btnEditPassword
+            // pcbPassword
             // 
-            this.btnEditPassword.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnEditPassword.Image")));
-            this.btnEditPassword.InitialImage = null;
-            this.btnEditPassword.Location = new System.Drawing.Point(468, 185);
-            this.btnEditPassword.Name = "btnEditPassword";
-            this.btnEditPassword.ShadowDecoration.Parent = this.btnEditPassword;
-            this.btnEditPassword.Size = new System.Drawing.Size(225, 76);
-            this.btnEditPassword.TabIndex = 8;
-            this.btnEditPassword.TabStop = false;
-            this.btnEditPassword.UseTransparentBackground = true;
+            this.pcbPassword.BackColor = System.Drawing.Color.Transparent;
+            this.pcbPassword.Image = ((System.Drawing.Image)(resources.GetObject("pcbPassword.Image")));
+            this.pcbPassword.InitialImage = null;
+            this.pcbPassword.Location = new System.Drawing.Point(468, 185);
+            this.pcbPassword.Name = "pcbPassword";
+            this.pcbPassword.ShadowDecoration.Parent = this.pcbPassword;
+            this.pcbPassword.Size = new System.Drawing.Size(225, 76);
+            this.pcbPassword.TabIndex = 8;
+            this.pcbPassword.TabStop = false;
+            this.pcbPassword.UseTransparentBackground = true;
             // 
             // pcbEmail
             // 
@@ -422,190 +422,200 @@
             this.btnEditFirstName.BackColor = System.Drawing.Color.Transparent;
             this.btnEditFirstName.CheckedState.Parent = this.btnEditFirstName;
             this.btnEditFirstName.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditFirstName.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.btnEditFirstName.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditFirstName.HoverState.Image")));
             this.btnEditFirstName.HoverState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditFirstName.HoverState.Parent = this.btnEditFirstName;
             this.btnEditFirstName.Image = ((System.Drawing.Image)(resources.GetObject("btnEditFirstName.Image")));
             this.btnEditFirstName.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditFirstName.Location = new System.Drawing.Point(442, 104);
             this.btnEditFirstName.Name = "btnEditFirstName";
-            this.btnEditFirstName.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.btnEditFirstName.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditFirstName.PressedState.Image")));
             this.btnEditFirstName.PressedState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditFirstName.PressedState.Parent = this.btnEditFirstName;
             this.btnEditFirstName.Size = new System.Drawing.Size(15, 15);
             this.btnEditFirstName.TabIndex = 15;
             this.btnEditFirstName.UseTransparentBackground = true;
+            this.btnEditFirstName.Click += new System.EventHandler(this.btnEditFirstName_Click);
             // 
             // btnEditMiddleName
             // 
             this.btnEditMiddleName.BackColor = System.Drawing.Color.Transparent;
             this.btnEditMiddleName.CheckedState.Parent = this.btnEditMiddleName;
             this.btnEditMiddleName.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditMiddleName.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
+            this.btnEditMiddleName.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditMiddleName.HoverState.Image")));
             this.btnEditMiddleName.HoverState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditMiddleName.HoverState.Parent = this.btnEditMiddleName;
             this.btnEditMiddleName.Image = ((System.Drawing.Image)(resources.GetObject("btnEditMiddleName.Image")));
             this.btnEditMiddleName.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditMiddleName.Location = new System.Drawing.Point(664, 104);
             this.btnEditMiddleName.Name = "btnEditMiddleName";
-            this.btnEditMiddleName.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
+            this.btnEditMiddleName.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditMiddleName.PressedState.Image")));
             this.btnEditMiddleName.PressedState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditMiddleName.PressedState.Parent = this.btnEditMiddleName;
             this.btnEditMiddleName.Size = new System.Drawing.Size(15, 15);
             this.btnEditMiddleName.TabIndex = 15;
             this.btnEditMiddleName.UseTransparentBackground = true;
+            this.btnEditMiddleName.Click += new System.EventHandler(this.btnEditMiddleName_Click);
             // 
             // btnEditSex
             // 
             this.btnEditSex.BackColor = System.Drawing.Color.Transparent;
             this.btnEditSex.CheckedState.Parent = this.btnEditSex;
             this.btnEditSex.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditSex.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.HoverState.Image")));
+            this.btnEditSex.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditSex.HoverState.Image")));
             this.btnEditSex.HoverState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditSex.HoverState.Parent = this.btnEditSex;
             this.btnEditSex.Image = ((System.Drawing.Image)(resources.GetObject("btnEditSex.Image")));
             this.btnEditSex.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditSex.Location = new System.Drawing.Point(848, 104);
             this.btnEditSex.Name = "btnEditSex";
-            this.btnEditSex.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.PressedState.Image")));
+            this.btnEditSex.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditSex.PressedState.Image")));
             this.btnEditSex.PressedState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditSex.PressedState.Parent = this.btnEditSex;
             this.btnEditSex.Size = new System.Drawing.Size(15, 15);
             this.btnEditSex.TabIndex = 15;
             this.btnEditSex.UseTransparentBackground = true;
+            this.btnEditSex.Click += new System.EventHandler(this.btnEditSex_Click);
             // 
             // btnEditBirthDate
             // 
             this.btnEditBirthDate.BackColor = System.Drawing.Color.Transparent;
             this.btnEditBirthDate.CheckedState.Parent = this.btnEditBirthDate;
             this.btnEditBirthDate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditBirthDate.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.HoverState.Image")));
+            this.btnEditBirthDate.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditBirthDate.HoverState.Image")));
             this.btnEditBirthDate.HoverState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditBirthDate.HoverState.Parent = this.btnEditBirthDate;
             this.btnEditBirthDate.Image = ((System.Drawing.Image)(resources.GetObject("btnEditBirthDate.Image")));
             this.btnEditBirthDate.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditBirthDate.Location = new System.Drawing.Point(219, 196);
             this.btnEditBirthDate.Name = "btnEditBirthDate";
-            this.btnEditBirthDate.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.PressedState.Image")));
+            this.btnEditBirthDate.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditBirthDate.PressedState.Image")));
             this.btnEditBirthDate.PressedState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditBirthDate.PressedState.Parent = this.btnEditBirthDate;
             this.btnEditBirthDate.Size = new System.Drawing.Size(15, 15);
             this.btnEditBirthDate.TabIndex = 15;
             this.btnEditBirthDate.UseTransparentBackground = true;
+            this.btnEditBirthDate.Click += new System.EventHandler(this.btnEditBirthDate_Click);
             // 
             // btnEditAccountType
             // 
             this.btnEditAccountType.BackColor = System.Drawing.Color.Transparent;
             this.btnEditAccountType.CheckedState.Parent = this.btnEditAccountType;
             this.btnEditAccountType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditAccountType.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton5.HoverState.Image")));
+            this.btnEditAccountType.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAccountType.HoverState.Image")));
             this.btnEditAccountType.HoverState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditAccountType.HoverState.Parent = this.btnEditAccountType;
             this.btnEditAccountType.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAccountType.Image")));
             this.btnEditAccountType.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditAccountType.Location = new System.Drawing.Point(442, 196);
             this.btnEditAccountType.Name = "btnEditAccountType";
-            this.btnEditAccountType.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton5.PressedState.Image")));
+            this.btnEditAccountType.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAccountType.PressedState.Image")));
             this.btnEditAccountType.PressedState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditAccountType.PressedState.Parent = this.btnEditAccountType;
             this.btnEditAccountType.Size = new System.Drawing.Size(15, 15);
             this.btnEditAccountType.TabIndex = 15;
             this.btnEditAccountType.UseTransparentBackground = true;
+            this.btnEditAccountType.Click += new System.EventHandler(this.btnEditAccountType_Click);
             // 
-            // guna2ImageButton6
+            // btnEditPassword
             // 
-            this.guna2ImageButton6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton6.CheckedState.Parent = this.guna2ImageButton6;
-            this.guna2ImageButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton6.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton6.HoverState.Image")));
-            this.guna2ImageButton6.HoverState.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageButton6.HoverState.Parent = this.guna2ImageButton6;
-            this.guna2ImageButton6.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton6.Image")));
-            this.guna2ImageButton6.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageButton6.Location = new System.Drawing.Point(664, 196);
-            this.guna2ImageButton6.Name = "guna2ImageButton6";
-            this.guna2ImageButton6.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton6.PressedState.Image")));
-            this.guna2ImageButton6.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageButton6.PressedState.Parent = this.guna2ImageButton6;
-            this.guna2ImageButton6.Size = new System.Drawing.Size(15, 15);
-            this.guna2ImageButton6.TabIndex = 15;
-            this.guna2ImageButton6.UseTransparentBackground = true;
+            this.btnEditPassword.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditPassword.CheckedState.Parent = this.btnEditPassword;
+            this.btnEditPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditPassword.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditPassword.HoverState.Image")));
+            this.btnEditPassword.HoverState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnEditPassword.HoverState.Parent = this.btnEditPassword;
+            this.btnEditPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnEditPassword.Image")));
+            this.btnEditPassword.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnEditPassword.Location = new System.Drawing.Point(664, 196);
+            this.btnEditPassword.Name = "btnEditPassword";
+            this.btnEditPassword.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditPassword.PressedState.Image")));
+            this.btnEditPassword.PressedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnEditPassword.PressedState.Parent = this.btnEditPassword;
+            this.btnEditPassword.Size = new System.Drawing.Size(15, 15);
+            this.btnEditPassword.TabIndex = 15;
+            this.btnEditPassword.UseTransparentBackground = true;
+            this.btnEditPassword.Click += new System.EventHandler(this.btnEditPassword_Click);
             // 
             // btnEditContact
             // 
             this.btnEditContact.BackColor = System.Drawing.Color.Transparent;
             this.btnEditContact.CheckedState.Parent = this.btnEditContact;
             this.btnEditContact.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditContact.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton7.HoverState.Image")));
+            this.btnEditContact.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditContact.HoverState.Image")));
             this.btnEditContact.HoverState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditContact.HoverState.Parent = this.btnEditContact;
             this.btnEditContact.Image = ((System.Drawing.Image)(resources.GetObject("btnEditContact.Image")));
             this.btnEditContact.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditContact.Location = new System.Drawing.Point(664, 380);
             this.btnEditContact.Name = "btnEditContact";
-            this.btnEditContact.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton7.PressedState.Image")));
+            this.btnEditContact.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditContact.PressedState.Image")));
             this.btnEditContact.PressedState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditContact.PressedState.Parent = this.btnEditContact;
             this.btnEditContact.Size = new System.Drawing.Size(15, 15);
             this.btnEditContact.TabIndex = 15;
             this.btnEditContact.UseTransparentBackground = true;
+            this.btnEditContact.Click += new System.EventHandler(this.btnEditContact_Click);
             // 
             // btnEditEmail
             // 
             this.btnEditEmail.BackColor = System.Drawing.Color.Transparent;
             this.btnEditEmail.CheckedState.Parent = this.btnEditEmail;
             this.btnEditEmail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditEmail.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton8.HoverState.Image")));
+            this.btnEditEmail.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditEmail.HoverState.Image")));
             this.btnEditEmail.HoverState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditEmail.HoverState.Parent = this.btnEditEmail;
             this.btnEditEmail.Image = ((System.Drawing.Image)(resources.GetObject("btnEditEmail.Image")));
             this.btnEditEmail.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditEmail.Location = new System.Drawing.Point(431, 380);
             this.btnEditEmail.Name = "btnEditEmail";
-            this.btnEditEmail.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton8.PressedState.Image")));
+            this.btnEditEmail.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditEmail.PressedState.Image")));
             this.btnEditEmail.PressedState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditEmail.PressedState.Parent = this.btnEditEmail;
             this.btnEditEmail.Size = new System.Drawing.Size(15, 15);
             this.btnEditEmail.TabIndex = 15;
             this.btnEditEmail.UseTransparentBackground = true;
+            this.btnEditEmail.Click += new System.EventHandler(this.btnEditEmail_Click);
             // 
             // btnEditAddress
             // 
             this.btnEditAddress.BackColor = System.Drawing.Color.Transparent;
             this.btnEditAddress.CheckedState.Parent = this.btnEditAddress;
             this.btnEditAddress.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditAddress.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton9.HoverState.Image")));
+            this.btnEditAddress.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAddress.HoverState.Image")));
             this.btnEditAddress.HoverState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditAddress.HoverState.Parent = this.btnEditAddress;
             this.btnEditAddress.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAddress.Image")));
             this.btnEditAddress.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditAddress.Location = new System.Drawing.Point(879, 465);
             this.btnEditAddress.Name = "btnEditAddress";
-            this.btnEditAddress.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton9.PressedState.Image")));
+            this.btnEditAddress.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAddress.PressedState.Image")));
             this.btnEditAddress.PressedState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditAddress.PressedState.Parent = this.btnEditAddress;
             this.btnEditAddress.Size = new System.Drawing.Size(15, 15);
             this.btnEditAddress.TabIndex = 15;
             this.btnEditAddress.UseTransparentBackground = true;
+            this.btnEditAddress.Click += new System.EventHandler(this.btnEditAddress_Click);
             // 
             // btnEditAboutMe
             // 
             this.btnEditAboutMe.BackColor = System.Drawing.Color.Transparent;
             this.btnEditAboutMe.CheckedState.Parent = this.btnEditAboutMe;
             this.btnEditAboutMe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditAboutMe.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image1")));
+            this.btnEditAboutMe.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAboutMe.HoverState.Image")));
             this.btnEditAboutMe.HoverState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditAboutMe.HoverState.Parent = this.btnEditAboutMe;
             this.btnEditAboutMe.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAboutMe.Image")));
             this.btnEditAboutMe.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditAboutMe.Location = new System.Drawing.Point(1178, 231);
             this.btnEditAboutMe.Name = "btnEditAboutMe";
-            this.btnEditAboutMe.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image1")));
+            this.btnEditAboutMe.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAboutMe.PressedState.Image")));
             this.btnEditAboutMe.PressedState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnEditAboutMe.PressedState.Parent = this.btnEditAboutMe;
             this.btnEditAboutMe.Size = new System.Drawing.Size(15, 15);
             this.btnEditAboutMe.TabIndex = 15;
             this.btnEditAboutMe.UseTransparentBackground = true;
+            this.btnEditAboutMe.Click += new System.EventHandler(this.btnEditAboutMe_Click);
             // 
             // frmProfileEdit
             // 
@@ -617,7 +627,7 @@
             this.Controls.Add(this.btnEditAddress);
             this.Controls.Add(this.btnEditEmail);
             this.Controls.Add(this.btnEditContact);
-            this.Controls.Add(this.guna2ImageButton6);
+            this.Controls.Add(this.btnEditPassword);
             this.Controls.Add(this.btnEditAccountType);
             this.Controls.Add(this.btnEditMiddleName);
             this.Controls.Add(this.btnEditBirthDate);
@@ -631,7 +641,7 @@
             this.Controls.Add(this.pcbContact);
             this.Controls.Add(this.pcbAddress);
             this.Controls.Add(this.pcbEmail);
-            this.Controls.Add(this.btnEditPassword);
+            this.Controls.Add(this.pcbPassword);
             this.Controls.Add(this.pcbAccountType);
             this.Controls.Add(this.pcbBirthDate);
             this.Controls.Add(this.pcbSex);
@@ -660,7 +670,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbSex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBirthDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAccountType)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEditPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEmail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAddress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbContact)).EndInit();
@@ -681,7 +691,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox pcbSex;
         private Guna.UI2.WinForms.Guna2PictureBox pcbBirthDate;
         private Guna.UI2.WinForms.Guna2PictureBox pcbAccountType;
-        private Guna.UI2.WinForms.Guna2PictureBox btnEditPassword;
+        private Guna.UI2.WinForms.Guna2PictureBox pcbPassword;
         private Guna.UI2.WinForms.Guna2PictureBox pcbEmail;
         private Guna.UI2.WinForms.Guna2PictureBox pcbAddress;
         private Guna.UI2.WinForms.Guna2PictureBox pcbContact;
@@ -704,7 +714,7 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnEditSex;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditBirthDate;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditAccountType;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton6;
+        private Guna.UI2.WinForms.Guna2ImageButton btnEditPassword;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditContact;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditEmail;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditAddress;
