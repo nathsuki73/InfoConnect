@@ -95,6 +95,7 @@ namespace InfoConnect
                 else if (id == "Contact")
                 {
                     txtNewInfo.PlaceholderText = $"09XXXXXXXXX";
+
                 }
                 else
                 {
@@ -145,6 +146,7 @@ namespace InfoConnect
         private void txtNewInfo_TextChanged(object sender, EventArgs e)
         {
             lbltextCount.Text = $"{txtNewInfo.Text.Length}/184";
+            
         }
 
         private void frmProfileEditInfo_FormClosing(object sender, FormClosingEventArgs e)
@@ -182,6 +184,18 @@ namespace InfoConnect
             return base.ProcessDialogKey(keyData);
         }
 
-
+        private void txtNewInfo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Ensure the event is only processed if the id is "Contact"
+            if (id == "Contact")
+            {
+                // Allow control keys like backspace
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            
+        }
     }
 }

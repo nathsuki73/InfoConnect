@@ -269,7 +269,10 @@ namespace InfoConnect
 
         private void btnEditContact_Click(object sender, EventArgs e)
         {
-            lblContact.Text = ShowFormEditor(pcbContact, "Contact");
+            string contact = ShowFormEditor(pcbContact, "Contact");
+            
+            lblContact.Text = contact.Substring(0, 11); // Truncate if longer
+            
             this.Refresh();
 
         }
@@ -422,6 +425,11 @@ namespace InfoConnect
             else if (!lblContact.Text.StartsWith("09"))
             {
                 MessageBox.Show("Contact should start with '09'.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (lblContact.Text.Length > 11)
+            {
+                MessageBox.Show("Contact should be 11 digits.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             ToTitleCase(lblFirstName.Text);

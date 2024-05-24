@@ -73,6 +73,7 @@
             this.txtNewInfo.Size = new System.Drawing.Size(50, 26);
             this.txtNewInfo.TabIndex = 2;
             this.txtNewInfo.TextChanged += new System.EventHandler(this.txtNewInfo_TextChanged);
+            this.txtNewInfo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNewInfo_KeyPress);
             // 
             // lbltextCount
             // 
