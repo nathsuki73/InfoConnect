@@ -95,7 +95,7 @@ namespace InfoConnect
             lblFullName.Text = processedFullName;
             lblCourseSection.Text = section;
             aboutMe = (aboutMe == "") ? "Write something about yourself...":aboutMe;
-            lblAboutMe.Text = InsertNewlines(aboutMe, 46);
+            lblAboutMe.Text = aboutMe;
             lblAccountDateCreated.Text = dateCreated;
             lblEmail.Text = InsertNewlines(email, 46);
         }

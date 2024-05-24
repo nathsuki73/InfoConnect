@@ -18,6 +18,8 @@ namespace InfoConnect
 {
     public partial class frmProfileEdit : Form
     {
+        string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
+
         PrivateFontCollection privateFont = new PrivateFontCollection();
         private frmProfileEditInfo newInfo;
 
@@ -59,7 +61,6 @@ namespace InfoConnect
 
         private void PopulateString()
         {
-            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
             string query = @"SELECT u.user_id, u.user_email, up.user_first_name, up.user_middle_name, up.user_last_name, up.user_account_type, up.user_sex, up.user_birth_date, up.user_contact, up.user_address, up.user_about_me, up.user_date_created 
                          FROM users u
                          JOIN users_profile up ON u.user_id = up.user_profile_id
@@ -125,8 +126,8 @@ namespace InfoConnect
             //address
             lblAddress.Text = (address == "") ? "Provide your address here..." : address;
             //about me
-            string tempAboutme = (address == "") ? "Write about yourself...": address;
-            lblAboutMe.Text = InsertNewlines(tempAboutme, 46);
+            string tempAboutme = (aboutMe == "") ? "Write about yourself...": aboutMe;
+            lblAboutMe.Text = tempAboutme;
             lblAboutMeCount.Text = (aboutMe == "") ? "0/184":$"{lblAboutMe.Text.Length}";
 
         }
@@ -312,11 +313,125 @@ namespace InfoConnect
 
 
 
-        private void btnProfileBack_CheckedChanged(object sender, EventArgs e)
-        {
 
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
-        
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            if (!ChangesValidated())
+            {
+                return;
+            }
+            string updateQuery = @"UPDATE users u
+                               JOIN users_profile up ON u.user_id = up.user_profile_id
+                               SET u.user_email = @userEmail,
+                                   up.user_first_name = @userFirstName,
+                                   up.user_middle_name = @userMiddleName,
+                                   up.user_last_name = @userLastName,
+                                   up.user_account_type = @userAccountType,
+                                   up.user_sex = @userSex,
+                                   up.user_birth_date = @userBirthDate,
+                                   up.user_contact = @userContact,
+                                   up.user_address = @userAddress,
+                                   up.user_about_me = @userAboutMe
+                               WHERE u.user_id = @userId";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(updateQuery, conn);
+
+                    cmd.Parameters.AddWithValue("@userEmail", lblEmail.Text);
+                    cmd.Parameters.AddWithValue("@userFirstName", lblFirstName.Text);
+                    cmd.Parameters.AddWithValue("@userMiddleName", lblMiddleName.Text);
+                    cmd.Parameters.AddWithValue("@userLastName", lblLastName.Text);
+                    cmd.Parameters.AddWithValue("@userAccountType", lblAccountType.Text);
+                    cmd.Parameters.AddWithValue("@userSex", lblSex.Text);
+                    cmd.Parameters.AddWithValue("@userBirthDate", lblBirthDate.Text);
+                    cmd.Parameters.AddWithValue("@userContact", lblContact.Text);
+                    cmd.Parameters.AddWithValue("@userAddress", lblAddress.Text);
+                    cmd.Parameters.AddWithValue("@userAboutMe", lblAboutMe.Text);
+                    cmd.Parameters.AddWithValue("@userId", id);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("User information updated successfully.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Update failed. User not found.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+            this.Close();
+        }
+
+        private bool ChangesValidated()
+        {
+            DateTime tempBirthday;
+
+            if (lblFirstName.Text.Length >= 50 || lblMiddleName.Text.Length >= 50 || lblLastName.Text.Length >= 50)
+            {
+                MessageBox.Show("Names should be less than 50 characters each.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(lblFirstName.Text) || string.IsNullOrWhiteSpace(lblMiddleName.Text) || string.IsNullOrWhiteSpace(lblLastName.Text))
+            {
+                MessageBox.Show("First Name, Middle Name, and Last Name cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(lblAccountType.Text))
+            {
+                MessageBox.Show("Account Type cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(lblSex.Text))
+            {
+                MessageBox.Show("Sex cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (DateTime.TryParse(lblBirthDate.Text, out tempBirthday))
+            {
+                if (tempBirthday > DateTime.Now)
+                {
+                    MessageBox.Show("Birth date cannot be in the future.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                else if (tempBirthday < DateTime.Now.AddYears(-120))
+                {
+                    MessageBox.Show("Birth date is too far in the past.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid birth date format.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(lblContact.Text))
+            {
+                MessageBox.Show("Contact cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else if (!lblContact.Text.StartsWith("09"))
+            {
+                MessageBox.Show("Contact should start with '09'.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
+
+        }
     }
 }

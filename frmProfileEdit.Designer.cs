@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProfileEdit));
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnProfileBack = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.pcbLastName = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbFirstName = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbMiddleName = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -66,6 +65,8 @@
             this.btnEditAddress = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditAboutMe = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblAboutMe = new System.Windows.Forms.Label();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLastName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbFirstName)).BeginInit();
@@ -91,27 +92,6 @@
             this.guna2PictureBox1.Size = new System.Drawing.Size(1225, 569);
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // btnProfileBack
-            // 
-            this.btnProfileBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnProfileBack.CheckedState.Parent = this.btnProfileBack;
-            this.btnProfileBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProfileBack.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnProfileBack.HoverState.Image")));
-            this.btnProfileBack.HoverState.ImageSize = new System.Drawing.Size(106, 55);
-            this.btnProfileBack.HoverState.Parent = this.btnProfileBack;
-            this.btnProfileBack.Image = ((System.Drawing.Image)(resources.GetObject("btnProfileBack.Image")));
-            this.btnProfileBack.ImageSize = new System.Drawing.Size(106, 55);
-            this.btnProfileBack.Location = new System.Drawing.Point(1099, 501);
-            this.btnProfileBack.Name = "btnProfileBack";
-            this.btnProfileBack.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnProfileBack.PressedState.Image")));
-            this.btnProfileBack.PressedState.ImageSize = new System.Drawing.Size(106, 55);
-            this.btnProfileBack.PressedState.Parent = this.btnProfileBack;
-            this.btnProfileBack.Size = new System.Drawing.Size(114, 56);
-            this.btnProfileBack.TabIndex = 1;
-            this.btnProfileBack.UseTransparentBackground = true;
-            this.btnProfileBack.CheckedChanged += new System.EventHandler(this.btnProfileBack_CheckedChanged);
-            this.btnProfileBack.Click += new System.EventHandler(this.btnProfileBack_Click);
             // 
             // pcbLastName
             // 
@@ -632,11 +612,53 @@
             this.lblAboutMe.TabIndex = 12;
             this.lblAboutMe.Text = "Nathaniel";
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(125, 40);
+            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(125, 40);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1085, 477);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(125, 40);
+            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Size = new System.Drawing.Size(125, 40);
+            this.guna2ImageButton1.TabIndex = 16;
+            this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(125, 40);
+            this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(125, 40);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(954, 477);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(125, 40);
+            this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Size = new System.Drawing.Size(125, 40);
+            this.guna2ImageButton2.TabIndex = 16;
+            this.guna2ImageButton2.UseTransparentBackground = true;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
+            // 
             // frmProfileEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1225, 569);
+            this.Controls.Add(this.guna2ImageButton2);
+            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.btnEditSex);
             this.Controls.Add(this.btnEditAddress);
             this.Controls.Add(this.btnEditEmail);
@@ -651,7 +673,6 @@
             this.Controls.Add(this.pcbMiddleName);
             this.Controls.Add(this.pcbFirstName);
             this.Controls.Add(this.pcbLastName);
-            this.Controls.Add(this.btnProfileBack);
             this.Controls.Add(this.pcbContact);
             this.Controls.Add(this.pcbAddress);
             this.Controls.Add(this.pcbEmail);
@@ -702,7 +723,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton btnProfileBack;
         private Guna.UI2.WinForms.Guna2PictureBox pcbLastName;
         private Guna.UI2.WinForms.Guna2PictureBox pcbFirstName;
         private Guna.UI2.WinForms.Guna2PictureBox pcbMiddleName;
@@ -738,5 +758,7 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnEditAddress;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditAboutMe;
         private System.Windows.Forms.Label lblAboutMe;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
     }
 }
