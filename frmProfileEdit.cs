@@ -13,6 +13,7 @@ using Guna.UI2.WinForms;
 using Microsoft.VisualBasic.ApplicationServices;
 using MySql.Data.MySqlClient;
 using static System.Collections.Specialized.BitVector32;
+using System.Globalization;
 
 namespace InfoConnect
 {
@@ -413,13 +414,7 @@ namespace InfoConnect
                     return false;
                 }
             }
-            else
-            {
-                MessageBox.Show("Invalid birth date format.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-
-            if (string.IsNullOrWhiteSpace(lblContact.Text))
+            else if (string.IsNullOrWhiteSpace(lblContact.Text))
             {
                 MessageBox.Show("Contact cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
@@ -429,9 +424,19 @@ namespace InfoConnect
                 MessageBox.Show("Contact should start with '09'.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-
+            ToTitleCase(lblFirstName.Text);
+            ToTitleCase(lblMiddleName.Text);
+            ToTitleCase(lblLastName.Text);
             return true;
 
+        }
+        public static string ToTitleCase(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+            return textInfo.ToTitleCase(input.ToLower());
         }
     }
 }
