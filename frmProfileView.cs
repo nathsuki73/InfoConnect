@@ -14,29 +14,40 @@ namespace InfoConnect
 {
     public partial class frmProfileView : Form
     {
-        string firstName = "Mhartin";
-        string middleName = "Esteban";
-        string lastName = "Tolentino";
-        string Section;
-        string AboutMe;
-        string Email;
-        string DateCreated;
-
         PrivateFontCollection privateFont = new PrivateFontCollection();
         frmMain frmMain;
-        public frmProfileView(frmMain formMain)
+        object[] profileDetails;
+        string firstName;
+        string middleName;
+        string lastName;
+        string section;
+        string aboutMe;
+        string email;
+        string dateCreated;
+
+        
+        public frmProfileView(frmMain formMain, object[] profileDetails)
         {
             InitializeComponent();
             AddVisualFont();
             frmMain = formMain;
+            this.profileDetails = profileDetails;
+            this.firstName = profileDetails[1].ToString();
+            this.middleName = profileDetails[2].ToString();
+            this.lastName = profileDetails[3].ToString();
+            this.section = profileDetails[5].ToString();
+            this.aboutMe = profileDetails[10].ToString(); //In Login, email and password where added
+            this.email = profileDetails[12].ToString();
+            this.dateCreated = profileDetails[11].ToString();
 
         }
 
         private void btnEditProfile_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmProfileEdit Profile = new frmProfileEdit(frmMain);
+            frmProfileEdit Profile = new frmProfileEdit(frmMain, profileDetails);
             Profile.Show();
+
         }
 
         
@@ -45,6 +56,11 @@ namespace InfoConnect
         {
             string processedFullName = NameLengthBreak();
             lblFullName.Text = processedFullName;
+            lblCourseSection.Text = section;
+            aboutMe = (aboutMe == "") ? "Write something about yourself...":aboutMe;
+            lblAboutMe.Text = aboutMe;
+            lblAccountDateCreated.Text = dateCreated;
+            lblEmail.Text = email;
         }
 
         private void frmProfileView_Deactivate(object sender, EventArgs e)

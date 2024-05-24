@@ -41,6 +41,8 @@ namespace InfoConnect
         string password;
         string confirmPassword;
 
+        DateTime dateCreated;
+
         public frmSignup(frmFrontPage frmFrontPage)
         {
             InitializeComponent();
@@ -235,8 +237,8 @@ namespace InfoConnect
 
             // Define the queries to insert a new user and a new user profile into the database.
             string insertUserQuery = "INSERT INTO users (user_email, user_password) VALUES (@Email, @Password);";
-            string insertUserProfileQuery = "INSERT INTO users_profile (user_first_name, user_middle_name, user_last_name, user_account_type, user_section, user_sex, user_birth_date)" +
-                                                              " VALUES (@FirstName, @MiddleName, @LastName, @AccountType, @Section, @Sex, @DateBirth);";
+            string insertUserProfileQuery = "INSERT INTO users_profile (user_first_name, user_middle_name, user_last_name, user_account_type, user_section, user_sex, user_birth_date, user_date_created)" +
+                                                              " VALUES (@FirstName, @MiddleName, @LastName, @AccountType, @Section, @Sex, @DateBirth, @DateCreated);";
 
             // Create a new MySqlConnection object using the provided connection string.
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
@@ -258,12 +260,15 @@ namespace InfoConnect
 
             commandInsertUserProfile.Parameters.AddWithValue("@Sex", sex);
             commandInsertUserProfile.Parameters.AddWithValue("@DateBirth", dateBirth);
+            commandInsertUserProfile.Parameters.AddWithValue("@DateCreated", DateTime.Now);
+
 
 
             commandInsertUser.ExecuteNonQuery();
             commandInsertUserProfile.ExecuteNonQuery();
             databaseConnection.Close();
-            MessageBox.Show("Success");
+            MessageBox.Show("Account Successfully created.");
+            this.Close();
             
         }
 

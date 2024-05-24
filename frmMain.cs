@@ -13,9 +13,11 @@ namespace InfoConnect
 {
     public partial class frmMain : Form
     {
-        public frmMain()
+        object[] profileDetails;
+        public frmMain(object[] profileDetails)
         {
             InitializeComponent();
+            this.profileDetails = profileDetails;
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -115,7 +117,7 @@ namespace InfoConnect
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            frmProfileView Profile = new frmProfileView(this);
+            frmProfileView Profile = new frmProfileView(this, profileDetails);
             Profile.Show();
         }
     }

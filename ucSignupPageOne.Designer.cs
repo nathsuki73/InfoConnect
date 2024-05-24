@@ -233,7 +233,7 @@
             this.cmbSection.Items.AddRange(new object[] {
             "Section",
             "BS in Computer Science 1A",
-            "BS in Computer Science 1A",
+            "BS in Computer Science 1B",
             "BS in Information Technology 1A",
             "BS in Information Technology 1B",
             "BS in Information Technology 1C",

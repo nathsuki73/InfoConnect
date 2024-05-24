@@ -1,6 +1,7 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace InfoConnect
 {
@@ -42,17 +43,55 @@ namespace InfoConnect
 
             try
             {
+
+                
                 databaseConnection.Open();
                 reader = commandDatabase.ExecuteReader();
 
                 if (reader.HasRows)
                 {
+                    int userId = -1; //default value
+                    string email = String.Empty;
+                    string password = String.Empty;
                     while (reader.Read())
                     {
-                        this.Hide();
-                        this.frmfrontpage.Hide();
-                        frmMain frmMain = new frmMain();
-                        frmMain.Show();
+                        // Retrieve the 'id' column value from the reader
+                        userId = reader.GetInt32(reader.GetOrdinal("user_id"));
+                        email = reader.GetString(reader.GetOrdinal("user_email"));
+                        password = reader.GetString(reader.GetOrdinal("user_password"));
+                    }
+                    reader.Close();
+
+                    if (userId != -1)
+                    {
+                        // Query the users_profile table using the retrieved userId
+                        string profileQuery = "SELECT * FROM users_profile WHERE user_profile_id=@UserId";
+                        MySqlCommand profileCommand = new MySqlCommand(profileQuery, databaseConnection);
+                        profileCommand.Parameters.AddWithValue("@UserId", userId);
+                        MySqlDataReader profileReader = profileCommand.ExecuteReader();
+                        if (profileReader.HasRows)
+                        {
+                            profileReader.Read();
+                            object[] profileDetails = new object[profileReader.FieldCount + 2];
+
+                            // Get the values of the current row and store them in the array
+                            profileReader.GetValues(profileDetails);
+                            // Add email and password to the profileDetails array
+                            profileDetails[profileReader.FieldCount] = email;
+                            profileDetails[profileReader.FieldCount + 1] = password;
+                            // Hide the current forms
+                            this.Hide();
+                            this.frmfrontpage.Hide();
+                            
+                            // Pass the userId (or any other data you retrieved) to the frmMain constructor and show the form
+                            frmMain frmMain = new frmMain(profileDetails);
+                            
+                            frmMain.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No profile found for this user.");
+                        }
                     }
                 }
                 else
