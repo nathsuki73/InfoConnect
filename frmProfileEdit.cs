@@ -11,30 +11,137 @@ using System.Drawing.Text;
 using System.IO;
 using Guna.UI2.WinForms;
 using Microsoft.VisualBasic.ApplicationServices;
+using MySql.Data.MySqlClient;
+using static System.Collections.Specialized.BitVector32;
 
 namespace InfoConnect
 {
     public partial class frmProfileEdit : Form
     {
         PrivateFontCollection privateFont = new PrivateFontCollection();
+        private frmProfileEditInfo newInfo;
+
         frmMain formMain;
         object[] profileDetails;
 
+        int id;
+
+        string email;
+        string firstName;
+        string middleName;
+        string lastName;
+        string accountType;
+        string sex;
+        DateTime birthDate;
+        string contact;
+        string address;
+        string aboutMe;
+        string dateCreated;
+
+        
+
         private bool isNewFormOpen = false;
-        public frmProfileEdit(frmMain frmMain, object[] profileDetails)
+        public frmProfileEdit(frmMain frmMain, int id)
         {
             InitializeComponent();
             formMain = frmMain;
-            this.profileDetails = profileDetails;
+            this.id = id;
             formMain.Enabled = false;
         }
 
         private void frmProfile_Load(object sender, EventArgs e)
         {
             AddVisualFont();
+            PopulateString();
+            PopulateLabel();
            
         }
 
+        private void PopulateString()
+        {
+            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
+            string query = @"SELECT u.user_id, u.user_email, up.user_first_name, up.user_middle_name, up.user_last_name, up.user_account_type, up.user_sex, up.user_birth_date, up.user_contact, up.user_address, up.user_about_me, up.user_date_created 
+                         FROM users u
+                         JOIN users_profile up ON u.user_id = up.user_profile_id
+                         WHERE u.user_id = @userId";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@userId", id);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            email = reader["user_email"].ToString();
+                            firstName = reader["user_first_name"].ToString();
+                            middleName = reader["user_middle_name"].ToString();
+                            lastName = reader["user_last_name"].ToString();
+                            accountType = reader["user_account_type"].ToString();
+
+                            sex = reader["user_sex"].ToString();
+                            birthDate = Convert.ToDateTime(reader["user_birth_date"]);
+                            contact = reader["user_contact"].ToString();
+                            address = reader["user_address"].ToString();
+                            accountType = reader["user_account_type"].ToString();
+
+                            aboutMe = reader["user_about_me"].ToString();
+                            dateCreated = reader["user_date_created"].ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("User not found.");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
+        private void PopulateLabel()
+        {
+            // putting the name in label
+            lblFirstName.Text = firstName;
+            lblMiddleName.Text = middleName;
+            lblLastName.Text = lastName;
+            
+            
+
+            // putting sex
+            lblSex.Text = sex;
+            //Date of birth
+            lblBirthDate.Text = ((DateTime)birthDate).ToString("yyyy-MM-dd");
+            //Account type
+            lblAccountType.Text = accountType;
+            //Email 
+            lblEmail.Text = email;
+            //Contact
+            lblContact.Text = (contact == "") ? "09XXXXXXXXX" : contact;
+            //address
+            lblAddress.Text = (address == "") ? "Provide your address here..." : address;
+            //about me
+            string tempAboutme = (address == "") ? "Write about yourself...": address;
+            lblAboutMe.Text = InsertNewlines(tempAboutme, 46);
+            lblAboutMeCount.Text = (aboutMe == "") ? "0/184":$"{lblAboutMe.Text.Length}";
+
+        }
+
+        public static string InsertNewlines(string text, int lineLength)
+        {
+            StringBuilder result = new StringBuilder();
+            while (text.Length > lineLength)
+            {
+                result.AppendLine(text.Substring(0, lineLength));
+                text = text.Substring(lineLength);
+            }
+            result.Append(text); // add any remaining text
+            return result.ToString();
+        }
         private void AddVisualFont()
         {
             // Define the path to the font file
@@ -59,6 +166,7 @@ namespace InfoConnect
             // Create a new font using the private font collection
             Font customFont = new Font(privateFont.Families[0], 10, FontStyle.Regular);
             Font aboutMeCountFont = new Font(privateFont.Families[0], 8, FontStyle.Regular);
+            Font aboutMeFont = new Font(privateFont.Families[0], 9, FontStyle.Regular);
 
 
             Label[] labels = { lblLastName, lblFirstName, lblMiddleName, lblSex, lblBirthDate, lblAccountType, lblPassword, lblEmail, lblContact, lblAddress };
@@ -68,25 +176,14 @@ namespace InfoConnect
                 lbl.Font = customFont;
             }
             lblAboutMeCount.Font = aboutMeCountFont;
+            lblAboutMe.Font = aboutMeFont;
 
-            /*Dictionary<Label, PictureBox> labelParentMap = new Dictionary<Label, PictureBox>
-            {
-                { lblLastName, guna2PictureBox1 },
-                { lblFirstName, guna2PictureBox1 },
-                { lblMiddleName, guna2PictureBox1 },
-                { lblSex, guna2PictureBox1 },
-                { lblBirthDate, guna2PictureBox1 },
-                { lblAccountType, guna2PictureBox1 },
-                { lblPassword, guna2PictureBox1 },
-                { lblEmail, guna2PictureBox1 },
-                { lblContact, guna2PictureBox1 },
-                { lblAddress, guna2PictureBox1 }
-            };*/
             foreach (Label label in labels)
             {
                 label.Parent = guna2PictureBox1;
             }
             lblAboutMeCount.Parent = guna2PictureBox1;
+            lblAboutMe.Parent = guna2PictureBox1;
 
 
         }
@@ -100,87 +197,102 @@ namespace InfoConnect
 
         private void frmProfile_FormClosing(object sender, FormClosingEventArgs e)
         {
-
             
         }
 
 
-        private frmProfileEditInfo newInfo;
-        private void ShowFormEditor(Guna2PictureBox image, string id)
+        private string ShowFormEditor(Guna2PictureBox image, string id)
         {
-            // Close the currently open form if it exists
-            if (newInfo == null || newInfo.IsDisposed)
-            {
-                newInfo = new frmProfileEditInfo(image.Size, image.Image, id);
-                newInfo.Show();
-            }
-            else
-            {
-                newInfo.Close();
-            }
+            string newData = null;
             
+            newInfo = new frmProfileEditInfo(image.Size, image.Image, id, this);
+            newInfo.ShowDialog();
+            // Retrieve the return value from the child form before closing it
+            newData = newInfo.ReturnValue;
+            newInfo.Close();
 
             
+            return newData;
         }
 
         private void btnEditLastName_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbLastName, "Last Name");
-
+            lblLastName.Text = ShowFormEditor(pcbLastName, "Last Name");
+            this.Refresh();
         }
 
         private void btnEditFirstName_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbFirstName, "First Name");
+            lblFirstName.Text = ShowFormEditor(pcbFirstName, "First Name");
+            this.Refresh();
 
         }
 
         private void btnEditMiddleName_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbMiddleName, "Middle Name");
+            lblMiddleName.Text = ShowFormEditor(pcbMiddleName, "Middle Name");
+            this.Refresh();
 
         }
 
         private void btnEditSex_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbSex, "Sex");
+            lblSex.Text = ShowFormEditor(pcbSex, "Sex");
+            this.Refresh();
+
         }
 
-        
+
 
         private void btnEditAccountType_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbAccountType, "Account Type");
+            lblAccountType.Text = ShowFormEditor(pcbAccountType, "Account Type");
+            this.Refresh();
+
         }
 
         private void btnEditBirthDate_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbBirthDate, "Birth Date");
+            lblBirthDate.Text = ShowFormEditor(pcbBirthDate, "Birth Date");
+            this.Refresh();
+
         }
 
         private void btnEditEmail_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbEmail, "Email");
+            lblEmail.Text = ShowFormEditor(pcbEmail, "Email");
+            this.Refresh();
+
         }
 
         private void btnEditContact_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbContact, "Contact");
+            lblContact.Text = ShowFormEditor(pcbContact, "Contact");
+            this.Refresh();
+
         }
 
         private void btnEditAddress_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbAddress, "Address");
+            lblAddress.Text = ShowFormEditor(pcbAddress, "Address");
+            this.Refresh();
+
         }
 
         private void btnEditAboutMe_Click(object sender, EventArgs e)
         {
-            ShowFormEditor(pcbAboutMe, "About Me");
+            string temp = ShowFormEditor(pcbAboutMe, "About Me");
+            lblAboutMe.Text = InsertNewlines(temp, 46);
+
+            this.Refresh();
+
         }
 
         private void btnEditPassword_Click(object sender, EventArgs e)
         {
             ShowFormEditor(pcbPassword, "Password");
+            this.Refresh();
+
         }
 
         private void frmProfileEdit_Deactivate(object sender, EventArgs e)
@@ -190,9 +302,21 @@ namespace InfoConnect
 
         private void frmProfileEdit_FormClosed(object sender, FormClosedEventArgs e)
         {
-            frmProfileView frmProfileView = new frmProfileView(formMain, profileDetails);
+            frmProfileView frmProfileView = new frmProfileView(formMain, id);
             formMain.Enabled = true;
             frmProfileView.Show();
         }
+
+        // Method to update the label text
+        
+
+
+
+        private void btnProfileBack_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

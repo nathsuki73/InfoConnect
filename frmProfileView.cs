@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,9 @@ namespace InfoConnect
     {
         PrivateFontCollection privateFont = new PrivateFontCollection();
         frmMain frmMain;
-        object[] profileDetails;
+
+        int id;
+
         string firstName;
         string middleName;
         string lastName;
@@ -26,26 +29,60 @@ namespace InfoConnect
         string dateCreated;
 
         
-        public frmProfileView(frmMain formMain, object[] profileDetails)
+        public frmProfileView(frmMain formMain, int id)
         {
             InitializeComponent();
             AddVisualFont();
             frmMain = formMain;
-            this.profileDetails = profileDetails;
-            this.firstName = profileDetails[1].ToString();
-            this.middleName = profileDetails[2].ToString();
-            this.lastName = profileDetails[3].ToString();
-            this.section = profileDetails[5].ToString();
-            this.aboutMe = profileDetails[10].ToString(); //In Login, email and password where added
-            this.email = profileDetails[12].ToString();
-            this.dateCreated = profileDetails[11].ToString();
+            this.id = id;
+            PopulateStrings(id);
 
+        }
+
+        public void PopulateStrings(int id)
+        {
+            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
+            string query = @"SELECT u.user_id, u.user_email, up.user_first_name, up.user_middle_name, up.user_last_name, up.user_section, up.user_about_me, up.user_date_created 
+                         FROM users u
+                         JOIN users_profile up ON u.user_id = up.user_profile_id
+                         WHERE u.user_id = @userId";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@userId", id);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            email = reader["user_email"].ToString();
+                            firstName = reader["user_first_name"].ToString();
+                            middleName = reader["user_middle_name"].ToString();
+                            lastName = reader["user_last_name"].ToString();
+                            section = reader["user_section"].ToString();
+                            aboutMe = reader["user_about_me"].ToString();
+                            dateCreated = reader["user_date_created"].ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("User not found.");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
 
         private void btnEditProfile_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmProfileEdit Profile = new frmProfileEdit(frmMain, profileDetails);
+            frmProfileEdit Profile = new frmProfileEdit(frmMain, id);
             Profile.Show();
 
         }
@@ -58,9 +95,9 @@ namespace InfoConnect
             lblFullName.Text = processedFullName;
             lblCourseSection.Text = section;
             aboutMe = (aboutMe == "") ? "Write something about yourself...":aboutMe;
-            lblAboutMe.Text = aboutMe;
+            lblAboutMe.Text = InsertNewlines(aboutMe, 46);
             lblAccountDateCreated.Text = dateCreated;
-            lblEmail.Text = email;
+            lblEmail.Text = InsertNewlines(email, 46);
         }
 
         private void frmProfileView_Deactivate(object sender, EventArgs e)
@@ -90,6 +127,18 @@ namespace InfoConnect
                 }
             }
             return name;
+        }
+
+        public static string InsertNewlines(string text, int lineLength)
+        {
+            StringBuilder result = new StringBuilder();
+            while (text.Length > lineLength)
+            {
+                result.AppendLine(text.Substring(0, lineLength));
+                text = text.Substring(lineLength);
+            }
+            result.Append(text); // add any remaining text
+            return result.ToString();
         }
         private void AddVisualFont()
         {

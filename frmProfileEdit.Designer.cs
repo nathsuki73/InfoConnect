@@ -65,6 +65,7 @@
             this.btnEditEmail = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditAddress = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditAboutMe = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.lblAboutMe = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLastName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbFirstName)).BeginInit();
@@ -109,6 +110,7 @@
             this.btnProfileBack.Size = new System.Drawing.Size(114, 56);
             this.btnProfileBack.TabIndex = 1;
             this.btnProfileBack.UseTransparentBackground = true;
+            this.btnProfileBack.CheckedChanged += new System.EventHandler(this.btnProfileBack_CheckedChanged);
             this.btnProfileBack.Click += new System.EventHandler(this.btnProfileBack_Click);
             // 
             // pcbLastName
@@ -319,9 +321,9 @@
             this.lblPassword.ForeColor = System.Drawing.Color.White;
             this.lblPassword.Location = new System.Drawing.Point(486, 230);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(64, 16);
+            this.lblPassword.Size = new System.Drawing.Size(126, 16);
             this.lblPassword.TabIndex = 12;
-            this.lblPassword.Text = "Nathaniel";
+            this.lblPassword.Text = "•••••••••••••••••";
             // 
             // lblEmail
             // 
@@ -396,6 +398,7 @@
             this.lblAboutMeCount.Size = new System.Drawing.Size(48, 13);
             this.lblAboutMeCount.TabIndex = 12;
             this.lblAboutMeCount.Text = "160/160";
+            this.lblAboutMeCount.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // btnEditLastName
             // 
@@ -617,13 +620,24 @@
             this.btnEditAboutMe.UseTransparentBackground = true;
             this.btnEditAboutMe.Click += new System.EventHandler(this.btnEditAboutMe_Click);
             // 
+            // lblAboutMe
+            // 
+            this.lblAboutMe.AutoSize = true;
+            this.lblAboutMe.BackColor = System.Drawing.Color.Transparent;
+            this.lblAboutMe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAboutMe.ForeColor = System.Drawing.Color.White;
+            this.lblAboutMe.Location = new System.Drawing.Point(890, 260);
+            this.lblAboutMe.Name = "lblAboutMe";
+            this.lblAboutMe.Size = new System.Drawing.Size(64, 16);
+            this.lblAboutMe.TabIndex = 12;
+            this.lblAboutMe.Text = "Nathaniel";
+            // 
             // frmProfileEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1225, 569);
             this.Controls.Add(this.btnEditSex);
-            this.Controls.Add(this.btnEditAboutMe);
             this.Controls.Add(this.btnEditAddress);
             this.Controls.Add(this.btnEditEmail);
             this.Controls.Add(this.btnEditContact);
@@ -655,7 +669,9 @@
             this.Controls.Add(this.lblBirthDate);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblLastName);
+            this.Controls.Add(this.btnEditAboutMe);
             this.Controls.Add(this.pcbAboutMe);
+            this.Controls.Add(this.lblAboutMe);
             this.Controls.Add(this.lblAboutMeCount);
             this.Controls.Add(this.guna2PictureBox1);
             this.Name = "frmProfileEdit";
@@ -721,5 +737,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnEditEmail;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditAddress;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditAboutMe;
+        private System.Windows.Forms.Label lblAboutMe;
     }
 }

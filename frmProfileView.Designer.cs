@@ -83,11 +83,11 @@
             this.lblAboutMe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(142)))), ((int)(((byte)(149)))));
             this.lblAboutMe.Location = new System.Drawing.Point(63, 254);
             this.lblAboutMe.Name = "lblAboutMe";
-            this.lblAboutMe.Size = new System.Drawing.Size(283, 52);
+            this.lblAboutMe.Size = new System.Drawing.Size(247, 52);
             this.lblAboutMe.TabIndex = 15;
-            this.lblAboutMe.Text = "1234567890123456789012345678901234567890123456\r\n123456789012345678901234567890123" +
-    "4567890123456\r\n1234567890123456789012345678901234567890123456\r\n12345678901234567" +
-    "89012345678901234567890123456";
+            this.lblAboutMe.Text = "1234567890123456789012345678901234567890\r\n123456789012345678901234567890123456789" +
+    "0\r\n1234567890123456789012345678901234567890\r\n12345678901234567890123456789012345" +
+    "67890";
             // 
             // lblEmail
             // 
@@ -116,12 +116,12 @@
             this.btnEditProfile.BackColor = System.Drawing.Color.Transparent;
             this.btnEditProfile.CheckedState.Parent = this.btnEditProfile;
             this.btnEditProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditProfile.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.btnEditProfile.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditProfile.HoverState.Image")));
             this.btnEditProfile.HoverState.Parent = this.btnEditProfile;
             this.btnEditProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnEditProfile.Image")));
             this.btnEditProfile.Location = new System.Drawing.Point(367, 21);
             this.btnEditProfile.Name = "btnEditProfile";
-            this.btnEditProfile.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.btnEditProfile.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditProfile.PressedState.Image")));
             this.btnEditProfile.PressedState.Parent = this.btnEditProfile;
             this.btnEditProfile.Size = new System.Drawing.Size(20, 20);
             this.btnEditProfile.TabIndex = 16;
@@ -133,14 +133,14 @@
             this.btnLogout.BackColor = System.Drawing.Color.Transparent;
             this.btnLogout.CheckedState.Parent = this.btnLogout;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
+            this.btnLogout.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.HoverState.Image")));
             this.btnLogout.HoverState.ImageSize = new System.Drawing.Size(66, 23);
             this.btnLogout.HoverState.Parent = this.btnLogout;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageSize = new System.Drawing.Size(66, 23);
             this.btnLogout.Location = new System.Drawing.Point(169, 468);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
+            this.btnLogout.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.PressedState.Image")));
             this.btnLogout.PressedState.ImageSize = new System.Drawing.Size(66, 23);
             this.btnLogout.PressedState.Parent = this.btnLogout;
             this.btnLogout.Size = new System.Drawing.Size(66, 23);

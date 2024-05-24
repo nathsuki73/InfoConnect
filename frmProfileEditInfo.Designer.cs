@@ -65,7 +65,6 @@
             this.txtNewInfo.HoverState.Parent = this.txtNewInfo;
             this.txtNewInfo.Location = new System.Drawing.Point(11, 39);
             this.txtNewInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNewInfo.MaxLength = 500;
             this.txtNewInfo.Name = "txtNewInfo";
             this.txtNewInfo.PasswordChar = '\0';
             this.txtNewInfo.PlaceholderText = "";
@@ -124,7 +123,6 @@
             this.txtDate.HoverState.Parent = this.txtDate;
             this.txtDate.Location = new System.Drawing.Point(13, 39);
             this.txtDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtDate.MaxLength = 10;
             this.txtDate.Name = "txtDate";
             this.txtDate.PasswordChar = '\0';
             this.txtDate.PlaceholderText = "YYYY-MM-DD";
@@ -152,6 +150,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProfileEditInfo";
             this.Deactivate += new System.EventHandler(this.frmProfileEditInfo_Deactivate);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProfileEditInfo_FormClosing);
             this.Load += new System.EventHandler(this.frmProfileEditInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbContainer)).EndInit();
             this.ResumeLayout(false);

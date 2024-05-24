@@ -19,7 +19,16 @@ namespace InfoConnect
         string fontFilePathGio = "C:\\Users\\gioan\\OneDrive\\Pictures\\InfoConnect\\share-tech-mono\\ShareTechMono-Regular.ttf";
         PrivateFontCollection privateFont = new PrivateFontCollection();
 
-        public frmProfileEditInfo(Size newFormSize, Image newImageContainer, string id)
+        frmProfileEdit frmProfileEdit;
+
+        public string ReturnValue { get; private set; }
+        public void SetReturnValue(string value)
+        {
+            ReturnValue = value;
+        }
+
+        string id;
+        public frmProfileEditInfo(Size newFormSize, Image newImageContainer, string id, frmProfileEdit newProfileEdit)
         {
             InitializeComponent();
             //1366,768
@@ -29,9 +38,10 @@ namespace InfoConnect
             int formHeight = newFormSize.Height + 37;
             this.Size = new Size(formWidth, formHeight); // set the size of the form based on the picture
             pcbContainer.Image = newImageContainer;
-
             txtDate.Visible = false;
 
+            frmProfileEdit = newProfileEdit;
+            this.id = id;
             //Change form title
             this.Text = "New " + id;
 
@@ -119,6 +129,8 @@ namespace InfoConnect
 
         }
 
+        
+
         private void frmProfileEditInfo_Load(object sender, EventArgs e)
         {
 
@@ -126,13 +138,50 @@ namespace InfoConnect
 
         private void frmProfileEditInfo_Deactivate(object sender, EventArgs e)
         {
-            this.Close();//Close form when focus is gone
 
+            this.Close();//Close form when focus is gone
         }
 
         private void txtNewInfo_TextChanged(object sender, EventArgs e)
         {
             lbltextCount.Text = $"{txtNewInfo.Text.Length}/184";
         }
+
+        private void frmProfileEditInfo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (id == "Sex" || id == "Account Type")
+            {
+                if (cmbBox.Text != "")
+                {
+                    SetReturnValue(cmbBox.Text);
+                }
+            }
+            else if (id == "Birth Date" && txtDate.Text != "")
+            {
+                SetReturnValue(txtDate.Text);
+            }
+            else if (txtNewInfo.Text != "")
+            {
+                SetReturnValue(txtNewInfo.Text);
+            }
+
+        }
+
+
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
+            // Check if the key pressed is Enter.
+            if (keyData == Keys.Enter)
+            {
+                // Close the dialog.
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+                return true; // Indicate that the key press has been handled.
+            }
+
+            return base.ProcessDialogKey(keyData);
+        }
+
+
     }
 }
