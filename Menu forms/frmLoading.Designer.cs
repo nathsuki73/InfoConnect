@@ -1,6 +1,6 @@
-﻿namespace InfoConnect
+﻿namespace InfoConnect.Menu_forms
 {
-    partial class frmDashboard
+    partial class frmLoading
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.SuspendLayout();
             // 
-            // frmDashboard
+            // frmLoading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(39)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1060, 654);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmDashboard";
-            this.Text = "frmDashboard";
+            this.Name = "frmLoading";
+            this.Text = "frmLoading";
             this.ResumeLayout(false);
 
         }

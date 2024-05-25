@@ -14,10 +14,13 @@ namespace InfoConnect
     public partial class frmMain : Form
     {
         object[] profileDetails;
+
+
         public frmMain(object[] profileDetails)
         {
             InitializeComponent();
             this.profileDetails = profileDetails;
+
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -35,6 +38,7 @@ namespace InfoConnect
 
             // Change the current form
             loadform(new frmDashboard());
+            
         }
 
         private void btnStatistics_CheckedChanged(object sender, EventArgs e)
@@ -80,6 +84,7 @@ namespace InfoConnect
 
             // Change the current form
             loadform(new frmSection());
+
         }
 
         private void btnInformationBoard_CheckedChanged(object sender, EventArgs e)

@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSection));
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.ucAccountDisplay1 = new InfoConnect.ucAccountDisplay();
             this.SuspendLayout();
             // 
-            // guna2PictureBox1
+            // ucAccountDisplay1
             // 
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1060, 654);
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
+            this.ucAccountDisplay1.BackColor = System.Drawing.Color.Transparent;
+            this.ucAccountDisplay1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucAccountDisplay1.BackgroundImage")));
+            this.ucAccountDisplay1.Location = new System.Drawing.Point(31, 63);
+            this.ucAccountDisplay1.Name = "ucAccountDisplay1";
+            this.ucAccountDisplay1.Size = new System.Drawing.Size(1006, 72);
+            this.ucAccountDisplay1.TabIndex = 0;
+            this.ucAccountDisplay1.TextFirstName = "Tangena";
             // 
             // frmSection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(39)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1060, 654);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.ucAccountDisplay1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSection";
             this.Text = "frmSection";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.frmSection_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+
+        private ucAccountDisplay ucAccountDisplay1;
     }
 }
