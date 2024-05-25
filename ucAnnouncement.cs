@@ -115,7 +115,8 @@ namespace InfoConnect
                     {
                         if (reader.Read())
                         {
-                            Console.WriteLine(reader["announcement_title"].ToString());
+                            frmannouncementDetails announcementdetails = new frmannouncementDetails(id);
+                            announcementdetails.ShowDialog();
                         }
                         else
                         {
