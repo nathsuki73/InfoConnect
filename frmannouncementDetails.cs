@@ -25,6 +25,7 @@ namespace InfoConnect
         {
             InitializeComponent();
             id = announcementId;
+            this.accountType = accountType;
 
         }
 
@@ -169,9 +170,6 @@ namespace InfoConnect
 
         }
 
-        private void frmannouncementDetails_Deactivate(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+      
     }
 }

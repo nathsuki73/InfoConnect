@@ -133,7 +133,6 @@
             this.Name = "frmannouncementDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmannouncementDetails";
-            this.Deactivate += new System.EventHandler(this.frmannouncementDetails_Deactivate);
             this.Load += new System.EventHandler(this.frmannouncementDetails_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
