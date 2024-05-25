@@ -73,6 +73,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Error Forms\birthdateError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error Forms\birthdateError.Designer.cs">
+      <DependentUpon>birthdateError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Error Forms\digitSymbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error Forms\digitSymbol.Designer.cs">
+      <DependentUpon>digitSymbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Error Forms\DropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error Forms\DropDown.Designer.cs">
+      <DependentUpon>DropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Error Forms\emailError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error Forms\emailError.Designer.cs">
+      <DependentUpon>emailError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Error Forms\emptyName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error Forms\emptyName.Designer.cs">
+      <DependentUpon>emptyName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Error Forms\emptyPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error Forms\emptyPassword.Designer.cs">
+      <DependentUpon>emptyPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Error Forms\PasswordMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error Forms\PasswordMatch.Designer.cs">
+      <DependentUpon>PasswordMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Error Forms\selectBirthday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error Forms\selectBirthday.Designer.cs">
+      <DependentUpon>selectBirthday.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProfileEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +144,18 @@
     </Compile>
     <Compile Include="frmSettings.Designer.cs">
       <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info Forms\accountCreated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info Forms\accountCreated.Designer.cs">
+      <DependentUpon>accountCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info Forms\loggedIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info Forms\loggedIn.Designer.cs">
+      <DependentUpon>loggedIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu forms\frmAboutUs.cs">
       <SubType>Form</SubType>
@@ -201,6 +261,30 @@
     <Compile Include="ucStudent.Designer.cs">
       <DependentUpon>ucStudent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Error Forms\birthdateError.resx">
+      <DependentUpon>birthdateError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error Forms\digitSymbol.resx">
+      <DependentUpon>digitSymbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error Forms\DropDown.resx">
+      <DependentUpon>DropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error Forms\emailError.resx">
+      <DependentUpon>emailError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error Forms\emptyName.resx">
+      <DependentUpon>emptyName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error Forms\emptyPassword.resx">
+      <DependentUpon>emptyPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error Forms\PasswordMatch.resx">
+      <DependentUpon>PasswordMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error Forms\selectBirthday.resx">
+      <DependentUpon>selectBirthday.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmProfileEdit.resx">
       <DependentUpon>frmProfileEdit.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +296,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info Forms\accountCreated.resx">
+      <DependentUpon>accountCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info Forms\loggedIn.resx">
+      <DependentUpon>loggedIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu forms\frmAboutUs.resx">
       <DependentUpon>frmAboutUs.cs</DependentUpon>

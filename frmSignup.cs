@@ -11,6 +11,9 @@ using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Xml.Linq;
+using InfoConnect.Error_Forms;
+using System.Globalization;
+using InfoConnect.Info_Forms;
 
 namespace InfoConnect
 {
@@ -140,70 +143,72 @@ namespace InfoConnect
             string firstname = firstName.Trim();
             string middlename = middleName.Trim();
             string lastname = lastName.Trim();
+            string passWord = password.Trim();
 
             if (string.IsNullOrWhiteSpace(firstName)
                 || string.IsNullOrWhiteSpace(middleName)
                 || string.IsNullOrWhiteSpace(lastName))
             {
-                MessageBox.Show("Name cannot be null or empty.");
+                emptyName emptyNameError = new emptyName();
+                emptyNameError.ShowDialog();
                 return false;
             }
 
-            if (firstname.Any(char.IsDigit) || middlename.Any(char.IsDigit) || lastname.Any(char.IsDigit))
+            if (firstname.Any(char.IsDigit) || firstname.Any(char.IsSymbol)
+                 || middlename.Any(char.IsDigit) || middlename.Any(char.IsSymbol)
+                 || lastname.Any(char.IsDigit) || lastname.Any(char.IsSymbol))
             {
-                MessageBox.Show("Name cannot contain a digit");
+                digitSymbol digitSymbolError = new digitSymbol();
+                digitSymbolError.ShowDialog();
                 return false;
             }
 
-            if (firstname.Any(char.IsSymbol) || middlename.Any(char.IsSymbol) || lastname.Any(char.IsSymbol))
+            if (accountType == "Account Type" || section == "Section" || sex == "Sex")
             {
-                MessageBox.Show("Name cannot contain any symbol");
+                DropDown dropDownItemsError = new DropDown();
+                dropDownItemsError.ShowDialog();
                 return false;
             }
 
-            if (accountType == "Account Type")
+            if (!email.EndsWith("@lspu.edu.ph", StringComparison.Ordinal))
             {
-                MessageBox.Show("Please choose your account type.");
-                return false;
-            }
-
-            if (section == "Section")
-            {
-                MessageBox.Show("Please choose your section.");
-                return false;
-            }
-
-            if (sex == "Sex")
-            {
-                MessageBox.Show("Please choose your gender.");
-                
+                emailError emailerror = new emailError();
+                emailerror.ShowDialog();
                 return false;
             }
 
             if (day != "Day" && month != 0 && year != "Year")
             {
-                dateBirth = new DateTime(int.Parse(year), month, int.Parse(day));
+                try
+                {
+                    dateBirth = new DateTime(int.Parse(year), month, int.Parse(day));
+                }
+                catch (FormatException)
+                {
+                    birthdateError birthdateerror = new birthdateError();
+                    birthdateerror.ShowDialog();
+                    return false;
+                }
             }
             else
             {
-                MessageBox.Show("Please choose your birthday.");
+                selectBirthday birthdayError = new selectBirthday();
+                birthdayError.ShowDialog();
                 return false;
             }
 
-            if (string.IsNullOrWhiteSpace(password)
-                || string.IsNullOrWhiteSpace(confirmPassword)
-                || string.IsNullOrWhiteSpace(lastName))
+            if (string.IsNullOrWhiteSpace(passWord))
             {
-                MessageBox.Show("Password cannot be null or empty.");
+                emptyPassword emptyPass = new emptyPassword();
+                emptyPass.ShowDialog();
                 return false;
             }
-
             if (password != confirmPassword)
             {
-                MessageBox.Show("Password don't match.");
+                PasswordMatch wrongPassword = new PasswordMatch();
+                wrongPassword.ShowDialog();
                 return false;
             }
-
 
             return true;
         }
@@ -302,7 +307,8 @@ namespace InfoConnect
             commandInsertUser.ExecuteNonQuery();
             commandInsertUserProfile.ExecuteNonQuery();
             databaseConnection.Close();
-            MessageBox.Show("Account Successfully created.");
+            accountCreated createSuccessfully = new accountCreated();
+            createSuccessfully.ShowDialog();
             this.Close();
             
         }

@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using InfoConnect.Info_Forms;
 
 namespace InfoConnect
 {
@@ -85,7 +86,8 @@ namespace InfoConnect
                             
                             // Pass the userId (or any other data you retrieved) to the frmMain constructor and show the form
                             frmMain frmMain = new frmMain(profileDetails);
-                            
+                            loggedIn loggedInSuccessfully = new loggedIn();
+                            loggedInSuccessfully.ShowDialog();
                             frmMain.Show();
                         }
                         else
