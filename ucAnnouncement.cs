@@ -48,17 +48,27 @@ namespace InfoConnect
             AddVisualFont();
         }
 
-        private void ucAnnouncement_MouseHover(object sender, EventArgs e)
+        private void ControlHover()
         {
             this.BackgroundImage = Properties.Resources.announcementHover;
             lblhehe.ForeColor = Color.White;
         }
 
-        private void ucAnnouncement_MouseLeave(object sender, EventArgs e)
+        private void ControlLeave()
         {
             this.BackgroundImage = Properties.Resources.announcement;
             lblhehe.ForeColor = Color.Black;
         }
+        private void ucAnnouncement_MouseHover(object sender, EventArgs e)
+        {
+            ControlHover();
+        }
+
+        private void ucAnnouncement_MouseLeave(object sender, EventArgs e)
+        {
+            ControlLeave();
+        }
+
 
         private void AddVisualFont()
         {
@@ -88,7 +98,7 @@ namespace InfoConnect
 
         }
 
-        private void ucAnnouncement_Click(object sender, EventArgs e)
+        private void openAnnouncementDetails()
         {
             string query = @"SELECT *
                          FROM announcements
@@ -118,6 +128,67 @@ namespace InfoConnect
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
+        }
+        private void ucAnnouncement_Click(object sender, EventArgs e)
+        {
+            openAnnouncementDetails();
+        }
+
+        private void lblhehe_Click(object sender, EventArgs e)
+        {
+            openAnnouncementDetails();
+        }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+            openAnnouncementDetails();
+
+        }
+
+        private void lblTime_Click(object sender, EventArgs e)
+        {
+            openAnnouncementDetails();
+
+        }
+
+        private void lblhehe_MouseHover(object sender, EventArgs e)
+        {
+            ControlHover();
+        }
+
+        private void lblAnnouncementTitle_MouseHover(object sender, EventArgs e)
+        {
+            ControlHover();
+        }
+
+        private void lblTime_MouseHover(object sender, EventArgs e)
+        {
+            ControlHover();
+        }
+
+        private void lblDate_MouseHover(object sender, EventArgs e)
+        {
+            ControlHover();
+        }
+
+        private void lblAnnouncementTitle_MouseLeave(object sender, EventArgs e)
+        {
+            ControlLeave();
+        }
+
+        private void lblhehe_MouseLeave(object sender, EventArgs e)
+        {
+            ControlLeave();
+        }
+
+        private void lblTime_MouseLeave(object sender, EventArgs e)
+        {
+            ControlLeave();
+        }
+
+        private void lblDate_MouseLeave(object sender, EventArgs e)
+        {
+            ControlLeave();
         }
     }
 }

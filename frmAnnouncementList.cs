@@ -43,7 +43,7 @@ namespace InfoConnect
                     using (MySqlDataReader reader = command.ExecuteReader())
                     {
                         int newPoint = 0;
-                        Point location = new Point(0, newPoint);
+                        Point location = new Point(10, newPoint);
                         while (reader.Read())
                         {
                             int id = (int)reader["announcement_id"];
@@ -57,7 +57,7 @@ namespace InfoConnect
                             ucAnnouncementOne.Location = location;
                             this.Controls.Add(ucAnnouncementOne);
                             newPoint = newPoint + 85;
-                            location = new Point(0, newPoint);
+                            location = new Point(10, newPoint);
                         }
                     }
                 }

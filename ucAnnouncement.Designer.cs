@@ -44,6 +44,9 @@
             this.lblAnnouncementTitle.Size = new System.Drawing.Size(35, 13);
             this.lblAnnouncementTitle.TabIndex = 0;
             this.lblAnnouncementTitle.Text = "label1";
+            this.lblAnnouncementTitle.Click += new System.EventHandler(this.lblDate_Click);
+            this.lblAnnouncementTitle.MouseLeave += new System.EventHandler(this.lblAnnouncementTitle_MouseLeave);
+            this.lblAnnouncementTitle.MouseHover += new System.EventHandler(this.lblAnnouncementTitle_MouseHover);
             // 
             // lblhehe
             // 
@@ -53,6 +56,9 @@
             this.lblhehe.Size = new System.Drawing.Size(292, 13);
             this.lblhehe.TabIndex = 0;
             this.lblhehe.Text = "Click Here To View More Details About This  Announcement";
+            this.lblhehe.Click += new System.EventHandler(this.lblhehe_Click);
+            this.lblhehe.MouseLeave += new System.EventHandler(this.lblhehe_MouseLeave);
+            this.lblhehe.MouseHover += new System.EventHandler(this.lblhehe_MouseHover);
             // 
             // lblTime
             // 
@@ -64,6 +70,9 @@
             this.lblTime.TabIndex = 0;
             this.lblTime.Text = "Time: 00:00";
             this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTime.Click += new System.EventHandler(this.lblTime_Click);
+            this.lblTime.MouseLeave += new System.EventHandler(this.lblTime_MouseLeave);
+            this.lblTime.MouseHover += new System.EventHandler(this.lblTime_MouseHover);
             // 
             // lblDate
             // 
@@ -75,6 +84,9 @@
             this.lblDate.TabIndex = 0;
             this.lblDate.Text = "Date:";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDate.Click += new System.EventHandler(this.lblDate_Click);
+            this.lblDate.MouseLeave += new System.EventHandler(this.lblDate_MouseLeave);
+            this.lblDate.MouseHover += new System.EventHandler(this.lblDate_MouseHover);
             // 
             // ucAnnouncement
             // 
@@ -86,6 +98,7 @@
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.lblAnnouncementTitle);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "ucAnnouncement";
             this.Size = new System.Drawing.Size(1006, 72);
             this.Click += new System.EventHandler(this.ucAnnouncement_Click);
