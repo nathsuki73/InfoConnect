@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Security.Principal;
@@ -72,10 +73,56 @@ namespace InfoConnect.Menu_forms
             }
         }
 
+        private Dictionary<int, string> GetArrayOfStudents()
+        {
+
+            // Initialize the dictionary to hold student data
+            Dictionary<int, string> students = new Dictionary<int, string>();
+
+            // Define the query
+            string query = @"SELECT user_profile_id, user_first_name, user_middle_name, user_last_name
+                         FROM users_profile
+                         WHERE user_account_type = 'Student' AND user_section = @section";
+
+
+            // Create and open a connection to the database
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@section", section);
+
+                try
+                {
+                    connection.Open();
+
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string fullName = $"{reader["user_first_name"]} {reader["user_middle_name"]} {reader["user_last_name"]}";
+                            int id = (int)reader["user_profile_id"];
+                            students.Add(id, fullName);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred while fetching student data: " + ex.Message);
+                }
+            }
+
+            return students;
+        }
 
         private void frmSection_Load(object sender, EventArgs e)
         {
-            
+            Dictionary<int, string> students = GetArrayOfStudents();
+            frmStudents formStudents = new frmStudents(students);
+            formStudents.TopLevel = false;
+            formStudents.Dock = DockStyle.Fill;
+            this.frmPanel.Controls.Add(formStudents);
+            this.frmPanel.Tag = formStudents;
+            formStudents.Show();
         }
     }
 }
