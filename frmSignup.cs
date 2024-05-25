@@ -241,7 +241,7 @@ namespace InfoConnect
                     commandCheckEmail.Parameters.AddWithValue("@Section", section);
 
                     int account = Convert.ToInt32(commandCheckEmail.ExecuteScalar());
-                    if (account > 0)
+                    if (account > 0 && accountType == "Teacher")
                     {
                         MessageBox.Show("There is already assigned teacher in this section.");
                         return true;
