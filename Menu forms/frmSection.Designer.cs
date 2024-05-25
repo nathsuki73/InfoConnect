@@ -30,17 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSection));
             this.ucAccountDisplay1 = new InfoConnect.ucAccountDisplay();
+            this.frmPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // ucAccountDisplay1
             // 
             this.ucAccountDisplay1.BackColor = System.Drawing.Color.Transparent;
             this.ucAccountDisplay1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucAccountDisplay1.BackgroundImage")));
-            this.ucAccountDisplay1.Location = new System.Drawing.Point(31, 63);
+            this.ucAccountDisplay1.Location = new System.Drawing.Point(27, 20);
             this.ucAccountDisplay1.Name = "ucAccountDisplay1";
             this.ucAccountDisplay1.Size = new System.Drawing.Size(1006, 72);
             this.ucAccountDisplay1.TabIndex = 0;
-            this.ucAccountDisplay1.TextFirstName = "Tangena";
+            this.ucAccountDisplay1.TextAccountType = "Adviser";
+            this.ucAccountDisplay1.TextFirstName = "Name here";
+            // 
+            // frmPanel
+            // 
+            this.frmPanel.Location = new System.Drawing.Point(27, 154);
+            this.frmPanel.Name = "frmPanel";
+            this.frmPanel.Size = new System.Drawing.Size(1006, 459);
+            this.frmPanel.TabIndex = 1;
             // 
             // frmSection
             // 
@@ -49,6 +58,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(39)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1060, 654);
+            this.Controls.Add(this.frmPanel);
             this.Controls.Add(this.ucAccountDisplay1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSection";
@@ -61,5 +71,6 @@
         #endregion
 
         private ucAccountDisplay ucAccountDisplay1;
+        private System.Windows.Forms.Panel frmPanel;
     }
 }

@@ -31,6 +31,7 @@ namespace InfoConnect
         {
             InitializeComponent();
             AddVisualFont();
+            lblAccountType.ForeColor = System.Drawing.ColorTranslator.FromHtml("#06A1FF");
         }
 
         private void ucAccountDisplay_Load(object sender, EventArgs e)
@@ -61,7 +62,9 @@ namespace InfoConnect
 
             // Create a new font using the private font collection
             lblName.Font = new Font(privateFont.Families[0], 11, FontStyle.Regular);
-            lblAccountType.Font = new Font(privateFont.Families[0], 11, FontStyle.Regular);
+            lblAccountType.Font = new Font(privateFont.Families[0], 12, FontStyle.Regular);
+
+
 
         }
     }

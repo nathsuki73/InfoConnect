@@ -169,6 +169,12 @@
     <Compile Include="Menu forms\frmStatistics.Designer.cs">
       <DependentUpon>frmStatistics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu forms\frmStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu forms\frmStudents.Designer.cs">
+      <DependentUpon>frmStudents.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ucAccountDisplay.cs">
@@ -188,6 +194,12 @@
     </Compile>
     <Compile Include="ucSignupPageTwo.Designer.cs">
       <DependentUpon>ucSignupPageTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStudent.Designer.cs">
+      <DependentUpon>ucStudent.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmProfileEdit.resx">
       <DependentUpon>frmProfileEdit.cs</DependentUpon>
@@ -237,6 +249,9 @@
     <EmbeddedResource Include="Menu forms\frmStatistics.resx">
       <DependentUpon>frmStatistics.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu forms\frmStudents.resx">
+      <DependentUpon>frmStudents.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -255,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucSignupPageTwo.resx">
       <DependentUpon>ucSignupPageTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStudent.resx">
+      <DependentUpon>ucStudent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
