@@ -125,5 +125,10 @@ namespace InfoConnect
             frmProfileView Profile = new frmProfileView(this, Convert.ToInt32(profileDetails[0]));
             Profile.Show();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+        }
     }
 }

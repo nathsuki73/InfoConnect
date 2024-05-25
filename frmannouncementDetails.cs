@@ -20,14 +20,24 @@ namespace InfoConnect
         PrivateFontCollection privateFont = new PrivateFontCollection();
 
         int id;
-        public frmannouncementDetails(int announcementId)
+        string accountType;
+        public frmannouncementDetails(int announcementId, string accountType)
         {
             InitializeComponent();
             id = announcementId;
+
         }
 
         private void frmannouncementDetails_Load(object sender, EventArgs e)
         {
+            if (accountType == "Teacher")
+            {
+                btnDelete.Visible = true;
+            }
+            else
+            {
+                btnDelete.Visible = false;
+            }
             // Define the query
             string query = @"SELECT *
                          FROM announcements
@@ -51,7 +61,7 @@ namespace InfoConnect
                             int id = (int)reader["announcement_id"];
                             lblTitle.Text = reader["announcement_title"].ToString();
                             string content = reader["announcement_content"].ToString();
-                            lblDescription.Text = InsertNewlines(content, 50);
+                            lblDescription.Text = InsertNewlines(content, 100);
                             lblCreatedBy.Text = $"Created By: {reader["announcement_CreatedBy"].ToString()}";
                             DateTime date = (DateTime)reader["announcement_dateTime"];
                             lblTime.Text = $"{date.ToString("yyyy-MM-dd")}"; 
@@ -112,6 +122,56 @@ namespace InfoConnect
             lblTime.Font = new Font(privateFont.Families[0], 11, FontStyle.Regular);
             lblCreatedBy.Font = new Font(privateFont.Families[0], 11, FontStyle.Regular);
 
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            // Ask for confirmation before deleting
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this announcement?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                string deleteQuery = @"DELETE FROM announcements WHERE announcement_id = @Id";
+
+                // Create and open a connection to the database
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    MySqlCommand command = new MySqlCommand(deleteQuery, connection);
+                    command.Parameters.AddWithValue("@Id", id);
+
+                    try
+                    {
+                        connection.Open();
+                        int rowsAffected = command.ExecuteNonQuery(); // ExecuteNonQuery is used for delete, update, insert commands
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Announcement deleted successfully.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No announcement found with the provided ID.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred while deleting the announcement: " + ex.Message);
+                    }
+
+                    AddVisualFont(); // Assuming this method updates the UI or performs some other necessary action
+                }
+            }
+            else
+            {
+                MessageBox.Show("Delete operation cancelled.");
+            }
+
+
+        }
+
+        private void frmannouncementDetails_Deactivate(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

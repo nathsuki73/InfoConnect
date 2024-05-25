@@ -41,10 +41,13 @@ namespace InfoConnect
         }
 
         int id;
-        public ucAnnouncement(int announcementId)
+        string section;
+        string accountType;
+        public ucAnnouncement(int announcementId, string accountType)
         {
             InitializeComponent();
             id = announcementId;
+            this.accountType = accountType;
             AddVisualFont();
         }
 
@@ -115,8 +118,8 @@ namespace InfoConnect
                     {
                         if (reader.Read())
                         {
-                            frmannouncementDetails announcementdetails = new frmannouncementDetails(id);
-                            announcementdetails.ShowDialog();
+                            frmannouncementDetails announcementdetails = new frmannouncementDetails(id, accountType);
+                            announcementdetails.Show();
                         }
                         else
                         {

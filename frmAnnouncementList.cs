@@ -16,10 +16,13 @@ namespace InfoConnect
     {
         string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
         string section;
-        public frmAnnouncementList(string section)
+        string accountType;
+        public frmAnnouncementList(string section, string accountType)
         {
             InitializeComponent();
             this.section = section;
+            this.accountType = accountType;
+
         }
 
         private void frmAnnouncementList_Load(object sender, EventArgs e)
@@ -50,7 +53,7 @@ namespace InfoConnect
                             string title = reader["announcement_title"].ToString();
                             DateTime date = (DateTime)reader["announcement_dateTime"];
 
-                            ucAnnouncement ucAnnouncementOne = new ucAnnouncement(id);
+                            ucAnnouncement ucAnnouncementOne = new ucAnnouncement(id, accountType);
                             ucAnnouncementOne.TextAnnouncementTitle = title;
                             ucAnnouncementOne.TextDate = date.ToString("yyyy-MM-dd");
                             ucAnnouncementOne.TextTime = date.ToString("HH:mm:ss");

@@ -16,7 +16,7 @@ namespace InfoConnect.Menu_forms
 
         string name;
         string section;
-
+        string accountType;
         
         public frmAnnouncements(object[] profileDetails)
         {
@@ -27,6 +27,7 @@ namespace InfoConnect.Menu_forms
             string lastname = profileDetails[3].ToString();
             name = $"{lastname}, {firstname} {middlename}"; 
             section = profileDetails[5].ToString();
+            accountType = profileDetails[4].ToString();
 
 
         }
@@ -42,12 +43,18 @@ namespace InfoConnect.Menu_forms
             //ShowForm for create announcement
             frmAnnouncement_create announcementCreate = new frmAnnouncement_create(name, section);
             announcementCreate.ShowDialog();
+            loadAnouncements();
         }
 
         private void frmAnnouncements_Load(object sender, EventArgs e)
         {
 
-            frmAnnouncementList formAnnouncements = new frmAnnouncementList(section);
+            loadAnouncements();
+        }
+
+        private void loadAnouncements()
+        {
+            frmAnnouncementList formAnnouncements = new frmAnnouncementList(section, accountType);
             formAnnouncements.TopLevel = false;
             formAnnouncements.Dock = DockStyle.Fill;
             this.frmPanel.Controls.Add(formAnnouncements);

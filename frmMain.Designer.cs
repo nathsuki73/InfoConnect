@@ -44,6 +44,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTopbarTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -314,12 +315,32 @@
             this.guna2PictureBox3.TabIndex = 2;
             this.guna2PictureBox3.TabStop = false;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefresh.CheckedState.Parent = this.btnRefresh;
+            this.btnRefresh.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.HoverState.Image")));
+            this.btnRefresh.HoverState.ImageSize = new System.Drawing.Size(24, 24);
+            this.btnRefresh.HoverState.Parent = this.btnRefresh;
+            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
+            this.btnRefresh.ImageSize = new System.Drawing.Size(24, 24);
+            this.btnRefresh.Location = new System.Drawing.Point(1274, 31);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.PressedState.Image")));
+            this.btnRefresh.PressedState.ImageSize = new System.Drawing.Size(24, 24);
+            this.btnRefresh.PressedState.Parent = this.btnRefresh;
+            this.btnRefresh.Size = new System.Drawing.Size(24, 24);
+            this.btnRefresh.TabIndex = 7;
+            this.btnRefresh.UseTransparentBackground = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnProfile);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pcbTopbarTitle);
@@ -365,5 +386,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox pcbTopbarTitle;
         private Guna.UI2.WinForms.Guna2Panel pnlMain;
         private Guna.UI2.WinForms.Guna2ImageButton btnProfile;
+        private Guna.UI2.WinForms.Guna2ImageButton btnRefresh;
     }
 }

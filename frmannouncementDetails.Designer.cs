@@ -35,6 +35,7 @@
             this.lblCreatedBy = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2ImageButton();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -94,12 +95,32 @@
             this.panel1.Size = new System.Drawing.Size(889, 3);
             this.panel1.TabIndex = 1;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.CheckedState.Parent = this.btnDelete;
+            this.btnDelete.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.HoverState.Image")));
+            this.btnDelete.HoverState.ImageSize = new System.Drawing.Size(25, 28);
+            this.btnDelete.HoverState.Parent = this.btnDelete;
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.ImageSize = new System.Drawing.Size(25, 28);
+            this.btnDelete.Location = new System.Drawing.Point(929, 34);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.PressedState.Image")));
+            this.btnDelete.PressedState.ImageSize = new System.Drawing.Size(25, 28);
+            this.btnDelete.PressedState.Parent = this.btnDelete;
+            this.btnDelete.Size = new System.Drawing.Size(25, 28);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.UseTransparentBackground = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // frmannouncementDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1029, 546);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblCreatedBy);
             this.Controls.Add(this.lblTime);
@@ -112,6 +133,7 @@
             this.Name = "frmannouncementDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmannouncementDetails";
+            this.Deactivate += new System.EventHandler(this.frmannouncementDetails_Deactivate);
             this.Load += new System.EventHandler(this.frmannouncementDetails_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -126,5 +148,6 @@
         private System.Windows.Forms.Label lblCreatedBy;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2ImageButton btnDelete;
     }
 }
