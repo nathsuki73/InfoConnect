@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,15 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Collections.Specialized.BitVector32;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace InfoConnect
 {
     public partial class ucAnnouncement : UserControl
     {
+        string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
+
         PrivateFontCollection privateFont = new PrivateFontCollection();
 
         public string TextAnnouncementTitle
@@ -22,20 +27,37 @@ namespace InfoConnect
             get { return lblAnnouncementTitle.Text; }
             set { lblAnnouncementTitle.Text = value; }
         }
-        public ucAnnouncement()
+
+        public string TextDate
+        {
+            get { return lblDate.Text; }
+            set { lblDate.Text = value; }
+        }
+
+        public string TextTime
+        {
+            get { return lblTime.Text; }
+            set { lblTime.Text = value; }
+        }
+
+        int id;
+        public ucAnnouncement(int announcementId)
         {
             InitializeComponent();
+            id = announcementId;
             AddVisualFont();
         }
 
         private void ucAnnouncement_MouseHover(object sender, EventArgs e)
         {
             this.BackgroundImage = Properties.Resources.announcementHover;
+            lblhehe.ForeColor = Color.White;
         }
 
         private void ucAnnouncement_MouseLeave(object sender, EventArgs e)
         {
             this.BackgroundImage = Properties.Resources.announcement;
+            lblhehe.ForeColor = Color.Black;
         }
 
         private void AddVisualFont()
@@ -64,6 +86,38 @@ namespace InfoConnect
             lblhehe.Font = new Font(privateFont.Families[0], 11, FontStyle.Regular);
 
 
+        }
+
+        private void ucAnnouncement_Click(object sender, EventArgs e)
+        {
+            string query = @"SELECT *
+                         FROM announcements
+                         WHERE announcement_id = @Id";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@Id", id);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            Console.WriteLine(reader["announcement_title"].ToString());
+                        }
+                        else
+                        {
+                            MessageBox.Show("User not found.");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
     }
 }
