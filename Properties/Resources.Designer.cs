@@ -73,6 +73,26 @@ namespace InfoConnect.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap announcement {
+            get {
+                object obj = ResourceManager.GetObject("announcement", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap announcementHover {
+            get {
+                object obj = ResourceManager.GetObject("announcementHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_forgotpass_frmlogin_default {
             get {
                 object obj = ResourceManager.GetObject("btn_forgotpass_frmlogin_default", resourceCulture);

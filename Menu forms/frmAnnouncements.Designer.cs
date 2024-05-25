@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAnnouncements));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.frmPanel = new System.Windows.Forms.Panel();
             this.btnCreateAnnouncement = new Guna.UI2.WinForms.Guna2ImageButton();
             this.SuspendLayout();
             // 
-            // panel1
+            // frmPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(29)))), ((int)(((byte)(42)))));
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1036, 563);
-            this.panel1.TabIndex = 0;
+            this.frmPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(29)))), ((int)(((byte)(42)))));
+            this.frmPanel.Location = new System.Drawing.Point(12, 12);
+            this.frmPanel.Name = "frmPanel";
+            this.frmPanel.Size = new System.Drawing.Size(1036, 563);
+            this.frmPanel.TabIndex = 0;
             // 
             // btnCreateAnnouncement
             // 
@@ -53,7 +53,7 @@
             this.btnCreateAnnouncement.ImageSize = new System.Drawing.Size(207, 53);
             this.btnCreateAnnouncement.Location = new System.Drawing.Point(841, 589);
             this.btnCreateAnnouncement.Name = "btnCreateAnnouncement";
-            this.btnCreateAnnouncement.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.btnCreateAnnouncement.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateAnnouncement.PressedState.Image")));
             this.btnCreateAnnouncement.PressedState.ImageSize = new System.Drawing.Size(207, 53);
             this.btnCreateAnnouncement.PressedState.Parent = this.btnCreateAnnouncement;
             this.btnCreateAnnouncement.Size = new System.Drawing.Size(207, 53);
@@ -69,17 +69,18 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1060, 654);
             this.Controls.Add(this.btnCreateAnnouncement);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.frmPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAnnouncements";
             this.Text = "frmAnnouncements";
+            this.Load += new System.EventHandler(this.frmAnnouncements_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel frmPanel;
         private Guna.UI2.WinForms.Guna2ImageButton btnCreateAnnouncement;
     }
 }

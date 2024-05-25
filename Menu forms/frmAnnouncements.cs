@@ -16,6 +16,8 @@ namespace InfoConnect.Menu_forms
 
         string name;
         string section;
+
+        
         public frmAnnouncements(object[] profileDetails)
         {
             InitializeComponent();
@@ -40,6 +42,17 @@ namespace InfoConnect.Menu_forms
             //ShowForm for create announcement
             frmAnnouncement_create announcementCreate = new frmAnnouncement_create(name, section);
             announcementCreate.ShowDialog();
+        }
+
+        private void frmAnnouncements_Load(object sender, EventArgs e)
+        {
+
+            frmAnnouncementList formAnnouncements = new frmAnnouncementList(section);
+            formAnnouncements.TopLevel = false;
+            formAnnouncements.Dock = DockStyle.Fill;
+            this.frmPanel.Controls.Add(formAnnouncements);
+            this.frmPanel.Tag = formAnnouncements;
+            formAnnouncements.Show();
         }
     }
 }

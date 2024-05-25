@@ -255,6 +255,12 @@
     <Compile Include="ucAccountDisplay.Designer.cs">
       <DependentUpon>ucAccountDisplay.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucAnnouncement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAnnouncement.Designer.cs">
+      <DependentUpon>ucAnnouncement.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucSignupPageOne.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -296,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Error Forms\selectBirthday.resx">
       <DependentUpon>selectBirthday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnnouncementList.resx">
+      <DependentUpon>frmAnnouncementList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAnnouncement_create.resx">
       <DependentUpon>frmAnnouncement_create.cs</DependentUpon>
@@ -369,6 +378,9 @@
     </Compile>
     <EmbeddedResource Include="ucAccountDisplay.resx">
       <DependentUpon>ucAccountDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAnnouncement.resx">
+      <DependentUpon>ucAnnouncement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucSignupPageOne.resx">
       <DependentUpon>ucSignupPageOne.cs</DependentUpon>
@@ -460,6 +472,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ABOUT US DASH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\announcementHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\announcement.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
