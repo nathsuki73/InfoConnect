@@ -74,7 +74,7 @@ namespace InfoConnect
             pcbTopbarTitle.Image = Properties.Resources.topbar_AnnouncementsTitle;
 
             // Change the current form
-            loadform(new frmAnnouncements());
+            loadform(new frmAnnouncements(profileDetails));
         }
 
         private void btnSection_CheckedChanged(object sender, EventArgs e)
