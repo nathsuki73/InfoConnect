@@ -21,10 +21,16 @@ namespace InfoConnect
             get { return lblName.Text; }
             set { lblName.Text = value; }
         }
+
+        public string TextAccountType
+        {
+            get { return lblAccountType.Text; }
+            set { lblAccountType.Text = value; }
+        }
         public ucAccountDisplay()
         {
             InitializeComponent();
-
+            AddVisualFont();
         }
 
         private void ucAccountDisplay_Load(object sender, EventArgs e)

@@ -190,6 +190,14 @@ namespace InfoConnect
                 return false;
             }
 
+            if (string.IsNullOrWhiteSpace(password)
+                || string.IsNullOrWhiteSpace(confirmPassword)
+                || string.IsNullOrWhiteSpace(lastName))
+            {
+                MessageBox.Show("Password cannot be null or empty.");
+                return false;
+            }
+
             if (password != confirmPassword)
             {
                 MessageBox.Show("Password don't match.");
@@ -221,6 +229,28 @@ namespace InfoConnect
             }
         }
 
+        private bool TeacherAlreadyExists()
+        {
+            string checkEmailQuery = "SELECT COUNT(*) FROM users_profile WHERE user_account_type = @AccountType AND user_section = @Section";
+            using (MySqlConnection databaseConnection = new MySqlConnection(connectionString))
+            {
+                databaseConnection.Open();
+                using (MySqlCommand commandCheckEmail = new MySqlCommand(checkEmailQuery, databaseConnection))
+                {
+                    commandCheckEmail.Parameters.AddWithValue("@AccountType", accountType);
+                    commandCheckEmail.Parameters.AddWithValue("@Section", section);
+
+                    int account = Convert.ToInt32(commandCheckEmail.ExecuteScalar());
+                    if (account > 0)
+                    {
+                        MessageBox.Show("There is already assigned teacher in this section.");
+                        return true;
+                    }
+                    return false;
+
+                }
+            }
+        }
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             PopulateDetails();
@@ -231,6 +261,11 @@ namespace InfoConnect
             }
 
             if (EmailAlreadyExist())
+            {
+                return;
+            }
+
+            if (TeacherAlreadyExists())
             {
                 return;
             }

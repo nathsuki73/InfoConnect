@@ -157,12 +157,6 @@
     <Compile Include="Menu forms\frmInformationBoard.Designer.cs">
       <DependentUpon>frmInformationBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu forms\frmLoading.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Menu forms\frmLoading.Designer.cs">
-      <DependentUpon>frmLoading.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu forms\frmSection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,9 +230,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu forms\frmInformationBoard.resx">
       <DependentUpon>frmInformationBoard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu forms\frmLoading.resx">
-      <DependentUpon>frmLoading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu forms\frmSection.resx">
       <DependentUpon>frmSection.cs</DependentUpon>

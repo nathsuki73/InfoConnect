@@ -83,7 +83,7 @@ namespace InfoConnect
             pcbTopbarTitle.Image = Properties.Resources.topbar_SectionTitle;
 
             // Change the current form
-            loadform(new frmSection());
+            loadform(new frmSection(profileDetails));
 
         }
 
