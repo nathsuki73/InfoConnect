@@ -29,17 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAnnouncements));
-            this.frmPanel = new System.Windows.Forms.Panel();
             this.btnCreateAnnouncement = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.frmPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-            // 
-            // frmPanel
-            // 
-            this.frmPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(29)))), ((int)(((byte)(42)))));
-            this.frmPanel.Location = new System.Drawing.Point(12, 12);
-            this.frmPanel.Name = "frmPanel";
-            this.frmPanel.Size = new System.Drawing.Size(1036, 563);
-            this.frmPanel.TabIndex = 0;
             // 
             // btnCreateAnnouncement
             // 
@@ -61,6 +53,14 @@
             this.btnCreateAnnouncement.UseTransparentBackground = true;
             this.btnCreateAnnouncement.Click += new System.EventHandler(this.btnCreateAnnouncement_Click);
             // 
+            // frmPanel
+            // 
+            this.frmPanel.BackColor = System.Drawing.Color.Transparent;
+            this.frmPanel.Location = new System.Drawing.Point(12, 12);
+            this.frmPanel.Name = "frmPanel";
+            this.frmPanel.Size = new System.Drawing.Size(1036, 563);
+            this.frmPanel.TabIndex = 0;
+            // 
             // frmAnnouncements
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -79,8 +79,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel frmPanel;
         private Guna.UI2.WinForms.Guna2ImageButton btnCreateAnnouncement;
+        private System.Windows.Forms.Panel frmPanel;
     }
 }

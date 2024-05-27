@@ -130,7 +130,11 @@ namespace InfoConnect
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            this.Refresh();
+            if (btnAnnouncements.Checked == true)
+            {
+                btnAnnouncements.Checked = false;
+                btnAnnouncements.Checked = true;
+            }
         }
     }
 }

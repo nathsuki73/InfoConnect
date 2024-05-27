@@ -121,22 +121,22 @@
     <Compile Include="Error Forms\selectBirthday.Designer.cs">
       <DependentUpon>selectBirthday.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmannouncementDetails.cs">
+    <Compile Include="Menu forms\Announcements Forms\frmannouncementDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmannouncementDetails.Designer.cs">
+    <Compile Include="Menu forms\Announcements Forms\frmannouncementDetails.Designer.cs">
       <DependentUpon>frmannouncementDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAnnouncementList.cs">
+    <Compile Include="Menu forms\Announcements Forms\frmAnnouncementList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAnnouncementList.Designer.cs">
+    <Compile Include="Menu forms\Announcements Forms\frmAnnouncementList.Designer.cs">
       <DependentUpon>frmAnnouncementList.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAnnouncement_create.cs">
+    <Compile Include="Menu forms\Announcements Forms\frmAnnouncement_create.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAnnouncement_create.Designer.cs">
+    <Compile Include="Menu forms\Announcements Forms\frmAnnouncement_create.Designer.cs">
       <DependentUpon>frmAnnouncement_create.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProfileEdit.cs">
@@ -193,10 +193,10 @@
     <Compile Include="Menu forms\frmAboutUs.Designer.cs">
       <DependentUpon>frmAboutUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu forms\frmAnnouncements.cs">
+    <Compile Include="Menu forms\Announcements Forms\frmAnnouncements.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu forms\frmAnnouncements.Designer.cs">
+    <Compile Include="Menu forms\Announcements Forms\frmAnnouncements.Designer.cs">
       <DependentUpon>frmAnnouncements.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu forms\frmDashboard.cs">
@@ -321,13 +321,13 @@
     <EmbeddedResource Include="Error Forms\selectBirthday.resx">
       <DependentUpon>selectBirthday.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmannouncementDetails.resx">
+    <EmbeddedResource Include="Menu forms\Announcements Forms\frmannouncementDetails.resx">
       <DependentUpon>frmannouncementDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAnnouncementList.resx">
+    <EmbeddedResource Include="Menu forms\Announcements Forms\frmAnnouncementList.resx">
       <DependentUpon>frmAnnouncementList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAnnouncement_create.resx">
+    <EmbeddedResource Include="Menu forms\Announcements Forms\frmAnnouncement_create.resx">
       <DependentUpon>frmAnnouncement_create.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProfileEdit.resx">
@@ -357,7 +357,7 @@
     <EmbeddedResource Include="Menu forms\frmAboutUs.resx">
       <DependentUpon>frmAboutUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu forms\frmAnnouncements.resx">
+    <EmbeddedResource Include="Menu forms\Announcements Forms\frmAnnouncements.resx">
       <DependentUpon>frmAnnouncements.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu forms\frmDashboard.resx">
