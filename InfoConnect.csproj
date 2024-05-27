@@ -121,6 +121,12 @@
     <Compile Include="Error Forms\selectBirthday.Designer.cs">
       <DependentUpon>selectBirthday.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEvents_create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvents_create.Designer.cs">
+      <DependentUpon>frmEvents_create.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu forms\Announcements Forms\frmannouncementDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Error Forms\selectBirthday.resx">
       <DependentUpon>selectBirthday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvents_create.resx">
+      <DependentUpon>frmEvents_create.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu forms\Announcements Forms\frmannouncementDetails.resx">
       <DependentUpon>frmannouncementDetails.cs</DependentUpon>

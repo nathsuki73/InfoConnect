@@ -16,5 +16,7 @@ namespace InfoConnect.Menu_forms
         {
             InitializeComponent();
         }
+
+       
     }
 }
