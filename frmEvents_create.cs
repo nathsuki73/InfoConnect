@@ -25,8 +25,6 @@ namespace InfoConnect
         {
             InitializeComponent();
             AddVisualFont();
-            txtTitleEvent.MaxLength = 60;
-            txtDescriptionEvent.MaxLength = 500;
         }
 
         private void AddVisualFont()
@@ -76,13 +74,20 @@ namespace InfoConnect
 
         private void txtTitleEvent_TextChanged(object sender, EventArgs e)
         {
-            lblTitle.Text = $"{lblTitle.Text.Length}/60";
+            lblTitle.Text = $"{txtTitleEvent.Text.Length}/60";
+            txtTitleEvent.MaxLength = 60;
         }
 
         private void txtDescriptionEvent_TextChanged(object sender, EventArgs e)
         {
-            lblTitle.Text = $"{lblDescription.Text.Length}/500";
+            lblDescription.Text = $"{txtDescriptionEvent.Text.Length}/500";
+            txtDescriptionEvent.MaxLength = 500;
 
+
+        }
+
+        private void frmEvents_create_Load(object sender, EventArgs e)
+        {
         }
     }
 }

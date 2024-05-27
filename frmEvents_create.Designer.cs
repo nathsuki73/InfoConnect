@@ -268,6 +268,7 @@
             this.Controls.Add(this.txtImage);
             this.Name = "frmEvents_create";
             this.Text = "frmEvents_create";
+            this.Load += new System.EventHandler(this.frmEvents_create_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

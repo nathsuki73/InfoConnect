@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mysqlx.Crud;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,10 @@ namespace InfoConnect.Menu_forms
             InitializeComponent();
         }
 
-       
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            frmEvents_create createEvent = new frmEvents_create();
+            createEvent.Show();
+        }
     }
 }
