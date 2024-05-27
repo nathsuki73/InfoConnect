@@ -1,4 +1,6 @@
-﻿using System;
+﻿using InfoConnect.Info_Forms;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +11,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Collections.Specialized.BitVector32;
+using System.Xml.Linq;
 
 namespace InfoConnect
 {
     public partial class frmEvents_create : Form
     {
+        string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
+
 
         // Define the path to the font file
         string fontFilePathNath = "C:\\Users\\Angelo\\Downloads\\share-tech-mono\\ShareTechMono-Regular.ttf";
@@ -88,6 +94,64 @@ namespace InfoConnect
 
         private void frmEvents_create_Load(object sender, EventArgs e)
         {
+        }
+
+        private void btnUploadEvent_Click(object sender, EventArgs e)
+        {
+            if (txtTitleEvent.Text == "")
+            {
+                MessageBox.Show("Title cannot be empty");
+                return;
+            }
+            if (txtDescriptionEvent.Text == "")
+            {
+                MessageBox.Show("Title cannot be empty");
+                return;
+            }
+
+            // Define the query to insert a new announcement into the database.
+            string insertAnnouncementQuery = "INSERT INTO events (event_title, event_description, event_date, event_time, event_img) " +
+                                             "VALUES ( @Title, @Content, @Date ,@Time, @Image)";
+
+            // Use a using statement to ensure the connection is properly closed and disposed of.
+            using (MySqlConnection databaseConnection = new MySqlConnection(connectionString))
+            {
+                    // Open the connection.
+                    databaseConnection.Open();
+
+                    // Create the MySqlCommand object for the query.
+                    MySqlCommand commandInsertAnnouncement = new MySqlCommand(insertAnnouncementQuery, databaseConnection);
+
+                    // Add parameters to the command and assign values to them.
+                    commandInsertAnnouncement.Parameters.AddWithValue("@Title", txtTitleEvent.Text); // Assuming there's a txtTitle textbox for the title
+                    commandInsertAnnouncement.Parameters.AddWithValue("@Content", txtDescriptionEvent.Text);
+                    commandInsertAnnouncement.Parameters.AddWithValue("@Date", txtDate.Text);
+                    commandInsertAnnouncement.Parameters.AddWithValue("@Time", txtTime.Text);
+                    byte[] imageBytes = GetImageBytesFromFile(txtImage.Text);
+
+                    commandInsertAnnouncement.Parameters.AddWithValue("@Image", imageBytes);
+
+
+
+                    // Execute the query.
+                    commandInsertAnnouncement.ExecuteNonQuery();
+               
+            }
+
+            // Show success message and close the form.
+            announcementUpload uploadedAnnouncement = new announcementUpload();
+            MessageBox.Show("You have uploaded succssfully.");
+            this.Close();
+        }
+        private static byte[] GetImageBytesFromFile(string imagePath)
+        {
+            using (FileStream fs = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
+            {
+                using (BinaryReader br = new BinaryReader(fs))
+                {
+                    return br.ReadBytes((int)fs.Length);
+                }
+            }
         }
     }
 }

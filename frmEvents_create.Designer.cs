@@ -248,7 +248,7 @@
             this.btnUploadEvent.TabIndex = 0;
             this.btnUploadEvent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnUploadEvent.UseTransparentBackground = true;
-            this.btnUploadEvent.Click += new System.EventHandler(this.btnImage_Click);
+            this.btnUploadEvent.Click += new System.EventHandler(this.btnUploadEvent_Click);
             // 
             // frmEvents_create
             // 
