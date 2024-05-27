@@ -128,11 +128,12 @@
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmannouncementDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmannouncementDetails";
+            this.Text = "ANNOUNCEMENT DETAILS";
             this.Load += new System.EventHandler(this.frmannouncementDetails_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

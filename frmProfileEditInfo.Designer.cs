@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProfileEditInfo));
             this.pcbContainer = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtNewInfo = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbltextCount = new System.Windows.Forms.Label();
@@ -145,11 +146,12 @@
             this.Controls.Add(this.cmbBox);
             this.Controls.Add(this.pcbContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmProfileEditInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmProfileEditInfo";
+            this.Text = "EDIT INFORMATION";
             this.Deactivate += new System.EventHandler(this.frmProfileEditInfo_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProfileEditInfo_FormClosing);
             this.Load += new System.EventHandler(this.frmProfileEditInfo_Load);

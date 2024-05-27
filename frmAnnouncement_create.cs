@@ -126,8 +126,8 @@ namespace InfoConnect
             }
 
             // Show success message and close the form.
-            accountCreated createSuccessfully = new accountCreated();
-            createSuccessfully.ShowDialog();
+            announcementUpload uploadedAnnouncement = new announcementUpload();
+            uploadedAnnouncement.ShowDialog();
             this.Close();
 
         }

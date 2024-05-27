@@ -1,6 +1,6 @@
-﻿namespace InfoConnect.Error_Forms
+﻿namespace InfoConnect.Info_Forms
 {
-    partial class DropDown
+    partial class teacherPermission
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DropDown));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(teacherPermission));
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.SuspendLayout();
             // 
@@ -43,16 +43,15 @@
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(81, 38);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(83, 91);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(78, 92);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(81, 38);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(95, 47);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(100, 48);
             this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
-            // DropDown
+            // teacherPermission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -63,7 +62,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "DropDown";
+            this.Name = "teacherPermission";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OOPS!";
             this.ResumeLayout(false);

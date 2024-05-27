@@ -10,20 +10,16 @@ using System.Windows.Forms;
 
 namespace InfoConnect.Info_Forms
 {
-    public partial class loggedIn : Form
+    public partial class announcementUpload : Form
     {
-        private frmFrontPage frontpage;
-        
-        public loggedIn()
+        public announcementUpload()
         {
             InitializeComponent();
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-
     }
 }

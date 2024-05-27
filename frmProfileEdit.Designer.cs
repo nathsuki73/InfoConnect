@@ -695,9 +695,13 @@
             this.Controls.Add(this.lblAboutMe);
             this.Controls.Add(this.lblAboutMeCount);
             this.Controls.Add(this.guna2PictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmProfileEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmProfile";
+            this.Text = "PROFILE";
             this.Deactivate += new System.EventHandler(this.frmProfileEdit_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProfile_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmProfileEdit_FormClosed);

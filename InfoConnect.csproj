@@ -169,11 +169,23 @@
     <Compile Include="Info Forms\accountCreated.Designer.cs">
       <DependentUpon>accountCreated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Info Forms\announcementUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info Forms\announcementUpload.Designer.cs">
+      <DependentUpon>announcementUpload.cs</DependentUpon>
+    </Compile>
     <Compile Include="Info Forms\loggedIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Info Forms\loggedIn.Designer.cs">
       <DependentUpon>loggedIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info Forms\teacherPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info Forms\teacherPermission.Designer.cs">
+      <DependentUpon>teacherPermission.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu forms\frmAboutUs.cs">
       <SubType>Form</SubType>
@@ -333,8 +345,14 @@
     <EmbeddedResource Include="Info Forms\accountCreated.resx">
       <DependentUpon>accountCreated.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Info Forms\announcementUpload.resx">
+      <DependentUpon>announcementUpload.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Info Forms\loggedIn.resx">
       <DependentUpon>loggedIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info Forms\teacherPermission.resx">
+      <DependentUpon>teacherPermission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu forms\frmAboutUs.resx">
       <DependentUpon>frmAboutUs.cs</DependentUpon>

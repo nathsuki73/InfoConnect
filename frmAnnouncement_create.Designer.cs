@@ -53,7 +53,6 @@
             this.txtTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTitle.HoverState.Parent = this.txtTitle;
             this.txtTitle.Location = new System.Drawing.Point(79, 166);
-            this.txtTitle.MaxLength = 60;
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.PasswordChar = '\0';
@@ -81,7 +80,6 @@
             this.txtDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDescription.HoverState.Parent = this.txtDescription;
             this.txtDescription.Location = new System.Drawing.Point(79, 334);
-            this.txtDescription.MaxLength = 500;
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.PasswordChar = '\0';
@@ -148,11 +146,12 @@
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAnnouncement_create";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAnnouncement_create";
+            this.Text = "CREATE ANNOUNCEMENT";
             this.Load += new System.EventHandler(this.frmAnnouncement_create_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

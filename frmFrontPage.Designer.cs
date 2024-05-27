@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFrontPage));
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnLogIn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -93,9 +94,13 @@
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.guna2PictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmFrontPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "InfoConnect";
+            this.Text = "INFOCONNECT";
             this.Load += new System.EventHandler(this.frmFrontPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);

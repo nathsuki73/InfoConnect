@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InfoConnect.Info_Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,7 +37,8 @@ namespace InfoConnect.Menu_forms
         {
             if (!(profileDetails[4].ToString() == "Teacher"))
             {
-                MessageBox.Show("You need teacher Permissions to create announcements.");
+                teacherPermission permission = new teacherPermission();
+                permission.ShowDialog();
                 return;
             }
 
@@ -48,7 +50,6 @@ namespace InfoConnect.Menu_forms
 
         private void frmAnnouncements_Load(object sender, EventArgs e)
         {
-
             loadAnouncements();
         }
 

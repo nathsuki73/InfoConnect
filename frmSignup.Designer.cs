@@ -173,9 +173,13 @@
             this.Controls.Add(this.rbtnPageOne);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.pictureBoxSignUp);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSignup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sign Up";
+            this.Text = "SIGN-UP";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSignup_FormClosing);
             this.Load += new System.EventHandler(this.frmSignup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSignUp)).EndInit();

@@ -80,14 +80,14 @@ namespace InfoConnect
                             // Add email and password to the profileDetails array
                             profileDetails[profileReader.FieldCount] = email;
                             profileDetails[profileReader.FieldCount + 1] = password;
-                            // Hide the current forms
+                            // shows the logged in notice and Hides the current forms
+                            loggedIn loggedInSuccessfully = new loggedIn();
+                            loggedInSuccessfully.ShowDialog();
                             this.Hide();
                             this.frmfrontpage.Hide();
                             
                             // Pass the userId (or any other data you retrieved) to the frmMain constructor and show the form
                             frmMain frmMain = new frmMain(profileDetails);
-                            loggedIn loggedInSuccessfully = new loggedIn();
-                            loggedInSuccessfully.ShowDialog();
                             frmMain.Show();
                         }
                         else

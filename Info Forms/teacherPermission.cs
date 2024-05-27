@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace InfoConnect.Info_Forms
 {
-    public partial class loggedIn : Form
+    public partial class teacherPermission : Form
     {
-        private frmFrontPage frontpage;
-        
-        public loggedIn()
+        public teacherPermission()
         {
             InitializeComponent();
         }
-
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-
     }
 }

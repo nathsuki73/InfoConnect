@@ -1,4 +1,5 @@
-﻿using InfoConnect.Menu_forms;
+﻿using InfoConnect.Info_Forms;
+using InfoConnect.Menu_forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,6 @@ namespace InfoConnect
     {
         object[] profileDetails;
 
-
         public frmMain(object[] profileDetails)
         {
             InitializeComponent();
@@ -27,6 +27,8 @@ namespace InfoConnect
         {
             // Select the Dashboard
             btnDashboard.Checked = true;
+            loggedIn login = new loggedIn();
+            login.Hide();
         }
 
 

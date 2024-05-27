@@ -162,11 +162,12 @@
             this.Controls.Add(this.lblFullName);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmProfileView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Profile    ";
+            this.Text = "PREVIEW";
             this.Deactivate += new System.EventHandler(this.frmProfileView_Deactivate);
             this.Load += new System.EventHandler(this.frmProfileView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
