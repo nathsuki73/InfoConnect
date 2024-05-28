@@ -234,14 +234,14 @@
             // 
             this.btnUploadEvent.BackColor = System.Drawing.Color.Transparent;
             this.btnUploadEvent.CheckedState.Parent = this.btnUploadEvent;
-            this.btnUploadEvent.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
+            this.btnUploadEvent.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnUploadEvent.HoverState.Image")));
             this.btnUploadEvent.HoverState.ImageSize = new System.Drawing.Size(148, 53);
             this.btnUploadEvent.HoverState.Parent = this.btnUploadEvent;
             this.btnUploadEvent.Image = ((System.Drawing.Image)(resources.GetObject("btnUploadEvent.Image")));
             this.btnUploadEvent.ImageSize = new System.Drawing.Size(148, 53);
             this.btnUploadEvent.Location = new System.Drawing.Point(427, 537);
             this.btnUploadEvent.Name = "btnUploadEvent";
-            this.btnUploadEvent.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
+            this.btnUploadEvent.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnUploadEvent.PressedState.Image")));
             this.btnUploadEvent.PressedState.ImageSize = new System.Drawing.Size(148, 53);
             this.btnUploadEvent.PressedState.Parent = this.btnUploadEvent;
             this.btnUploadEvent.Size = new System.Drawing.Size(148, 53);
