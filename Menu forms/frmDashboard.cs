@@ -24,13 +24,15 @@ namespace InfoConnect
 
 
         object[] profileDetails;
-        public frmDashboard(object[] profileDetails)
+        frmMain main;
+        public frmDashboard(object[] profileDetails, frmMain main)
         {
             InitializeComponent();
             this.profileDetails = profileDetails;
             AddVisualFont();
             timer1.Start();
             SetAdviserName();
+            this.main = main;
 
         }
 
@@ -192,6 +194,10 @@ namespace InfoConnect
             }
 
             lblGreet.Text = $"Good {greet}!, {profileDetails[1]} \n\tyou currently have:";
+        }
+
+        private void btnOpenAnnouncements_Click(object sender, EventArgs e)
+        {
         }
     }
 }

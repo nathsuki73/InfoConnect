@@ -39,7 +39,7 @@ namespace InfoConnect
             pcbTopbarTitle.Image = Properties.Resources.topbar_DashboardTitle;
 
             // Change the current form
-            loadform(new frmDashboard(profileDetails));
+            loadform(new frmDashboard(profileDetails, this));
             
         }
 
