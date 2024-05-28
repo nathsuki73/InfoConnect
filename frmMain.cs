@@ -135,6 +135,11 @@ namespace InfoConnect
                 btnAnnouncements.Checked = false;
                 btnAnnouncements.Checked = true;
             }
+            if (btnEvents.Checked == true)
+            {
+                btnEvents.Checked = false;
+                btnEvents.Checked = true;
+            }
         }
     }
 }
