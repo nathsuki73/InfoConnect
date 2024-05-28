@@ -39,6 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblRealTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblSection = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,7 +65,8 @@
             // 
             this.lblEventCount.AutoSize = true;
             this.lblEventCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblEventCount.Location = new System.Drawing.Point(134, 195);
+            this.lblEventCount.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblEventCount.Location = new System.Drawing.Point(128, 169);
             this.lblEventCount.Name = "lblEventCount";
             this.lblEventCount.Size = new System.Drawing.Size(35, 13);
             this.lblEventCount.TabIndex = 1;
@@ -74,7 +76,8 @@
             // 
             this.lblAnnouncementCount.AutoSize = true;
             this.lblAnnouncementCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnnouncementCount.Location = new System.Drawing.Point(324, 195);
+            this.lblAnnouncementCount.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAnnouncementCount.Location = new System.Drawing.Point(334, 169);
             this.lblAnnouncementCount.Name = "lblAnnouncementCount";
             this.lblAnnouncementCount.Size = new System.Drawing.Size(35, 13);
             this.lblAnnouncementCount.TabIndex = 1;
@@ -116,7 +119,7 @@
             this.lblRealTime.AutoSize = true;
             this.lblRealTime.BackColor = System.Drawing.Color.Transparent;
             this.lblRealTime.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblRealTime.Location = new System.Drawing.Point(113, 596);
+            this.lblRealTime.Location = new System.Drawing.Point(113, 575);
             this.lblRealTime.Name = "lblRealTime";
             this.lblRealTime.Size = new System.Drawing.Size(35, 13);
             this.lblRealTime.TabIndex = 1;
@@ -125,6 +128,16 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblSection
+            // 
+            this.lblSection.AutoSize = true;
+            this.lblSection.BackColor = System.Drawing.Color.Transparent;
+            this.lblSection.Location = new System.Drawing.Point(698, 38);
+            this.lblSection.Name = "lblSection";
+            this.lblSection.Size = new System.Drawing.Size(35, 13);
+            this.lblSection.TabIndex = 1;
+            this.lblSection.Text = "label1";
             // 
             // frmDashboard
             // 
@@ -136,6 +149,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblRealTime);
             this.Controls.Add(this.lblGreet);
+            this.Controls.Add(this.lblSection);
             this.Controls.Add(this.lblAdviser);
             this.Controls.Add(this.lblAnnouncementCount);
             this.Controls.Add(this.lblEventCount);
@@ -161,5 +175,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblRealTime;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblSection;
     }
 }
