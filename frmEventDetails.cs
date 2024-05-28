@@ -59,6 +59,7 @@ namespace InfoConnect
             lblTitle.Text = selectedEvent.EventTitle;
             lblDescription.Text = selectedEvent.EventDescription;
             pictureBox1.Image = selectedEvent.EventImage;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }

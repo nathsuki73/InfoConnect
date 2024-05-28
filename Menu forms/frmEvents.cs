@@ -26,8 +26,7 @@ namespace InfoConnect.Menu_forms
 
         private void frmEvents_Load(object sender, EventArgs e)
         {
-            ucEventView eventView = new ucEventView();
-            eventView.mainPanel = this.panel1;
+            ucEventView eventView = new ucEventView(this, panel1);
             eventView.Location = new Point(1017, 45);
             this.Controls.Add(eventView);
 

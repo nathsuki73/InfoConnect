@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using InfoConnect.Menu_forms;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -29,10 +30,13 @@ namespace InfoConnect
         string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
         List<EventData> eventsList = new List<EventData>();
 
-        public Panel mainPanel { get; set; }
-        public ucEventView()
+        frmEvents frmEvents;
+        Panel panel;
+        public ucEventView(frmEvents frmevent, Panel panel)
         {
             InitializeComponent();
+            frmEvents = frmevent;
+            this.panel = panel;
         }
 
         private void ucEventView_Load(object sender, EventArgs e)
@@ -100,6 +104,12 @@ namespace InfoConnect
                             imageRadioButton.CheckedState.Image = Properties.Resources.eventButton_checked;
                             imageRadioButton.HoverState.Image = Properties.Resources.eventButton_hover;
                             imageRadioButton.CheckedChanged += RadioButton_CheckedChanged;
+
+                           if (i == 0)
+                            {
+                                imageRadioButton.Checked = true;
+                            }
+
                             this.Controls.Add(imageRadioButton);
                             yPosition += 35;
                             i++;
@@ -112,17 +122,25 @@ namespace InfoConnect
                     MessageBox.Show("An error occurred while fetching student data: " + ex.Message);
                 }
             }
+
+
         }
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            Guna2RadioButton radioButton = sender as Guna2RadioButton;
-            if (radioButton != null && radioButton.Checked)
+            Guna2ImageRadioButton imageRadioButton = sender as Guna2ImageRadioButton;
+
+            if (imageRadioButton != null && imageRadioButton.Checked)
             {
-                int index = (int)radioButton.Tag;
+                int index = (int)imageRadioButton.Tag;
                 EventData selectedEvent = eventsList[index];
                 // Now you can use selectedEvent to display the event details
-
+                frmEventDetails eventDetails = new frmEventDetails(selectedEvent);
+                eventDetails.TopLevel = false;
+                eventDetails.Dock = DockStyle.Fill;
+                panel.Controls.Add(eventDetails);
+                panel.Tag = eventDetails;
+                eventDetails.Show();
             }
 
 
