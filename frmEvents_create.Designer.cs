@@ -266,8 +266,10 @@
             this.Controls.Add(this.btnUploadEvent);
             this.Controls.Add(this.btnImage);
             this.Controls.Add(this.txtImage);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmEvents_create";
-            this.Text = "frmEvents_create";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CREATE EVENT";
             this.Load += new System.EventHandler(this.frmEvents_create_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

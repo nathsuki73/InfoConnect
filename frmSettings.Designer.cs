@@ -33,6 +33,7 @@
             this.btnNotification = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.btnPrivacyAndSecurity = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.btnHelpAndSupport = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,11 +111,32 @@
             this.btnHelpAndSupport.TabIndex = 3;
             this.btnHelpAndSupport.UseTransparentBackground = true;
             // 
+            // guna2RadioButton1
+            // 
+            this.guna2RadioButton1.AutoSize = true;
+            this.guna2RadioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
+            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
+            this.guna2RadioButton1.Location = new System.Drawing.Point(476, 150);
+            this.guna2RadioButton1.Name = "guna2RadioButton1";
+            this.guna2RadioButton1.Size = new System.Drawing.Size(14, 13);
+            this.guna2RadioButton1.TabIndex = 4;
+            this.guna2RadioButton1.TabStop = true;
+            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
+            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton1.UseVisualStyleBackColor = false;
+            // 
             // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 459);
+            this.Controls.Add(this.guna2RadioButton1);
             this.Controls.Add(this.btnHelpAndSupport);
             this.Controls.Add(this.btnPrivacyAndSecurity);
             this.Controls.Add(this.btnNotification);
@@ -130,6 +152,7 @@
             this.Load += new System.EventHandler(this.frmSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -139,5 +162,6 @@
         private Guna.UI2.WinForms.Guna2ImageRadioButton btnNotification;
         private Guna.UI2.WinForms.Guna2ImageRadioButton btnPrivacyAndSecurity;
         private Guna.UI2.WinForms.Guna2ImageRadioButton btnHelpAndSupport;
+        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
     }
 }

@@ -121,11 +121,29 @@
     <Compile Include="Error Forms\selectBirthday.Designer.cs">
       <DependentUpon>selectBirthday.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEventDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventDetails.Designer.cs">
+      <DependentUpon>frmEventDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEvents_create.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEvents_create.Designer.cs">
       <DependentUpon>frmEvents_create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info Forms\emptyTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info Forms\emptyTitle.Designer.cs">
+      <DependentUpon>emptyTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info Forms\eventUploaded.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info Forms\eventUploaded.Designer.cs">
+      <DependentUpon>eventUploaded.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu forms\Announcements Forms\frmannouncementDetails.cs">
       <SubType>Form</SubType>
@@ -285,6 +303,10 @@
     <Compile Include="ucAnnouncement.Designer.cs">
       <DependentUpon>ucAnnouncement.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucEventView.cs" />
+    <Compile Include="ucEventView.Designer.cs">
+      <DependentUpon>ucEventView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucSignupPageOne.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -327,8 +349,17 @@
     <EmbeddedResource Include="Error Forms\selectBirthday.resx">
       <DependentUpon>selectBirthday.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEventDetails.resx">
+      <DependentUpon>frmEventDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEvents_create.resx">
       <DependentUpon>frmEvents_create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info Forms\emptyTitle.resx">
+      <DependentUpon>emptyTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info Forms\eventUploaded.resx">
+      <DependentUpon>eventUploaded.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu forms\Announcements Forms\frmannouncementDetails.resx">
       <DependentUpon>frmannouncementDetails.cs</DependentUpon>
@@ -417,6 +448,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucAnnouncement.resx">
       <DependentUpon>ucAnnouncement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEventView.resx">
+      <DependentUpon>ucEventView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucSignupPageOne.resx">
       <DependentUpon>ucSignupPageOne.cs</DependentUpon>
@@ -514,6 +548,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\announcement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eventButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eventButton hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eventButton checked.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

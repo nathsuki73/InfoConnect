@@ -1,6 +1,6 @@
-﻿namespace InfoConnect.Menu_forms
+﻿namespace InfoConnect.Info_Forms
 {
-    partial class frmEvents
+    partial class emptyTitle
     {
         /// <summary>
         /// Required designer variable.
@@ -28,58 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEvents));
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(emptyTitle));
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(35, 45);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(963, 536);
-            this.panel1.TabIndex = 0;
             // 
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(145, 45);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(145, 45);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(853, 597);
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(81, 38);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(86, 74);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(145, 45);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(145, 45);
-            this.guna2ImageButton1.TabIndex = 1;
+            this.guna2ImageButton1.Size = new System.Drawing.Size(80, 44);
+            this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.UseTransparentBackground = true;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
-            // frmEvents
+            // emptyTitle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(39)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1060, 654);
+            this.ClientSize = new System.Drawing.Size(253, 141);
             this.Controls.Add(this.guna2ImageButton1);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmEvents";
-            this.Text = "frmEvents";
-            this.Load += new System.EventHandler(this.frmEvents_Load);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "emptyTitle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "OOPS!";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }

@@ -98,14 +98,15 @@ namespace InfoConnect
 
         private void btnUploadEvent_Click(object sender, EventArgs e)
         {
+            emptyTitle noTitle = new emptyTitle();
             if (txtTitleEvent.Text == "")
             {
-                MessageBox.Show("Title cannot be empty");
+                noTitle.ShowDialog();
                 return;
             }
             if (txtDescriptionEvent.Text == "")
             {
-                MessageBox.Show("Title cannot be empty");
+                noTitle.ShowDialog();
                 return;
             }
 
@@ -139,8 +140,8 @@ namespace InfoConnect
             }
 
             // Show success message and close the form.
-            announcementUpload uploadedAnnouncement = new announcementUpload();
-            MessageBox.Show("You have uploaded succssfully.");
+            eventUploaded eventuploaded = new eventUploaded();
+            eventuploaded.ShowDialog();
             this.Close();
         }
         private static byte[] GetImageBytesFromFile(string imagePath)

@@ -23,5 +23,14 @@ namespace InfoConnect.Menu_forms
             frmEvents_create createEvent = new frmEvents_create();
             createEvent.Show();
         }
+
+        private void frmEvents_Load(object sender, EventArgs e)
+        {
+            ucEventView eventView = new ucEventView();
+            eventView.mainPanel = this.panel1;
+            eventView.Location = new Point(1017, 45);
+            this.Controls.Add(eventView);
+
+        }
     }
 }
