@@ -344,6 +344,7 @@
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(962, 89);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
@@ -354,6 +355,7 @@
             this.guna2CirclePictureBox1.TabIndex = 13;
             this.guna2CirclePictureBox1.TabStop = false;
             this.guna2CirclePictureBox1.UseTransparentBackground = true;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // pcbAboutMe
             // 

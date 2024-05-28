@@ -12,19 +12,20 @@ using System.Windows.Forms;
 
 namespace InfoConnect
 {
-    public partial class frmEventDetails : Form
+    public partial class frmEventsAdditionalDetails : Form
     {
-
         PrivateFontCollection privateFont = new PrivateFontCollection();
-        EventData selectedEvent;
 
-        public frmEventDetails(EventData selectedEvent)
+        public frmEventsAdditionalDetails(string time, string date)
         {
             InitializeComponent();
+            lblDate.Text = date;
+            lblTime.Text = time;
+        }
+
+        private void frmEventsAdditionalDetails_Load(object sender, EventArgs e)
+        {
             AddVisualFont();
-            this.selectedEvent = selectedEvent;
-
-
         }
 
         public void AddVisualFont()
@@ -49,24 +50,16 @@ namespace InfoConnect
             }
 
             // Create a new font using the private font collection
-            lblTitle.Font = new Font(privateFont.Families[0], 15, FontStyle.Regular);
-            lblDescription.Font = new Font(privateFont.Families[0], 12, FontStyle.Regular);
+            lblTime.Font = new Font(privateFont.Families[0], 12, FontStyle.Regular);
+            lblDate.Font = new Font(privateFont.Families[0], 12, FontStyle.Regular);
+            label1.Font = new Font(privateFont.Families[0], 12, FontStyle.Regular);
+            label2.Font = new Font(privateFont.Families[0], 12, FontStyle.Regular);
 
         }
 
-        private void frmEventDetails_Load(object sender, EventArgs e)
+        private void frmEventsAdditionalDetails_Deactivate(object sender, EventArgs e)
         {
-            lblTitle.Text = selectedEvent.EventTitle;
-            lblDescription.Text = selectedEvent.EventDescription;
-            pictureBox1.Image = selectedEvent.EventImage;
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-        }
-
-        private void btnEventInfo_Click(object sender, EventArgs e)
-        {
-            frmEventsAdditionalDetails newDetails = new frmEventsAdditionalDetails(selectedEvent.EventTime, selectedEvent.EventDate);
-            newDetails.Show();
-
+            this.Close();
         }
     }
 }

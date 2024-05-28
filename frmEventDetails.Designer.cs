@@ -55,6 +55,7 @@
             this.btnEventInfo.Size = new System.Drawing.Size(31, 32);
             this.btnEventInfo.TabIndex = 1;
             this.btnEventInfo.UseTransparentBackground = true;
+            this.btnEventInfo.Click += new System.EventHandler(this.btnEventInfo_Click);
             // 
             // lblTitle
             // 
