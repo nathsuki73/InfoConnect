@@ -132,6 +132,7 @@ namespace InfoConnect
 
             if (imageRadioButton != null && imageRadioButton.Checked)
             {
+                panel.Controls.Clear();
                 int index = (int)imageRadioButton.Tag;
                 EventData selectedEvent = eventsList[index];
                 // Now you can use selectedEvent to display the event details

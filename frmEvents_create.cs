@@ -13,6 +13,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Collections.Specialized.BitVector32;
 using System.Xml.Linq;
+using System.Diagnostics;
+using System.Security.Cryptography;
 
 namespace InfoConnect
 {
@@ -109,6 +111,28 @@ namespace InfoConnect
                 noTitle.ShowDialog();
                 return;
             }
+            if (!string.IsNullOrEmpty(txtImage.Text))
+            {
+                if (File.Exists(txtImage.Text))
+                {
+                    // File exists, further validation if needed
+                }
+                else
+                {
+                    // File doesn't exist, show error message or take appropriate action
+                    MessageBox.Show("The specified image file does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+            else
+            {
+                // No image path provided, show error message or take appropriate action
+                MessageBox.Show("Please select an image.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+
 
             // Define the query to insert a new announcement into the database.
             string insertAnnouncementQuery = "INSERT INTO events (event_title, event_description, event_date, event_time, event_img) " +
@@ -146,13 +170,22 @@ namespace InfoConnect
         }
         private static byte[] GetImageBytesFromFile(string imagePath)
         {
-            using (FileStream fs = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
+            try
             {
-                using (BinaryReader br = new BinaryReader(fs))
+                using (FileStream fs = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
                 {
-                    return br.ReadBytes((int)fs.Length);
+                    using (BinaryReader br = new BinaryReader(fs))
+                    {
+                        return br.ReadBytes((int)fs.Length);
+                    }
                 }
             }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
     }
 }
