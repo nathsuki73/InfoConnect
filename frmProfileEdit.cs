@@ -119,8 +119,6 @@ namespace InfoConnect
             lblSex.Text = sex;
             //Date of birth
             lblBirthDate.Text = ((DateTime)birthDate).ToString("yyyy-MM-dd");
-            //Account type
-            lblAccountType.Text = accountType;
             //Email 
             lblEmail.Text = email;
             //Contact
@@ -172,7 +170,7 @@ namespace InfoConnect
             Font aboutMeFont = new Font(privateFont.Families[0], 9, FontStyle.Regular);
 
 
-            Label[] labels = { lblLastName, lblFirstName, lblMiddleName, lblSex, lblBirthDate, lblAccountType, lblPassword, lblEmail, lblContact, lblAddress };
+            Label[] labels = { lblLastName, lblFirstName, lblMiddleName, lblSex, lblBirthDate, lblPassword, lblEmail, lblContact, lblAddress };
 
             foreach (Label lbl in labels)
             {
@@ -247,12 +245,7 @@ namespace InfoConnect
 
 
 
-        private void btnEditAccountType_Click(object sender, EventArgs e)
-        {
-            lblAccountType.Text = ShowFormEditor(pcbAccountType, "Account Type");
-            this.Refresh();
-
-        }
+        
 
         private void btnEditBirthDate_Click(object sender, EventArgs e)
         {
@@ -415,11 +408,7 @@ namespace InfoConnect
                 MessageBox.Show("First Name, Middle Name, and Last Name cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(lblAccountType.Text))
-            {
-                MessageBox.Show("Account Type cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
+            
             else if (string.IsNullOrWhiteSpace(lblSex.Text))
             {
                 MessageBox.Show("Sex cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
