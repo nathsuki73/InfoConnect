@@ -116,30 +116,17 @@ namespace InfoConnect
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            /*Guna2RadioButton radioButton = sender as Guna2RadioButton;
+            Guna2RadioButton radioButton = sender as Guna2RadioButton;
             if (radioButton != null && radioButton.Checked)
             {
                 int index = (int)radioButton.Tag;
                 EventData selectedEvent = eventsList[index];
                 // Now you can use selectedEvent to display the event details
-            }*/
 
-
-            Guna2ImageRadioButton imageRadioButton = sender as Guna2ImageRadioButton;
-            if (imageRadioButton != null && imageRadioButton.Checked)
-            {
-                foreach (var eventData in eventsList)
-                {
-                    Console.WriteLine("Event ID: " + eventData.EventId);
-                    Console.WriteLine("Event Title: " + eventData.EventTitle);
-                    Console.WriteLine("Event Description: " + eventData.EventDescription);
-                    Console.WriteLine("Event Time: " + eventData.EventTime);
-                    Console.WriteLine("Event Date: " + eventData.EventDate);
-                    // Printing the image is not practical; instead, you might print the byte array length or other properties
-                    Console.WriteLine("Event Image Size: " + eventData.EventImage.Size);
-                    Console.WriteLine("-----------------------------------");
-                }
             }
+
+
+            
 
         }
     }

@@ -30,41 +30,42 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEventDetails));
             this.btnEventInfo = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblDescription = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEventInfo
             // 
             this.btnEventInfo.BackColor = System.Drawing.Color.Transparent;
-            this.btnEventInfo.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.CheckedState.Image")));
+            this.btnEventInfo.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEventInfo.CheckedState.Image")));
             this.btnEventInfo.CheckedState.ImageSize = new System.Drawing.Size(24, 24);
             this.btnEventInfo.CheckedState.Parent = this.btnEventInfo;
-            this.btnEventInfo.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.btnEventInfo.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEventInfo.HoverState.Image")));
             this.btnEventInfo.HoverState.ImageSize = new System.Drawing.Size(24, 24);
             this.btnEventInfo.HoverState.Parent = this.btnEventInfo;
             this.btnEventInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnEventInfo.Image")));
             this.btnEventInfo.ImageSize = new System.Drawing.Size(24, 24);
             this.btnEventInfo.Location = new System.Drawing.Point(893, 472);
             this.btnEventInfo.Name = "btnEventInfo";
-            this.btnEventInfo.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.btnEventInfo.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEventInfo.PressedState.Image")));
             this.btnEventInfo.PressedState.ImageSize = new System.Drawing.Size(24, 24);
             this.btnEventInfo.PressedState.Parent = this.btnEventInfo;
             this.btnEventInfo.Size = new System.Drawing.Size(31, 32);
             this.btnEventInfo.TabIndex = 1;
             this.btnEventInfo.UseTransparentBackground = true;
             // 
-            // label1
+            // lblTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(41, 278);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(81)))), ((int)(((byte)(81)))));
+            this.lblTitle.Location = new System.Drawing.Point(41, 278);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(35, 13);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "label1";
             // 
             // pictureBox1
             // 
@@ -75,15 +76,16 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // lblDescription
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(44, 340);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(81)))), ((int)(((byte)(81)))));
+            this.lblDescription.Location = new System.Drawing.Point(41, 336);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(35, 13);
+            this.lblDescription.TabIndex = 4;
+            this.lblDescription.Text = "label2";
             // 
             // frmEventDetails
             // 
@@ -91,13 +93,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(963, 536);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnEventInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEventDetails";
             this.Text = "frmEventDetails";
+            this.Load += new System.EventHandler(this.frmEventDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -106,8 +109,8 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2ImageButton btnEventInfo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblDescription;
     }
 }
