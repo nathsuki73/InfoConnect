@@ -27,8 +27,8 @@ namespace InfoConnect
         string aboutMe;
         string email;
         string dateCreated;
+        Image event_img;
 
-        
         public frmProfileView(frmMain formMain, int id)
         {
             InitializeComponent();
@@ -42,15 +42,15 @@ namespace InfoConnect
         public void PopulateStrings(int id)
         {
             string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=infoconnect";
-            string query = @"SELECT u.user_id, u.user_email, up.user_first_name, up.user_middle_name, up.user_last_name, up.user_section, up.user_about_me, up.user_date_created 
+            string query = @"SELECT u.user_id, u.user_email, up.user_first_name, up.user_middle_name, up.user_last_name, up.user_section, up.user_about_me, up.user_date_created, up.user_img 
                          FROM users u
                          JOIN users_profile up ON u.user_id = up.user_profile_id
                          WHERE u.user_id = @userId";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
-                try
-                {
+               /* try
+                {*/
                     conn.Open();
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@userId", id);
@@ -65,17 +65,36 @@ namespace InfoConnect
                             section = reader["user_section"].ToString();
                             aboutMe = reader["user_about_me"].ToString();
                             dateCreated = reader["user_date_created"].ToString();
-                        }
-                        else
-                        {
-                            MessageBox.Show("User not found.");
-                        }
+                                // Read the blob data and convert it to an image
+                            byte[] event_img_bytes = (byte[])reader["user_img"];
+
+                            if (event_img_bytes != null && event_img_bytes.Length > 0)
+                                {
+                                    using (MemoryStream ms = new MemoryStream(event_img_bytes))
+                                    {
+                                        try
+                                        {
+                                            ms.Seek(0, SeekOrigin.Begin); // Reset stream position
+                                            event_img = Image.FromStream(ms);
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            Console.WriteLine("Error loading image: " + ex.Message);
+                                            // Handle the exception or log it as needed
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("User not found.");
+                            }
                     }
-                }
+                /*}
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message);
-                }
+                }*/
             }
         }
 
@@ -98,6 +117,14 @@ namespace InfoConnect
             lblAboutMe.Text = aboutMe;
             lblAccountDateCreated.Text = dateCreated;
             lblEmail.Text = InsertNewlines(email, 46);
+            if (event_img != null)
+            {
+                guna2CirclePictureBox1.Image = new Bitmap(event_img);
+            } else
+            {
+                guna2CirclePictureBox1.Image = Properties.Resources.default_profile;
+
+            }
         }
 
         private void frmProfileView_Deactivate(object sender, EventArgs e)

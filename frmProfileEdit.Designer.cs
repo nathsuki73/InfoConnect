@@ -35,7 +35,6 @@
             this.pcbMiddleName = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbSex = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbBirthDate = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pcbAccountType = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbPassword = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbEmail = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pcbAddress = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -45,7 +44,6 @@
             this.lblMiddleName = new System.Windows.Forms.Label();
             this.lblSex = new System.Windows.Forms.Label();
             this.lblBirthDate = new System.Windows.Forms.Label();
-            this.lblAccountType = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblContact = new System.Windows.Forms.Label();
@@ -58,7 +56,6 @@
             this.btnEditMiddleName = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditSex = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditBirthDate = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnEditAccountType = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditPassword = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditContact = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnEditEmail = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -73,7 +70,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbMiddleName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBirthDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbAccountType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAddress)).BeginInit();
@@ -158,25 +154,12 @@
             this.pcbBirthDate.TabStop = false;
             this.pcbBirthDate.UseTransparentBackground = true;
             // 
-            // pcbAccountType
-            // 
-            this.pcbAccountType.BackColor = System.Drawing.Color.Transparent;
-            this.pcbAccountType.Image = ((System.Drawing.Image)(resources.GetObject("pcbAccountType.Image")));
-            this.pcbAccountType.InitialImage = null;
-            this.pcbAccountType.Location = new System.Drawing.Point(246, 185);
-            this.pcbAccountType.Name = "pcbAccountType";
-            this.pcbAccountType.ShadowDecoration.Parent = this.pcbAccountType;
-            this.pcbAccountType.Size = new System.Drawing.Size(225, 76);
-            this.pcbAccountType.TabIndex = 7;
-            this.pcbAccountType.TabStop = false;
-            this.pcbAccountType.UseTransparentBackground = true;
-            // 
             // pcbPassword
             // 
             this.pcbPassword.BackColor = System.Drawing.Color.Transparent;
             this.pcbPassword.Image = ((System.Drawing.Image)(resources.GetObject("pcbPassword.Image")));
             this.pcbPassword.InitialImage = null;
-            this.pcbPassword.Location = new System.Drawing.Point(468, 185);
+            this.pcbPassword.Location = new System.Drawing.Point(246, 185);
             this.pcbPassword.Name = "pcbPassword";
             this.pcbPassword.ShadowDecoration.Parent = this.pcbPassword;
             this.pcbPassword.Size = new System.Drawing.Size(225, 76);
@@ -281,25 +264,13 @@
             this.lblBirthDate.TabIndex = 12;
             this.lblBirthDate.Text = "Nathaniel";
             // 
-            // lblAccountType
-            // 
-            this.lblAccountType.AutoSize = true;
-            this.lblAccountType.BackColor = System.Drawing.Color.Transparent;
-            this.lblAccountType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountType.ForeColor = System.Drawing.Color.White;
-            this.lblAccountType.Location = new System.Drawing.Point(264, 230);
-            this.lblAccountType.Name = "lblAccountType";
-            this.lblAccountType.Size = new System.Drawing.Size(64, 16);
-            this.lblAccountType.TabIndex = 12;
-            this.lblAccountType.Text = "Nathaniel";
-            // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(486, 230);
+            this.lblPassword.Location = new System.Drawing.Point(266, 230);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(126, 16);
             this.lblPassword.TabIndex = 12;
@@ -482,26 +453,6 @@
             this.btnEditBirthDate.UseTransparentBackground = true;
             this.btnEditBirthDate.Click += new System.EventHandler(this.btnEditBirthDate_Click);
             // 
-            // btnEditAccountType
-            // 
-            this.btnEditAccountType.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditAccountType.CheckedState.Parent = this.btnEditAccountType;
-            this.btnEditAccountType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditAccountType.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAccountType.HoverState.Image")));
-            this.btnEditAccountType.HoverState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnEditAccountType.HoverState.Parent = this.btnEditAccountType;
-            this.btnEditAccountType.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAccountType.Image")));
-            this.btnEditAccountType.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnEditAccountType.Location = new System.Drawing.Point(442, 196);
-            this.btnEditAccountType.Name = "btnEditAccountType";
-            this.btnEditAccountType.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAccountType.PressedState.Image")));
-            this.btnEditAccountType.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnEditAccountType.PressedState.Parent = this.btnEditAccountType;
-            this.btnEditAccountType.Size = new System.Drawing.Size(15, 15);
-            this.btnEditAccountType.TabIndex = 15;
-            this.btnEditAccountType.UseTransparentBackground = true;
-            this.btnEditAccountType.Click += new System.EventHandler(this.btnEditAccountType_Click);
-            // 
             // btnEditPassword
             // 
             this.btnEditPassword.BackColor = System.Drawing.Color.Transparent;
@@ -512,7 +463,7 @@
             this.btnEditPassword.HoverState.Parent = this.btnEditPassword;
             this.btnEditPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnEditPassword.Image")));
             this.btnEditPassword.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnEditPassword.Location = new System.Drawing.Point(664, 196);
+            this.btnEditPassword.Location = new System.Drawing.Point(442, 196);
             this.btnEditPassword.Name = "btnEditPassword";
             this.btnEditPassword.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnEditPassword.PressedState.Image")));
             this.btnEditPassword.PressedState.ImageSize = new System.Drawing.Size(15, 15);
@@ -666,7 +617,6 @@
             this.Controls.Add(this.btnEditEmail);
             this.Controls.Add(this.btnEditContact);
             this.Controls.Add(this.btnEditPassword);
-            this.Controls.Add(this.btnEditAccountType);
             this.Controls.Add(this.btnEditMiddleName);
             this.Controls.Add(this.btnEditBirthDate);
             this.Controls.Add(this.btnEditFirstName);
@@ -679,13 +629,11 @@
             this.Controls.Add(this.pcbAddress);
             this.Controls.Add(this.pcbEmail);
             this.Controls.Add(this.pcbPassword);
-            this.Controls.Add(this.pcbAccountType);
             this.Controls.Add(this.pcbBirthDate);
             this.Controls.Add(this.pcbSex);
             this.Controls.Add(this.lblSex);
             this.Controls.Add(this.lblMiddleName);
             this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.lblAccountType);
             this.Controls.Add(this.lblContact);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblEmail);
@@ -714,7 +662,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbMiddleName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBirthDate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbAccountType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEmail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAddress)).EndInit();
@@ -734,7 +681,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox pcbMiddleName;
         private Guna.UI2.WinForms.Guna2PictureBox pcbSex;
         private Guna.UI2.WinForms.Guna2PictureBox pcbBirthDate;
-        private Guna.UI2.WinForms.Guna2PictureBox pcbAccountType;
         private Guna.UI2.WinForms.Guna2PictureBox pcbPassword;
         private Guna.UI2.WinForms.Guna2PictureBox pcbEmail;
         private Guna.UI2.WinForms.Guna2PictureBox pcbAddress;
@@ -744,7 +690,6 @@
         private System.Windows.Forms.Label lblMiddleName;
         private System.Windows.Forms.Label lblSex;
         private System.Windows.Forms.Label lblBirthDate;
-        private System.Windows.Forms.Label lblAccountType;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblContact;
@@ -757,7 +702,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnEditMiddleName;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditSex;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditBirthDate;
-        private Guna.UI2.WinForms.Guna2ImageButton btnEditAccountType;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditPassword;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditContact;
         private Guna.UI2.WinForms.Guna2ImageButton btnEditEmail;

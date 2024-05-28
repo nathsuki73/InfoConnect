@@ -40,6 +40,7 @@ namespace InfoConnect
         string address;
         string aboutMe;
         string dateCreated;
+        string pictureFilePath;
 
         
 
@@ -313,8 +314,26 @@ namespace InfoConnect
         }
 
         // Method to update the label text
-        
 
+        private static byte[] GetImageBytesFromFile(string imagePath)
+        {
+            try
+            {
+                using (FileStream fs = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
+                {
+                    using (BinaryReader br = new BinaryReader(fs))
+                    {
+                        return br.ReadBytes((int)fs.Length);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
 
 
 
@@ -340,7 +359,8 @@ namespace InfoConnect
                                    up.user_birth_date = @userBirthDate,
                                    up.user_contact = @userContact,
                                    up.user_address = @userAddress,
-                                   up.user_about_me = @userAboutMe
+                                   up.user_about_me = @userAboutMe,
+                                   up.user_img = @userImg
                                WHERE u.user_id = @userId";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -354,13 +374,14 @@ namespace InfoConnect
                     cmd.Parameters.AddWithValue("@userFirstName", lblFirstName.Text);
                     cmd.Parameters.AddWithValue("@userMiddleName", lblMiddleName.Text);
                     cmd.Parameters.AddWithValue("@userLastName", lblLastName.Text);
-                    cmd.Parameters.AddWithValue("@userAccountType", lblAccountType.Text);
                     cmd.Parameters.AddWithValue("@userSex", lblSex.Text);
                     cmd.Parameters.AddWithValue("@userBirthDate", lblBirthDate.Text);
                     cmd.Parameters.AddWithValue("@userContact", lblContact.Text);
                     cmd.Parameters.AddWithValue("@userAddress", lblAddress.Text);
                     cmd.Parameters.AddWithValue("@userAboutMe", lblAboutMe.Text);
                     cmd.Parameters.AddWithValue("@userId", id);
+                    cmd.Parameters.AddWithValue("@userImg", GetImageBytesFromFile(pictureFilePath));
+
 
                     int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
@@ -449,7 +470,19 @@ namespace InfoConnect
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
 
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
+
+            openFileDialog.Title = "Select an Image File";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string selectedFilePath = openFileDialog.FileName;
+
+                pictureFilePath = selectedFilePath;
+                guna2CirclePictureBox1.Image = new Bitmap(pictureFilePath);
+            }
         }
     }
 }
