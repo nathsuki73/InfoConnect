@@ -196,5 +196,10 @@ namespace InfoConnect
             lblAccountDateCreated.Font = new Font(privateFont.Families[0], 9, FontStyle.Regular);
 
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

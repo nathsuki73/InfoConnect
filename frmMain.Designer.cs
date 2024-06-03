@@ -57,7 +57,7 @@
             this.pnlMain.Location = new System.Drawing.Point(289, 75);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.ShadowDecoration.Parent = this.pnlMain;
-            this.pnlMain.Size = new System.Drawing.Size(1060, 654);
+            this.pnlMain.Size = new System.Drawing.Size(1058, 654);
             this.pnlMain.TabIndex = 6;
             this.pnlMain.UseTransparentBackground = true;
             // 

@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="pnlMain.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnProfile.HoverState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -12075,7 +12072,7 @@
   <data name="btnRefresh.HoverState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAWFJREFUSEvNVNFtwjAQjUQT8ZkROkJHYIN2A7pJ2aBs4IQOwgiMkBEY4Xrv/FwM
+        DwAACw8BkvkDpQAAAWFJREFUSEvNVNFtwjAQjUQT8ZkROkJHYIN2A7pJ2aBs4IQOwgiMkBEY4Xrv/FwM
         RrENtOqTrMgn33vPvss1/wbdKBNW4+SZoceCAvJwkScnq24Q145ypIAXuRvqUkn3EWm8TgJO+vobOXkJ
         ju3rZBPdYFpGhNjrOraaw1AG3nkgH3o4VJDojBxQ4i3OQqToJiQC+ZahLGCEOXuGrmPh5I1upuC8CHo2
         3BpNwWiKyMmaoWKgTmZOO46hFEp8MIHigp2A2piA3p6hFDwg3FYjm/8XAtZBl61YAjwrcvHMDKXQQlmR
@@ -12087,7 +12084,7 @@
   <data name="btnRefresh.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAUVJREFUSEvNlAsNwjAQhicBCUhAAg7AATgBB+AAnCABCUhAwvi/7j8yKGMtgYQv
+        DwAACw8BkvkDpQAAAUVJREFUSEvNlAsNwjAQhicBCUhAAg7AATgBB+AAnCABCUhAwvi/7j8yKGMtgYQv
         uXS9V6+PXfM3tG17sUyt+i5ODt9dRMnmkoPkKgkuNn+Okkwlp5Qu576AvieSuh0pYCaJihm3HuHhiDzH
         NrPqPQQ7AI6SifUkys5f870EiBnfiZxIAnurRpEvhcDJqtfIYdn5pUVS5SXgK4ldz63OkTEqWVlVjGK4
         JzhYlSPjufMpvLAeiuHuYPgJ26H1tBqHD8fb/tMF4gVVtwLF8O/A2aocGeOSt1YVo5h1F/r+kuk7wJOr
@@ -12098,7 +12095,7 @@
   <data name="btnRefresh.PressedState.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAWFJREFUSEvNVNFtwjAQjUQT8ZkROkJHYIN2A7pJ2aBs4IQOwgiMkBEY4Xrv/FwM
+        DwAACw8BkvkDpQAAAWFJREFUSEvNVNFtwjAQjUQT8ZkROkJHYIN2A7pJ2aBs4IQOwgiMkBEY4Xrv/FwM
         RrENtOqTrMgn33vPvss1/wbdKBNW4+SZoceCAvJwkScnq24Q145ypIAXuRvqUkn3EWm8TgJO+vobOXkJ
         ju3rZBPdYFpGhNjrOraaw1AG3nkgH3o4VJDojBxQ4i3OQqToJiQC+ZahLGCEOXuGrmPh5I1upuC8CHo2
         3BpNwWiKyMmaoWKgTmZOO46hFEp8MIHigp2A2piA3p6hFDwg3FYjm/8XAtZBl61YAjwrcvHMDKXQQlmR

@@ -73,6 +73,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="comingSoon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comingSoon.Designer.cs">
+      <DependentUpon>comingSoon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Error Forms\birthdateError.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,6 +337,9 @@
     <Compile Include="ucStudent.Designer.cs">
       <DependentUpon>ucStudent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="comingSoon.resx">
+      <DependentUpon>comingSoon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Error Forms\birthdateError.resx">
       <DependentUpon>birthdateError.cs</DependentUpon>
     </EmbeddedResource>

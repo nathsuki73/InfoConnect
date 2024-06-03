@@ -146,6 +146,7 @@
             this.btnLogout.Size = new System.Drawing.Size(66, 23);
             this.btnLogout.TabIndex = 16;
             this.btnLogout.UseTransparentBackground = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // frmProfileView
             // 
