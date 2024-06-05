@@ -84,38 +84,82 @@ The tutorial video is available on YouTube and can be accessed via the following
 
 ## WinForms Screenshots
 
+<div align="center">
+
 ![Front Page](https://github.com/nathsuki73/InfoConnect/blob/master/ReadMePics/front%20page.jpg)
 *Front Page*
+
+</div>
+
+<div align="center">
 
 ![Login Interface](https://github.com/nathsuki73/InfoConnect/blob/master/ReadMePics/login%20page.jpg)
 *Login Interface*
 
+</div>
+
+<div align="center">
+
 ![Sign-up Interface](https://github.com/nathsuki73/InfoConnect/blob/master/ReadMePics/sign%20up%20page.jpg)
 *Sign-up Interface*
+
+</div>
+
+<div align="center">
 
 ![Dashboard Interface](https://github.com/nathsuki73/InfoConnect/blob/master/ReadMePics/dashboard%20page.jpg)
 *Dashboard Interface*
 
+</div>
+
+<div align="center">
+
 ![Events Interface](https://github.com/nathsuki73/InfoConnect/blob/master/ReadMePics/event%20page.jpg)
 *Events Interface*
+
+</div>
+
+<div align="center">
 
 ![Create Event Interface](https://github.com/nathsuki73/InfoConnect/blob/master/ReadMePics/create%20event.jpg)
 *Create Event Interface*
 
+</div>
+
+<div align="center">
+
 ![Announcements Interface](ReadMePics/announcement.jpg)
 *Announcements Interface*
+
+</div>
+
+<div align="center">
 
 ![Section Interface](ReadMePics/section.jpg)
 *Section Interface*
 
+</div>
+
+<div align="center">
+
 ![About Us Interface](https://github.com/nathsuki73/InfoConnect/blob/master/ReadMePics/about%20us.jpg)
 *About Us Interface*
+
+</div>
+
+<div align="center">
 
 ![Profile View Interface](https://github.com/nathsuki73/InfoConnect/blob/master/ReadMePics/profile%20view.jpg)
 *Profile View Interface*
 
+</div>
+
+<div align="center">
+
 ![Profile Edit Interface](https://github.com/nathsuki73/InfoConnect/blob/master/ReadMePics/profile%20edit.jpg)
 *Profile Edit Interface*
+
+</div>
 
 ## Intermediate Programming Applied
 
