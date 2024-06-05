@@ -84,37 +84,37 @@ The tutorial video is available on YouTube and can be accessed via the following
 
 ## WinForms Screenshots
 
-![Front Page](screenshots/front_page.png)
+![Front Page](ReadMePics/front page.jpg)
 *Front Page*
 
-![Login Interface](screenshots/login_interface.png)
+![Login Interface](ReadMePics/login page.jpg)
 *Login Interface*
 
-![Sign-up Interface](screenshots/signup_interface.png)
+![Sign-up Interface](ReadMePics/sign up page.jpg)
 *Sign-up Interface*
 
-![Dashboard Interface](screenshots/dashboard_interface.png)
+![Dashboard Interface](ReadMePics/dashboard page.jpg)
 *Dashboard Interface*
 
-![Events Interface](screenshots/events_interface.png)
+![Events Interface](ReadMePics/event page.jpg)
 *Events Interface*
 
-![Create Event Interface](screenshots/create_event_interface.png)
+![Create Event Interface](ReadMePics/create event.jpg)
 *Create Event Interface*
 
-![Announcements Interface](screenshots/announcements_interface.png)
+![Announcements Interface](ReadMePics/announcement.jpg)
 *Announcements Interface*
 
-![Section Interface](screenshots/section_interface.png)
+![Section Interface](ReadMePics/section.jpg)
 *Section Interface*
 
-![About Us Interface](screenshots/about_us_interface.png)
+![About Us Interface](ReadMePics/about us.jpg)
 *About Us Interface*
 
-![Profile View Interface](screenshots/profile_view_interface.png)
+![Profile View Interface](ReadMePics/profile view.jpg)
 *Profile View Interface*
 
-![Profile Edit Interface](screenshots/profile_edit_interface.png)
+![Profile Edit Interface](ReadMePics/profile edit.jpg)
 *Profile Edit Interface*
 
 ## Intermediate Programming Applied
