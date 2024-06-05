@@ -63,6 +63,8 @@ InfoConnect was started on April 23, 2024, and completed on June 3, 2024, by Nat
 
 - **Issue:** Announcements not refreshing after creation.
   - **Solution:** Navigate to a different section and return to the announcements.
+- **Issue:** Description not creating a new line when it reaches a maximum characters.
+  - **Solution:** Press the enter to create a newline in the textbox.
 
 ## Frequently Asked Questions (FAQ)
 
